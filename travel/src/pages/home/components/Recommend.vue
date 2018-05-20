@@ -3,7 +3,7 @@
     <div class="recommend-title">热销推荐</div>
     <ul>
       <li class="item border-bottom" v-for="(recommend, index) in recommendList" :key="index">
-        <img class="item-img" :src="recommend.src" alt="" >
+        <img class="item-img" :src="recommend.imgUrl" alt="" >
         <div class="item-info">
           <p class="item-title">{{recommend.title}}</p>
           <p class="item-desc">{{recommend.desc}}</p>
@@ -17,29 +17,11 @@
 <script>
 export default {
   name: 'HomeRecommend',
+  props: {
+    recommendList: Array
+  },
   data () {
-    return {
-      recommendList: [
-        {
-          id: '001',
-          title: '上海玛雅海滩水公园',
-          desc: '全方位360度尽收上海林立高楼之美景全方位360度尽收上海林立高楼之美景全方位360度尽收上海林立高楼之美景',
-          src: 'http://img1.qunarzz.com/sight/p0/1506/30/7a528fae12c17e6e29d5d13a9d9813ee.water.jpg_200x200_e7f0d0ad.jpg'
-        },
-        {
-          id: '001',
-          title: '上海玛雅海滩水公园',
-          desc: '全方位360度尽收上海林立高楼之美景全方位360度尽收上海林立高楼之美景全方位360度尽收上海林立高楼之美景',
-          src: 'http://img1.qunarzz.com/sight/p0/1506/30/7a528fae12c17e6e29d5d13a9d9813ee.water.jpg_200x200_e7f0d0ad.jpg'
-        },
-        {
-          id: '001',
-          title: '上海玛雅海滩水公园',
-          desc: '全方位360度尽收上海林立高楼之美景全方位360度尽收上海林立高楼之美景全方位360度尽收上海林立高楼之美景',
-          src: 'http://img1.qunarzz.com/sight/p0/1506/30/7a528fae12c17e6e29d5d13a9d9813ee.water.jpg_200x200_e7f0d0ad.jpg'
-        }
-      ]
-    }
+    return {}
   }
 }
 </script>
