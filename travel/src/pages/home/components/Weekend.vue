@@ -2,9 +2,9 @@
   <div>
     <div class="recommend-title">周末去哪</div>
     <ul>
-      <li class="item border-bottom" v-for="(recommend, index) in recommendList" :key="index">
+      <li class="item border-bottom" v-for="(recommend, index) in weekendList" :key="index">
         <div class="item-img-wrapper">
-          <img class="item-img" :src="recommend.src" alt="" >
+          <img class="item-img" :src="recommend.imgUrl" alt="" >
         </div>
         <div class="item-info">
           <p class="item-title">{{recommend.title}}</p>
@@ -18,29 +18,11 @@
 <script>
 export default {
   name: 'HomeWeekend',
+  props: {
+    weekendList: Array
+  },
   data () {
-    return {
-      recommendList: [
-        {
-          id: '001',
-          title: '上海玛雅海滩水公园',
-          desc: '全方位360度尽收上海林立高楼之美景全方位360度尽收上海林立高楼之美景全方位360度尽收上海林立高楼之美景',
-          src: 'http://img1.qunarzz.com/sight/source/1505/7d/df6ff468331c43.jpg_r_640x214_1f3783d0.jpg'
-        },
-        {
-          id: '001',
-          title: '上海玛雅海滩水公园',
-          desc: '全方位360度尽收上海林立高楼之美景全方位360度尽收上海林立高楼之美景全方位360度尽收上海林立高楼之美景',
-          src: 'http://img1.qunarzz.com/sight/source/1603/ad/69b0fc5f48ad5f.jpg_r_640x214_b0fd5c7b.jpg'
-        },
-        {
-          id: '001',
-          title: '上海玛雅海滩水公园',
-          desc: '全方位360度尽收上海林立高楼之美景全方位360度尽收上海林立高楼之美景全方位360度尽收上海林立高楼之美景',
-          src: 'http://img1.qunarzz.com/sight/source/1505/b7/2f4621a3a4e12c.jpg_r_640x214_d55c10ba.jpg'
-        }
-      ]
-    }
+    return {}
   }
 }
 </script>
