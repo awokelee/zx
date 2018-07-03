@@ -1,0 +1,131 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Web前端导航</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="./build/fe-nav/index.css">
+  <link rel="stylesheet" type="text/css" href="./static/css/iconfont.css">
+  <!-- <link rel="stylesheet" type="text/css" href="./static/css/index.css"> -->
+  <!-- <link type="text/css" rel="stylesheet" href="chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/content.css"> -->
+</head>
+
+<body>
+  <div class="container" id="container">
+    <div class="left-bar">
+      <div class="title">
+        <p>Web前端导航</p>
+      </div>
+      <div class="nav">
+        <div class="home item active">
+          <a href="/">
+            <i class="iconfont icon-daohang"></i> 前端导航 </a>
+          <i class="hairlines"></i>
+        </div>
+        <div class="nav-item">
+          <div class="category-nav" id="category">
+            <ul>
+              <!-- 左侧导航 -->
+              <li v-for="(nav, index) in list.navData" :key="index" :id="nav.id">
+                <!-- class="active" -->
+                <a :href="`#${nav.id}Item`" :data-id="nav.id">
+                  <i :data-id="nav.id" :class="nav.iconfont"></i>
+                  <span v-text="nav.text"></span>
+                </a>
+              </li>
+            </ul>
+            <i id="menu-shadow-top" class="menu-list-shadow is-top" style="opacity: 0; transform: scaleY(0);"></i>
+            <i id="menu-shadow-bottom" class="menu-list-shadow is-bottom" style="opacity: 1;transform: scaleY(1);;"></i>
+          </div>
+        </div>
+        <!-- 留言 -->
+        <div class="item msg-board">
+          <a href="http://www.alloyteam.com/nav/">
+            <i class="iconfont icon-liuyan"></i>参考 Alloyteam
+          </a>
+          <i class="iconfont icon-jiantou arrow"></i>
+        </div>
+      </div>
+    </div>
+    <div class="main" id="mainWrap">
+      <div id="mainContent">
+        <!-- 内容 -->
+        <div v-for="(item, index) in list.navList" :key="index" class="fe" :id="item.id">
+          <div class="sub-category">
+            <div>
+              <i :class="item.iconfont"></i>
+              <span v-text="item.text"></span>
+            </div>
+          </div>
+          <!-- 内容列表 -->
+          <div>
+            <a v-for="(it, idx) in item.list" :id="it.id" :key="idx" target="_blank" :href="it.href">
+              <div class="item">
+                <div class="logo">
+                  <img :data-original="it.src" width="100%" class="loaded" :src="it.src">
+                  <span v-text="it.name"></span>
+                </div>
+                <div class="desc">
+                  <span v-text="it.desc"></span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <!--<div class="recommend">
+                  <p>Web前端导航，最<strong>贴心</strong>的 前端导航！</p>
+
+                  <div>如果你也有好的资源欢迎向我们
+                      <div class="recommend-icon">
+                          <a href="">推荐</a>
+                      </div>
+                  </div>
+                  <div>Thank you!<img src="./static/images/kissing.png" /> </div>
+              </div>-->
+        <p>微信关注 AlloyTeam 公众号，了解我们更多资讯</p>
+        <div class="copyright">
+          <div>
+
+            Copyright © 2011- 2018
+            <a href="http://www.alloyteam.com/">
+              Web前端 腾讯AlloyTeam
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- <script type="text/javascript" src="http://tajs.qq.com/stats?sId=39379138" charset="UTF-8"></script> -->
+  <!-- <script src="./build/vendor.js"></script> -->
+  <!-- <script src="./build/fe-nav/index.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <script>
+    var app = new Vue({
+      el: '#container',
+      data: {
+        list: [],
+      },
+      mounted() {
+        this.getData()
+      },
+      methods: {
+        getData() {
+          const self = this
+          fetch('./mock/data.json').then(function (res) {
+            if (res.ok) {
+              res.json().then(function (data) {
+                self.list = data
+              })
+            }
+          })
+        }
+      }
+    })
+  </script>
+
+</body>
+
+</html>
