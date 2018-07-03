@@ -168,7 +168,7 @@
         "desc": ""
       }]
     },
-    { "id": "fePortalsItem", "iconfont": "iconfont icon-gongju", "text": "前端门户", 
+    { "id": "fePortalsItem", "iconfont": "iconfont icon-gongju", "text": "前端门户1", 
       "list": [{
         "href": "https://www.docschina.org/",
         "src": "./static/images/docschina.png",
