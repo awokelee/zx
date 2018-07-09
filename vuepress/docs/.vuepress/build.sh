@@ -9,6 +9,9 @@ git init
 git add -A
 git commit -m 'deploy'
 
-git push -f git@github.com:awokelee/vue-press.git master
+git remote add origin https://github.com/awokelee/vue-press.git
+
+git pull –rebase origin master
+git push -f https://github.com/awokelee/vue-press.git master:master
 
 cd -
