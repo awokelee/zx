@@ -31,10 +31,10 @@ module.exports = {
         '',      /* /bar/ */
         'three', /* /bar/three.html */
         'Promise教程',  /* /foo/one.html */
+        'mac 常用',  /* /foo/one.html */
         '浏览器兼容性问题',  /* /foo/one.html */
         'four'   /* /bar/four.html */
       ],
-
       // fallback
       '/': [
         '',        /* / */
