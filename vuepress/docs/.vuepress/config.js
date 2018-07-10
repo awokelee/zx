@@ -1,5 +1,5 @@
 module.exports = {
-  base: '/awoke/',
+  base: '/vue-press/',
   title: 'Awoke',
   description: 'Just playing around',
   search: false,
@@ -7,33 +7,25 @@ module.exports = {
   lastUpdated: 'Last Updated', // string | boolean
   themeConfig: {
     nav: [
-      { text: 'Home', link: '/bar/' },
-      { text: 'Guide', link: '/guide/' },
-      { text: 'External', link: 'https://google.com' },
+      { text: '主页', link: '/home/' },
+      // { text: 'Guide', link: '/guide/' },
       {
-        text: 'Languages',
+        text: '项目',
         items: [
-          { text: 'Group1', items: [
-            { text: 'Chinese', link: '/language/chinese' },
-          ]},
-          { text: 'Japanese', link: '/language/japanese' }
+          { text: 'Qunar', link: 'http://qunar.gaodaqian.com' },
         ]
-      }
+      },
+      { text: '导航', link: 'http://nav.gaodaqian.com' },
+      { text: '博客', link: 'http://blog.gaodaqian.com' },
+      { text: 'GitHub', link: 'https://github.com/awokelee' },
     ],
     sidebar: {
-      '/foo/': [
-        '',     /* /foo/ */
-        'one',  /* /foo/one.html */
-        'two'   /* /foo/two.html */
-      ],
-
-      '/bar/': [
-        '',      /* /bar/ */
-        'three', /* /bar/three.html */
-        'Promise教程',  /* /foo/one.html */
-        'mac',  /* /foo/one.html */
-        '浏览器兼容性问题',  /* /foo/one.html */
-        'four'   /* /bar/four.html */
+      '/home/': [
+        // 'promise',
+        'mac-soft',
+        // '浏览器兼容性问题',
+        // 'Vue 项目里戳中你痛点的问题及解决办法',
+        // 'vue路由设置history模式在nginx下404'
       ],
       // fallback
       '/': [
