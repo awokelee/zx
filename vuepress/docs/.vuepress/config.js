@@ -25,6 +25,7 @@ module.exports = {
     sidebar: {
       '/home/': [
         // 'promise',
+        'commit-message',
         'mac-soft',
         // '浏览器兼容性问题',
         // 'Vue 项目里戳中你痛点的问题及解决办法',
