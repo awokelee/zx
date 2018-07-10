@@ -5,6 +5,9 @@ module.exports = {
   search: false,
   searchMaxSuggestions: 10,
   lastUpdated: 'Last Updated', // string | boolean
+  head: [
+    ['link', { rel: 'icon', href: `/logo.png` }],
+  ],
   themeConfig: {
     nav: [
       { text: '主页', link: '/home/' },
