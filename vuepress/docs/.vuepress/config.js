@@ -11,7 +11,6 @@ module.exports = {
   themeConfig: {
     nav: [
       { text: '主页', link: '/home/' },
-      // { text: 'Guide', link: '/guide/' },
       {
         text: '项目',
         items: [
@@ -24,19 +23,19 @@ module.exports = {
     ],
     sidebar: {
       '/home/': [
-        // 'promise',
+        'promise',
         'commit-message',
         'mac-soft',
-        // '浏览器兼容性问题',
-        // 'Vue 项目里戳中你痛点的问题及解决办法',
-        // 'vue路由设置history模式在nginx下404'
+        '浏览器兼容性问题',
+        'Vue 项目里戳中你痛点的问题及解决办法',
+        'vue路由设置history模式在nginx下404'
       ],
       // fallback
       '/': [
-        '',        /* / */
-        'contact', /* /contact.html */
-        'about'    /* /about.html */
-      ]
+        '', 
+        'contact',
+        'about'    
+      ] 
     }
   }
 }
