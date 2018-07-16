@@ -10,7 +10,8 @@ module.exports = {
   ],
   themeConfig: {
     nav: [
-      { text: '主页', link: '/home/' },
+      { text: '笔记', link: '/home/' },
+      { text: 'Guide', link: '/guide/' },
       {
         text: '项目',
         items: [
@@ -23,19 +24,36 @@ module.exports = {
     ],
     sidebar: {
       '/home/': [
+        '',     /* /foo/ */
         'promise',
         'commit-message',
         'mac-soft',
         '浏览器兼容性问题',
         'Vue 项目里戳中你痛点的问题及解决办法',
-        'vue路由设置history模式在nginx下404'
+        'vue路由设置history模式在nginx下404',
       ],
-      // fallback
+      '/guide/': [
+        '',
+        'algorithm',
+        // 'browser-ch',
+        // 'dataStruct-zh',
+        // 'algorithm-ch',
+        // 'framework-zh',
+        // 'git-zh',
+        // 'JS-ch',
+        // 'Network-zh',
+        // 'performance-ch',
+        // 'react-zh',
+        // 'safety-cn',
+        // 'vue-zh',
+        // 'How-to-use-your-time-correctly',
+      ],
+      // 回退(fallback)侧边栏配置
       '/': [
-        '', 
-        'contact',
-        'about'    
-      ] 
+        '',        /* / */
+        'contact', /* /contact.html */
+        'about'    /* /about.html */
+      ]
     }
   }
 }
