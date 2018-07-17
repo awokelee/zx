@@ -11,6 +11,7 @@ module.exports = {
   themeConfig: {
     nav: [
       { text: '笔记', link: '/home/' },
+      { text: 'Vue', link: '/vue/' },
       { text: 'Guide', link: '/guide/' },
       {
         text: '项目',
@@ -47,6 +48,11 @@ module.exports = {
         // 'safety-cn',
         // 'vue-zh',
         // 'How-to-use-your-time-correctly',
+      ],
+      '/vue/': [
+        '',
+        'axios-primise',
+        'axios-await',
       ],
       // 回退(fallback)侧边栏配置
       '/': [
