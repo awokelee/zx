@@ -33,9 +33,9 @@ module.exports = {
         'Vue 项目里戳中你痛点的问题及解决办法',
         'vue路由设置history模式在nginx下404',
       ],
-      '/guide/': [
-        '',
-        'algorithm',
+      // '/guide/': [
+        // '',
+        // 'algorithm',
         // 'browser-ch',
         // 'dataStruct-zh',
         // 'algorithm-ch',
@@ -48,11 +48,21 @@ module.exports = {
         // 'safety-cn',
         // 'vue-zh',
         // 'How-to-use-your-time-correctly',
-      ],
+      // ],
       '/vue/': [
         '',
-        'axios-primise',
-        'axios-await',
+        '00_vue-cli',
+        '01_项目目录',
+        '02_meta',
+        '02_favicon',
+        '03_reset',
+        '04_border',
+        '05_fastclick',
+        '06_stylus',
+        '07_iconfont',
+        '08_axios',
+        '08_axios_promise',
+        '08_axios_await',
       ],
       // 回退(fallback)侧边栏配置
       '/': [
