@@ -1,4 +1,4 @@
-# axios
+# axios 请求接口
 
 ## 安装
 
@@ -12,7 +12,8 @@
 import qs from 'qs'
 import axios from 'axios'
 
-// 全局拦截器, 这里用于将 POST 请求 FormData 数据 {id:1,name:'zs'} 转换成 FormData 的 id=1&name=zs
+// 全局拦截器, 这里用于将 POST 请求 FormData 数据 {id:1,name:'zs'} 
+// 转换成 FormData 的 id=1&name=zs
 axios.interceptors.request.use((config) => {
   if (config.method === 'post') {
     config.data = qs.stringify(config.data)
@@ -34,36 +35,17 @@ Vue.prototype.$http = axios
 - `GET`
 
 ```js
-  this.$http
-    .get('/url', {
-      params: {
-        id: 1,
-        name: 'zs',
-      }
-    })
+  this.$http.get('/url', { params: { id: 1, name: 'zs' }})
     .then(res => {
-      const { data } = res
-      if (data) {
-        // TODO:
-      } else {
-       // 失败
-      }
+      // todo something
     })
 ```
 
 - `POST`
 
 ```js
-  this.$http
-    .post('/url', {
-      id: 1,
-      name: 'zs'
-    })
-    .then(function(res) {
-      if (res && res.code === _this.status.SUCCESS) {
-        // TODO:
-      } else {
-        // 失败
-      }
+  this.$http.post('/url', { id: 1, name: 'zs' })
+    .then(res => {
+      // todo something
     })
 ```

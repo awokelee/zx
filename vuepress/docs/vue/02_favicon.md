@@ -1,4 +1,4 @@
-# favicon
+# favicon 图标
 
 > 项目图标配置
 

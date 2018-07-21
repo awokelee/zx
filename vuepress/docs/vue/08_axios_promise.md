@@ -1,4 +1,4 @@
-# axios-primise
+# axios promise 封装
 
 ```js
 const axios = require('axios')

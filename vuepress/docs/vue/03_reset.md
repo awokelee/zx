@@ -1,4 +1,4 @@
-# reset.css
+# reset.css 样式初始化
 
 > 引入 reset.css
 

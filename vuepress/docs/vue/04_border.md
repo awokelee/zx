@@ -1,4 +1,4 @@
-# border.css
+# border.css 1px 边框
 
 > `border.css` 解决移动端 `1px` 问题
 

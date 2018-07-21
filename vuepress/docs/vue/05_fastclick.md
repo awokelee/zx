@@ -1,4 +1,4 @@
-# fastclick
+# fastclick 点击穿透
 
 > `fastclick` 300ms点击问题
 

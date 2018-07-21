@@ -1,4 +1,4 @@
-# stylus
+# stylus 样式
 
 > 使用 stylus
 
@@ -75,4 +75,15 @@ ellipsis()
 .el-submenu__title
   height: 46px
   line-height: 46px
+```
+
+## 样式穿透
+
+覆盖 `UI` 库的样式, 比如在当前组件需要覆盖库中 `class` 为 `el-table` 的样式
+
+```css
+<style lang="stylus" scoped>
+>>>.el-table
+  font-size: 20px
+</style>
 ```
