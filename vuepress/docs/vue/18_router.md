@@ -6,23 +6,21 @@
 
 ```js
 {
-    path: '/',
-    name: 'Home',
-    component: Home
+  path: '/',
+  name: 'Home',
+  component: Home
 },
-
 // 改成
-
 {
-    path: '/',
-    name: 'Home',
-    component: () => import('@/pages/home/Home')
+  path: '/',
+  name: 'Home',
+  component: () => import('@/pages/home/Home')
 },
 ```
 
 - 组件中
 
-- 如 `Home.vue`
+如 `Home.vue`
 
 ```js
 import HomeHeader from './components/Header'

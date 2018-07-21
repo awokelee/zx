@@ -2,15 +2,15 @@
 
 > 项目使用 iconfont
 
-## 下载 iconfont
+- 下载 iconfont
 
 在 `http://www.iconfont.cn/`  下载好 `iconfont`
 
-## 添加到项目
+- 添加到项目
 
-- 在 `src/assets/styles` 目录下新建 `iconfont` 目录, 解压后的其他文件摆在该目录
+在 `src/assets/styles` 目录下新建 `iconfont` 目录, 解压后的其他文件摆在该目录
 
-```shell
+```md
 ├── icomoon.eot
 ├── icomoon.svg
 ├── icomoon.ttf
@@ -21,9 +21,9 @@
 └── iconfont.woff
 ```
 
-- 下载好的压缩文件解压, 将 `iconfont.css` 移到`src/assets/styles` 目录
+下载好的压缩文件解压, 将 `iconfont.css` 移到`src/assets/styles` 目录
 
-- 修改 `iconfont.css` 中其他引入文件的路径
+修改 `iconfont.css` 中其他引入文件的路径
 
 ```css
 
@@ -46,7 +46,7 @@
 .icon-toufangfangan:before { content: "\e619"; }
 ```
 
-## 组件中使用
+- 组件中使用
 
 ```html
 <i class="iconfont icon-yanjing"></i>

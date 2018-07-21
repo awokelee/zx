@@ -4,7 +4,7 @@
 
 下面案例是对 `poster` 接口做的跨域和转发处理
 
-```js
+```bash
 location /poster/ {
     proxy_pass http://192.168.89.72:8027/poster/;
     proxy_set_header Host $host;

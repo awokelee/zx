@@ -31,7 +31,7 @@ import 'styles/reset.css'
 
 `css` 中
 
-```css
+```html
 <style lang="stylus" scoped>
 // 引入 src/assets/styles 目录下的 varibles.styl, 但引入时别名前需要加 ～
 @import '~styles/varibles.styl'

@@ -1,6 +1,6 @@
-# filter
+# filter 过滤器
 
-## 创建
+- 创建
 
 在 `src` 下新建 `filters` 文件夹, 创建 `index.js`, 案例如下
 
@@ -30,9 +30,9 @@ export function handleDateFormat (t) {
 }
 ```
 
-## 使用
+- 使用
 
-- `main.js`中注入
+在 `main.js` 中注入
 
 ```js
 import * as filters from './filters'
@@ -43,7 +43,7 @@ Object.keys(filters).forEach(key => {
 })
 ```
 
-- 组件中使用
+在组件中使用:
 
 ```html
 <span>{{timestamp | parseTime}}</span>

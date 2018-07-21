@@ -1,10 +1,10 @@
 # axios 请求接口
 
-## 安装
+- 安装
 
 `npm install axios -S`
 
-## 引入
+- 引入
 
 `main.js` 中加入以下代码.
 
@@ -28,11 +28,9 @@ axios.interceptors.request.use((config) => {
 Vue.prototype.$http = axios
 ```
 
-### 使用
+- `vue` 组件中使用
 
-`vue组件中:`
-
-- `GET`
+`GET`
 
 ```js
   this.$http.get('/url', { params: { id: 1, name: 'zs' }})
@@ -41,7 +39,7 @@ Vue.prototype.$http = axios
     })
 ```
 
-- `POST`
+`POST`
 
 ```js
   this.$http.post('/url', { id: 1, name: 'zs' })

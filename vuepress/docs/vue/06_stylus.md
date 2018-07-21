@@ -2,11 +2,11 @@
 
 > 使用 stylus
 
-## 安装
+- 安装
 
-- 安装 `stylus`, `npm install stylus --save`
+安装 `stylus`, `npm install stylus --save`
 
-- 安装 `stylus-loader`, `npm install stylus-loader --save`
+安装 `stylus-loader`, `npm install stylus-loader --save`
 
 - 使用
 
@@ -16,9 +16,9 @@
 </style>
 ```
 
-## 变量
+- 变量
 
-- 在 `src/assets/styles` 目录下新建 `varibles.styl` 文件
+在 `src/assets/styles` 目录下新建 `varibles.styl` 文件
 
 `varibles.styl` 文件内容
 
@@ -26,7 +26,7 @@
 $headerHeight = 60px
 ```
 
-- 组件中使用
+组件中使用
 
 ```css
 <style lang="stylus" scoped>
@@ -37,9 +37,9 @@ $headerHeight = 60px
 </style>
 ```
 
-## mixin
+- mixin
 
-- 在 `src/assets/styles` 目录下新建 `mixins.styl` 文件
+在 `src/assets/styles` 目录下新建 `mixins.styl` 文件
 
 `mixins.styl` 文件内容
 
@@ -50,7 +50,7 @@ ellipsis()
   text-overflow: ellipsis
 ```
 
-- 组件中使用
+组件中使用
 
 ```css
 <style lang="stylus" scoped>
@@ -61,9 +61,9 @@ ellipsis()
 </style>
 ```
 
-## 全局样式
+- 全局样式
 
-- 在 `src/assets/styles` 目录下新建 `global.styl` 文件
+在 `src/assets/styles` 目录下新建 `global.styl` 文件
 
 `global.styl` 文件内容
 
@@ -77,11 +77,11 @@ ellipsis()
   line-height: 46px
 ```
 
-## 样式穿透
+- 样式穿透
 
 覆盖 `UI` 库的样式, 比如在当前组件需要覆盖库中 `class` 为 `el-table` 的样式
 
-```css
+```html
 <style lang="stylus" scoped>
 >>>.el-table
   font-size: 20px
