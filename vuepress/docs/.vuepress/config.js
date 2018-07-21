@@ -12,6 +12,7 @@ module.exports = {
     nav: [
       { text: '笔记', link: '/home/' },
       { text: 'Vue', link: '/vue/' },
+      { text: '规范', link: '/rules/' },
       { text: 'Guide', link: '/guide/' },
       {
         text: '项目',
@@ -49,6 +50,7 @@ module.exports = {
         // 'vue-zh',
         // 'How-to-use-your-time-correctly',
       // ],
+      // vue
       '/vue/': [
         '',
         '00_node安装',
@@ -63,8 +65,8 @@ module.exports = {
         '06_stylus',
         '07_iconfont',
         '08_axios',
-        '08_axios_await',
-        '08_axios_promise',
+        '08_axios-await',
+        '08_axios-promise',
         '09_filter',
         '10_proxyTable',
         '11_nginx',
@@ -76,11 +78,35 @@ module.exports = {
         '17_权限',
         '18_router',
       ],
-      // 回退(fallback)侧边栏配置
+      // 规范
+      '/rules/': [
+        '',
+        {
+          title:'中文技术文档的写作规范', 
+          children: [
+          '00_中文技术文档的写作规范-阮一峰/00_标题',
+          '00_中文技术文档的写作规范-阮一峰/01_文本',
+          '00_中文技术文档的写作规范-阮一峰/02_段落',
+          '00_中文技术文档的写作规范-阮一峰/03_数值',
+          '00_中文技术文档的写作规范-阮一峰/04_文档体系',
+          '00_中文技术文档的写作规范-阮一峰/05_marks',
+          '00_中文技术文档的写作规范-阮一峰/06_参考链接',
+        ]},
+        '01_commit-message规范',
+        '02_文件名规范',
+        '03_文件夹命名参考',
+        '04_HTML命名参考',
+        '05_CSS命名规范',
+        '06_CSS命名参考',
+        '07_JS函数方法常用的动词',
+        '08_图片命名参考',
+        '07_JS函数方法常用的动词',
+        '09_图片的命名规范及脚本文件和动态文件命名规范',
+      ],
       '/': [
-        '',        /* / */
-        'contact', /* /contact.html */
-        'about'    /* /about.html */
+        '',
+        'contact',
+        'about'
       ]
     }
   }

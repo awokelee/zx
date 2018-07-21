@@ -1,4 +1,4 @@
-# proxyTable 代理（dev 环境）
+# proxyTable 代理（dev）
 
 > 配置 `dev` 开发环境的代理接口地址
 
