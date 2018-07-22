@@ -10,29 +10,27 @@ module.exports = {
   ],
   themeConfig: {
     nav: [
-      { text: '笔记', link: '/home/' },
+      // { text: '笔记', link: '/home/' },
       { text: 'Vue', link: '/vue/' },
-      { text: '规范', link: '/rules/' },
-      { text: 'Guide', link: '/guide/' },
+      { text: 'Notes', link: '/notes/' },
+      { text: 'Standard', link: '/standard/' },
+      // { text: 'Guide', link: '/guide/' },
       {
-        text: '项目',
+        text: 'Projects',
         items: [
-          { text: 'Qunar', link: 'http://qunar.gaodaqian.com' },
+          { text: 'Qunar (去哪儿, Vue)', link: 'http://qunar.gaodaqian.com' },
         ]
       },
-      { text: '导航', link: 'http://nav.gaodaqian.com' },
-      { text: '博客', link: 'http://blog.gaodaqian.com' },
+      { text: 'Nav', link: 'http://nav.gaodaqian.com' },
+      { text: 'Blog', link: 'http://blog.gaodaqian.com' },
       { text: 'GitHub', link: 'https://github.com/awokelee' },
     ],
     sidebar: {
       '/home/': [
         '',     /* /foo/ */
         'promise',
-        'commit-message',
         'mac-soft',
         '浏览器兼容性问题',
-        'Vue 项目里戳中你痛点的问题及解决办法',
-        'vue路由设置history模式在nginx下404',
       ],
       // '/guide/': [
         // '',
@@ -81,8 +79,17 @@ module.exports = {
         '20_bus',
         '21_vuex',
       ],
+      // 遇到的问题
+      '/notes/': [
+        '',
+        '00_解决npm_run_build卡住问题',
+        '01_GitHub超时',
+        '02_GitHub设置代理',
+        // 'Vue 项目里戳中你痛点的问题及解决办法',
+        'vue路由设置history模式在nginx下404',
+      ],
       // 规范
-      '/rules/': [
+      '/standard/': [
         '',
         {
           title:'中文技术文档的写作规范', 

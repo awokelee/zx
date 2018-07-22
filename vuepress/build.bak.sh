@@ -24,3 +24,4 @@ git push -f https://github.com/awokelee/vue-press.git master:gh-pages
 # git push -f git@github.com:awokelee/vue-press.git master:gh-pages
 
 cd -
+
