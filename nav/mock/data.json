@@ -1,300 +1,115 @@
 {
   "navData": [
-    { "id": "blog", "iconfont": "iconfont icon-zuzhi", "text": "团队组织" },
-    { "id": "tools", "iconfont": "iconfont icon-zuzhi", "text": "Tools" },
-    { "id": "cheatsheet", "iconfont": "iconfont icon-zuzhi", "text": "Cheatsheet" },
-    { "id": "framework", "iconfont": "iconfont icon-application", "text": "Vue" },
-    { "id": "community", "iconfont": "iconfont icon-shequ", "text": "开发社区" },
-    { "id": "fePortals", "iconfont": "iconfont icon-gongju", "text": "前端门户" },
-    { "id": "front-end-platform", "iconfont": "iconfont icon-tool", "text": "开发平台" },
-    { "id": "animation", "iconfont": "iconfont icon-iconfontcolor54", "text": "图形动效" },
-    { "id": "gameFramework", "iconfont": "iconfont icon-youxi", "text": "游戏框架" },
-    { "id": "front-end-conf", "iconfont": "iconfont icon-conference", "text": "前端大会" },
-    { "id": "css", "iconfont": "iconfont icon-ui-copy", "text": "CSS相关" },
-    { "id": "nodejs", "iconfont": "iconfont icon-nodejs", "text": "Node.js相关" },
-    { "id": "ide", "iconfont": "iconfont icon-editor", "text": "IDE" },
-    { "id": "debugTools", "iconfont": "iconfont icon-debug", "text": "调试工具" },
-    { "id": "buildTools", "iconfont": "iconfont icon-lecloud_daimagoujian", "text": "构建工具" },
-    { "id": "inlineTools", "iconfont": "iconfont icon-tool", "text": "在线工具" },
-    { "id": "fontIcon", "iconfont": "iconfont icon-ziti", "text": "字体图标" },
-    { "id": "designNav", "iconfont": "iconfont icon-sheji", "text": "设计资源" },
-    { "id": "wechatSubscription", "iconfont": "iconfont icon-importedlayerscopy3", "text": "前端公众号" },
-    { "id": "excellentFrontEndEngineer", "iconfont": "iconfont icon-usersecret", "text": "前端大牛" },
-    { "id": "excellentFrontEndEngineer", "iconfont": "iconfont icon-usersecret", "text": "前端大牛" },
-    { "id": "excellentFrontEndEngineer", "iconfont": "iconfont icon-usersecret", "text": "前端大牛" },
-    { "id": "excellentFrontEndEngineer", "iconfont": "iconfont icon-usersecret", "text": "前端大牛" },
-    { "id": "bookShare", "iconfont": "iconfont icon-shu-copy", "text": "书籍推荐" }
+    { "id": "vue", "iconfont": "iconfont icon-ui-copy", "text": "Vue 常用" },
+    { "id": "code", "iconfont": "iconfont icon-nodejs", "text": "代码片段" },
+    { "id": "interview", "iconfont": "iconfont icon-shequ", "text": "面试相关" },
+    { "id": "tutorial", "iconfont": "iconfont icon-shu-copy", "text": "教程文档" }
   ],
   "navList": [
-    { "id": "blogItem", "iconfont": "iconfont icon-zuzhi", "text": "团队组织", 
+    { 
+      "id": "vueItem", "iconfont": "iconfont icon-ui-copy", "text": "Vue 常用", 
       "list": [{
-        "href": "http://www.alloyteam.com/",
-        "src": "./static/images/alloyteam-favicon.jpg",
-        "name": "腾讯 AlloyTeam 团队",
-        "desc": "腾讯Web前端团队，代表作品WebQQ，致力于前端技术的研究"
-      },{
-        "href": "https://isux.tencent.com/",
-        "src": "./static/images/isux-favicon.jpg",
-        "name": "ISUX",
-        "desc": "腾讯社交用户体验设计，简称ISUX，腾讯设计团队网站"
-      },{
-        "href": "http://fex.baidu.com/",
-        "src": "./static/images/fex-favicon.png",
-        "name": "FEX",
-        "desc": "百度Web前端研发部出品"
-      },{
-        "href": "http://taobaofed.org/",
-        "src": "./static/images/fed-favicon.png",
-        "name": "淘宝前端团队（FED）",
-        "desc": "用技术为体验提供无限可能"
-      },{
-        "href": "https://aotu.io/",
-        "src": "./static/images/aotu-favicon.png",
-        "name": "凹凸实验室",
-        "desc": "京东用户体验设计部出品"
-      },{
-        "href": "https://75team.com/",
-        "src": "./static/images/75team-favicon.png",
-        "name": "奇舞团",
-        "desc": "奇虎360旗下前端开发团队出品"
-      },{
-        "href": "http://www.aliued.com/",
-        "src": "./static/images/aliued-favicon.ico",
-        "name": "阿里巴巴国际UED团队",
-        "desc": "在更新的屏幕里创造出更好的产品和更优的体验"
-      },{
-        "href": "http://efe.baidu.com/",
-        "src": "./static/images/efe-favicon.png",
-        "name": "EFE",
-        "desc": "由百度多个遵循统一技术体系的前端团队所组成"
-      },{
-        "href": "",
-        "src": "",
-        "name": "",
-        "desc": ""
-      }]
-    },
-    { "id": "frameworkItem", "iconfont": "iconfont icon-application", "text": "Vue", 
-      "list": [{
-        "href": "https://cn.vuejs.org/",
-        "src": "./static/images/alloyteam-favicon.jpg",
-        "name": "vue",
-        "desc": "腾讯Web前端团队，代表作品WebQQ，致力于前端技术的研究"
-      },{
-        "href": "https://vue-native.io/",
-        "src": "./static/images/isux-favicon.jpg",
-        "name": "vue-native",
-        "desc": "腾讯社交用户体验设计，简称ISUX，腾讯设计团队网站"
-      },{
-        "href": "https://cli.vuejs.org/",
-        "src": "./static/images/fex-favicon.png",
-        "name": "vue-cli",
-        "desc": "百度Web前端研发部出品"
-      },{
-        "href": "http://taobaofed.org/",
-        "src": "./static/images/fed-favicon.png",
-        "name": "淘宝前端团队（FED）",
-        "desc": "用技术为体验提供无限可能"
-      },{
-        "href": "https://aotu.io/",
-        "src": "./static/images/aotu-favicon.png",
-        "name": "凹凸实验室",
-        "desc": "京东用户体验设计部出品"
-      },{
-        "href": "https://75team.com/",
-        "src": "./static/images/75team-favicon.png",
-        "name": "奇舞团",
-        "desc": "奇虎360旗下前端开发团队出品"
-      },{
-        "href": "http://www.aliued.com/",
-        "src": "./static/images/aliued-favicon.ico",
-        "name": "阿里巴巴国际UED团队",
-        "desc": "在更新的屏幕里创造出更好的产品和更优的体验"
-      },{
-        "href": "http://efe.baidu.com/",
-        "src": "./static/images/efe-favicon.png",
-        "name": "EFE",
-        "desc": "由百度多个遵循统一技术体系的前端团队所组成"
-      },{
-        "href": "",
-        "src": "",
-        "name": "",
-        "desc": ""
-      }]
-    },
-    { "id": "blogItem", "iconfont": "iconfont icon-zuzhi", "text": "团队组织", 
-      "list": [{
-        "href": "http://www.alloyteam.com/",
-        "src": "./static/images/alloyteam-favicon.jpg",
-        "name": "腾讯 AlloyTeam 团队",
-        "desc": "腾讯Web前端团队，代表作品WebQQ，致力于前端技术的研究"
-      },{
-        "href": "https://isux.tencent.com/",
-        "src": "./static/images/isux-favicon.jpg",
-        "name": "ISUX",
-        "desc": "腾讯社交用户体验设计，简称ISUX，腾讯设计团队网站"
-      },{
-        "href": "http://fex.baidu.com/",
-        "src": "./static/images/fex-favicon.png",
-        "name": "FEX",
-        "desc": "百度Web前端研发部出品"
-      },{
-        "href": "http://taobaofed.org/",
-        "src": "./static/images/fed-favicon.png",
-        "name": "淘宝前端团队（FED）",
-        "desc": "用技术为体验提供无限可能"
-      },{
-        "href": "https://aotu.io/",
-        "src": "./static/images/aotu-favicon.png",
-        "name": "凹凸实验室",
-        "desc": "京东用户体验设计部出品"
-      },{
-        "href": "https://75team.com/",
-        "src": "./static/images/75team-favicon.png",
-        "name": "奇舞团",
-        "desc": "奇虎360旗下前端开发团队出品"
-      },{
-        "href": "http://www.aliued.com/",
-        "src": "./static/images/aliued-favicon.ico",
-        "name": "阿里巴巴国际UED团队",
-        "desc": "在更新的屏幕里创造出更好的产品和更优的体验"
-      },{
-        "href": "http://efe.baidu.com/",
-        "src": "./static/images/efe-favicon.png",
-        "name": "EFE",
-        "desc": "由百度多个遵循统一技术体系的前端团队所组成"
-      },{
-        "href": "",
-        "src": "",
-        "name": "",
-        "desc": ""
-      }]
-    },
-    { "id": "frameworkItem", "iconfont": "iconfont icon-application", "text": "Vue", 
-      "list": [{
-        "href": "https://cn.vuejs.org/",
-        "src": "./static/images/alloyteam-favicon.jpg",
-        "name": "vue",
-        "desc": "腾讯Web前端团队，代表作品WebQQ，致力于前端技术的研究"
-      },{
-        "href": "https://vue-native.io/",
-        "src": "./static/images/isux-favicon.jpg",
-        "name": "vue-native",
-        "desc": "腾讯社交用户体验设计，简称ISUX，腾讯设计团队网站"
-      },{
-        "href": "https://cli.vuejs.org/",
-        "src": "./static/images/fex-favicon.png",
-        "name": "vue-cli",
-        "desc": "百度Web前端研发部出品"
-      },{
-        "href": "http://taobaofed.org/",
-        "src": "./static/images/fed-favicon.png",
-        "name": "淘宝前端团队（FED）",
-        "desc": "用技术为体验提供无限可能"
-      },{
-        "href": "https://aotu.io/",
-        "src": "./static/images/aotu-favicon.png",
-        "name": "凹凸实验室",
-        "desc": "京东用户体验设计部出品"
-      },{
-        "href": "https://75team.com/",
-        "src": "./static/images/75team-favicon.png",
-        "name": "奇舞团",
-        "desc": "奇虎360旗下前端开发团队出品"
-      },{
-        "href": "http://www.aliued.com/",
-        "src": "./static/images/aliued-favicon.ico",
-        "name": "阿里巴巴国际UED团队",
-        "desc": "在更新的屏幕里创造出更好的产品和更优的体验"
-      },{
-        "href": "http://efe.baidu.com/",
-        "src": "./static/images/efe-favicon.png",
-        "name": "EFE",
-        "desc": "由百度多个遵循统一技术体系的前端团队所组成"
-      },{
-        "href": "",
-        "src": "",
-        "name": "",
-        "desc": ""
-      }]
-    },
-    { "id": "communityItem", "iconfont": "iconfont icon-shequ", "text": "开发社区", 
-      "list": [{
-        "href": "https://juejin.im/",
-        "src": "./static/images/gold-favicon.png",
-        "name": "掘金",
-        "desc": "只有高手分享的中文技术社区"
-      },{
-        "href": "http://stackoverflow.com/",
-        "src": "./static/images/stackoverflow-favicon.png",
-        "name": "Stack Overflow",
-        "desc": "编程相关的IT技术问答网站"
-      },{
-        "href": "https://github.com/",
-        "src": "./static/images/github-favicon.png",
-        "name": "GitHub",
-        "desc": "面向开源及私有软件项目的git托管平台"
-      },{
-        "href": "https://segmentfault.com/",
-        "src": "./static/images/segmentfault-favicon.png",
-        "name": "SegmentFault",
-        "desc": "一个专注于解决编程问题，提高开发技能的社区。"
-      },{
-        "href": "https://www.v2ex.com/",
-        "src": "./static/images/v2ex-favicon.png",
-        "name": "V2EX",
-        "desc": "一个关于分享和探索的地方。"
-      },{
-        "href": "https://www.smashingmagazine.com/",
-        "src": "./static/images/smashingmagazine-favicon.png",
-        "name": "Smashingmagazine",
-        "desc": "一个web技术类的博客杂志站点"
-      },{
-        "href": "https://cnodejs.org/",
-        "src": "./static/images/cnodejs-favicon.png",
-        "name": "CNode",
-        "desc": "Node.js专业中文社区"
-      },{
-        "href": "http://www.jstips.co/",
-        "src": "./static/images/jstips-favicon.png",
-        "name": "JS Tips",
-        "desc": "每天推出一个JS技巧的网站"
-      },{
-        "href": "",
-        "src": "",
-        "name": "",
-        "desc": ""
-      }]
-    },
-    { "id": "toolsItem", "iconfont": "iconfont icon-gongju", "text": "Tools", 
-      "list": [{
-        "href": "https://www.mockplus.cn/",
-        "src": "./static/images/mockplus.png",
-        "name": "Mockplus",
-        "desc": "更快、更简单的原型设计"
-      }]
-    },
-    { "id": "cheatsheetItem", "iconfont": "iconfont icon-gongju", "text": "Cheatsheet", 
-      "list": [{
-        "href": "https://vuejs-tips.github.io/cheatsheet/#vm-isServer",
+        "href": "https://ustbhuangyi.github.io/vue-analysis/",
         "src": "./static/images/vue-favicon.png",
-        "name": "Vue.js API",
-        "desc": "Vue.js 完整 API 手册"
+        "name": "Vue.js 技术揭秘",
+        "desc": "Vue 源码分析, 慕课网《Vue.js 源码揭秘》视频课程的辅助教材"
       },{
-        "href": "https://shfshanyue.github.io/cheat-sheets/command",
-        "src": "./static/images/linux.png",
-        "name": "Linux 命令",
-        "desc": "Linux 命令手册"
+        "href": "http://hcysun.me/vue-design/",
+        "src": "./static/images/vue-favicon.png",
+        "name": "Vue 技术内幕",
+        "desc": "逐行级别的 Vue 源码分析"
       },{
-        "href": "https://shfshanyue.github.io/cheat-sheets/git",
-        "src": "./static/images/git.png",
-        "name": "Git 命令",
-        "desc": "Git 命令手册"
+        "href": "https://vuejsexamples.com/",
+        "src": "./static/images/vueconf.png",
+        "name": "Vue.js Examples",
+        "desc": "Vue 组件及案例"
       },{
-        "href": "https://kapeli.com/cheat_sheets/Axios.docset/Contents/Resources/Documents/index",
-        "src": "./static/images/axios.png",
-        "name": "Axios API",
-        "desc": "Axios API 手册"
+        "href": "http://vue.awesometiny.com/",
+        "src": "./static/images/vueconf.png",
+        "name": "Vue 资源精选",
+        "desc": "一些 Vue 的组件"
+      },{
+        "href": "http://www.wheelsfactory.cn/#/home?filter=vue",
+        "src": "./static/images/vueconf.png",
+        "name": "轮子工厂",
+        "desc": "Vue 的组件"
+      },{
+        "href": "https://github.com/search?q=awesome+vue",
+        "src": "./static/images/github-favicon.png",
+        "name": "Awesome Vue",
+        "desc": "Github 的 Awesome Vue"
+      }]
+    },
+    { 
+      "id": "codeItem", "iconfont": "iconfont icon-nodejs", "text": "代码片段", 
+      "list": [{
+        "href": "http://www.css88.com/30-seconds-of-code/",
+        "src": "./static/images/30code-favicon.png",
+        "name": "30秒 JavaScript",
+        "desc": "30 秒就能理解的 JavaScript 代码片段"
+      },{
+        "href": "http://caibaojian.com/30-seconds-of-css/",
+        "src": "./static/images/30css-favicon.png",
+        "name": "30秒 CSS",
+        "desc": "可以在30秒或更短的时间内弄懂的有用CSS代码片段的精选"
+      },{
+        "href": "https://30secondsofinterviews.org/",
+        "src": "./static/images/30interviews.svg",
+        "name": "30秒 面试",
+        "desc": "30秒 面试英文版"
+      },{
+        "href": "http://www.css88.com/doc/lodash/",
+        "src": "./static/images/lodash.svg",
+        "name": "Lodash 中文",
+        "desc": "Lodash 中文文档"
+      },{
+        "href": "https://30secondsofcode.org/array",
+        "src": "./static/images/30code-favicon.png",
+        "name": "30 seconds of code",
+        "desc": "30 seconds of code"
+      },{
+        "href": "https://atomiks.github.io/30-seconds-of-css/",
+        "src": "./static/images/30css-favicon.png",
+        "name": "30 Seconds of CSS",
+        "desc": "A curated collection of useful CSS snippets you can understand in 30 seconds or less"
+      },{
+        "href": "https://lodash.com/docs/4.17.10",
+        "src": "./static/images/lodash.svg",
+        "name": "Lodash",
+        "desc": "Lodash"
+      }]
+    },
+    { 
+      "id": "interviewItem", "iconfont": "iconfont icon-shequ", "text": "面试相关", 
+      "list": [{
+        "href": "https://yuchengkai.cn/docs/zh/",
+        "src": "./static/images/interviewmap.png",
+        "name": "面试图谱",
+        "desc": "打造最好的面试图谱"
+      }]
+    },
+    { 
+      "id": "tutorialItem", "iconfont": "iconfont icon-shu-copy", "text": "教程文档", 
+      "list": [{
+        "href": "http://es6.ruanyifeng.com/",
+        "src": "./static/images/cover-3rd.jpg",
+        "name": "ECMAScript 6 入门",
+        "desc": "阮一峰《ECMAScript 6 入门》"
+      },{
+        "href": "https://wangdoc.com/javascript/",
+        "src": "./static/images/javascript_round.png",
+        "name": "JavaScript 教程",
+        "desc": "阮一峰 JavaScript 教程"
+      },{
+        "href": "https://github.com/hyy1115/ES6-learning",
+        "src": "./static/images/es6.png",
+        "name": "深入理解ES6",
+        "desc": "《深入理解ES6》教程学习笔记"
+      },{
+        "href": "https://www.bilibili.com/video/av21376839/",
+        "src": "./static/images/computer.jpeg",
+        "name": "计算机速成课",
+        "desc": "计算机速成课 | Crash Course 字幕组 (全40集 2018-5-1 精校完成)"
       }]
     }
   ]
