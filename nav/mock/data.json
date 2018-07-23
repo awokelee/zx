@@ -12,12 +12,22 @@
         "href": "https://ustbhuangyi.github.io/vue-analysis/",
         "src": "./static/images/vue-favicon.png",
         "name": "Vue.js 技术揭秘",
-        "desc": "Vue 源码分析, 慕课网《Vue.js 源码揭秘》视频课程的辅助教材"
+        "desc": "滴滴 黄轶, Vue 源码分析, 慕课网《Vue.js 源码揭秘》视频课程的辅助教材"
       },{
         "href": "http://hcysun.me/vue-design/",
         "src": "./static/images/vue-favicon.png",
         "name": "Vue 技术内幕",
-        "desc": "逐行级别的 Vue 源码分析"
+        "desc": "美团 HcySunYang, 逐行级别的 Vue 源码分析"
+      },{
+        "href": "https://github.com/answershuto/learnVue",
+        "src": "./static/images/vue-favicon.png",
+        "name": "Vue.js 源码解析",
+        "desc": "染陌《剖析 Vue.js 内部运行机制》"
+      },{
+        "href": "https://github.com/DMQ/mvvm",
+        "src": "./static/images/vue-favicon.png",
+        "name": "Vue MVVM",
+        "desc": "剖析 Vue 实现原理，自己动手实现 MVVM"
       },{
         "href": "https://vuejsexamples.com/",
         "src": "./static/images/vueconf.png",
@@ -35,7 +45,7 @@
         "desc": "Vue 的组件"
       },{
         "href": "https://github.com/search?q=awesome+vue",
-        "src": "./static/images/github-favicon.png",
+        "src": "./static/images/awesomevue.png",
         "name": "Awesome Vue",
         "desc": "Github 的 Awesome Vue"
       }]
@@ -77,6 +87,21 @@
         "src": "./static/images/lodash.svg",
         "name": "Lodash",
         "desc": "Lodash"
+      },{
+        "href": "https://www.kancloud.cn/yunye/axios/234845",
+        "src": "./static/images/axios.png",
+        "name": "Axios 中文说明",
+        "desc": "Axios 中文说明"
+      },{
+        "href": "https://xluos.github.io/demo/flexbox/",
+        "src": "./static/images/flex.png",
+        "name": "Flexbox 演示站",
+        "desc": "Flexbox 演示站"
+      },{
+        "href": "https://shfshanyue.github.io/cheat-sheets/git",
+        "src": "./static/images/git.png",
+        "name": "Git Cheat Sheet",
+        "desc": "Git 常用命令"
       }]
     },
     { 
@@ -105,6 +130,46 @@
         "src": "./static/images/es6.png",
         "name": "深入理解ES6",
         "desc": "《深入理解ES6》教程学习笔记"
+      },{
+        "href": "http://webpack.wuhaolin.cn/",
+        "src": "./static/images/webpack.png",
+        "name": "深入浅出 Webpack",
+        "desc": "《深入浅出 Webpack》"
+      },{
+        "href": "http://webpack.css88.com/",
+        "src": "./static/images/webpack4.png",
+        "name": "Webpack 中文文档",
+        "desc": "webpack 中文文档(v4.15.1)"
+      },{
+        "href": "https://yoyoyohamapi.gitbooks.io/undersercore-analysis/content/",
+        "src": "./static/images/underscore.png",
+        "name": "Underscore 源码分析",
+        "desc": "Underscore 源码分析"
+      },{
+        "href": "https://zhongsp.gitbooks.io/typescript-handbook/content/",
+        "src": "./static/images/typescript.png",
+        "name": "TypeScript Handbook",
+        "desc": "TypeScript Handbook（中文版）"
+      },{
+        "href": "https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000",
+        "src": "./static/images/git.png",
+        "name": "Git 教程",
+        "desc": "廖雪峰 Git 教程"
+      },{
+        "href": "https://github.com/alsotang/node-lessons",
+        "src": "./static/images/node.jpeg",
+        "name": "Node.js 包教不包会",
+        "desc": "《Node.js 包教不包会》 by alsotang"
+      },{
+        "href": "https://github.com/nqdeng/7-days-nodejs",
+        "src": "./static/images/node.jpeg",
+        "name": "七天学会NodeJS",
+        "desc": "七天学会NodeJS"
+      },{
+        "href": "https://github.com/nswbmw/N-blog",
+        "src": "./static/images/node.jpeg",
+        "name": "一起学 Node.js",
+        "desc": "《一起学 Node.js》"
       },{
         "href": "https://www.bilibili.com/video/av21376839/",
         "src": "./static/images/computer.jpeg",
