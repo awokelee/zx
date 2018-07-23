@@ -1,7 +1,7 @@
 module.exports = {
   base: '/vue-press/',
   title: 'Awoke',
-  description: 'Just playing around',
+  description: 'some notes',
   search: false,
   searchMaxSuggestions: 10,
   lastUpdated: 'Last Updated', // string | boolean
@@ -22,7 +22,7 @@ module.exports = {
         ]
       },
       { text: 'Nav', link: 'http://nav.gaodaqian.com' },
-      { text: 'Blog', link: 'http://blog.gaodaqian.com' },
+      { text: 'Blogs', link: 'http://blog.gaodaqian.com' },
       { text: 'GitHub', link: 'https://github.com/awokelee' },
     ],
     sidebar: {
@@ -85,8 +85,9 @@ module.exports = {
         '00_解决npm_run_build卡住问题',
         '01_GitHub超时',
         '02_GitHub设置代理',
-        // 'Vue 项目里戳中你痛点的问题及解决办法',
-        'vue路由设置history模式在nginx下404',
+        '03_vue部署nginx404',
+        '04_nginx配置vue跨域',
+        '05_vue滚动条位置',
       ],
       // 规范
       '/standard/': [

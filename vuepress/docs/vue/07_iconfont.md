@@ -28,11 +28,16 @@
 ```css
 
 @font-face {font-family: "iconfont";
-  src: url('./iconfont/iconfont.eot?t=1525653874076'); /* IE9*/
-  src: url('./iconfont/iconfont.eot?t=1525653874076#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  /* IE9*/
+  src: url('./iconfont/iconfont.eot?t=1525653874076');
+  /* IE6-IE8 */
+  src: url('./iconfont/iconfont.eot?t=1525653874076#iefix')
+  format('embedded-opentype'),
   ......
-  url('./iconfont/iconfont.ttf?t=1525653874076') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('./iconfont/iconfont.svg?t=1525653874076#iconfont') format('svg'); /* iOS 4.1- */
+  /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('./iconfont/iconfont.ttf?t=1525653874076') format('truetype'),
+  /* iOS 4.1- */
+  url('./iconfont/iconfont.svg?t=1525653874076#iconfont') format('svg');
 }
 
 .iconfont {
@@ -43,7 +48,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-toufangfangan:before { content: "\e619"; }
+.icon-icon-yanjing:before { content: "\e619"; }
 ```
 
 - 组件中使用

@@ -1,6 +1,12 @@
-# vue路由设置 history 模式在 nginx 下 404
+# Vue 项目 Nginx 显示 404
+
+> 路由设置 `history` 模式在 `nginx` 下 `404`, 或者刷新才出现 `404`
 
 ## 出现的问题
+
+::: tip
+如果直接访问项目出现 404, 则去检查是否少了项目前缀, 本文都是在项目主页可以正常访问情境下
+:::
 
 - 访问 `http://001.smj123dev.com/newsDetails/2/5` 出现 `404 Not Found`
 
