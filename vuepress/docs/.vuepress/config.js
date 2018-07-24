@@ -1,5 +1,5 @@
 module.exports = {
-  base: '/vue-press/',
+  // base: '/vue-press/',
   title: 'Awoke',
   description: 'some notes',
   search: false,
