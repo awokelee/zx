@@ -62,6 +62,7 @@ module.exports = {
         '05_fastclick',
         '06_stylus',
         '07_iconfont',
+        '07_vux',
         '08_axios',
         '08_axios-await',
         '08_axios-promise',
