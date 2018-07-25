@@ -106,7 +106,7 @@ Vue.prototype.globalData = globalData;
 <div>{{globalData.d}}</div>
 ```
 
-上述代码在全局有一个 `globalData`，它被传入一个 `Vue` 对象的 `data` 中，之后在任意 Vue 模板中对该变量进行展示，因为此时 `globalData` 已经在 Vue 的 `prototype` 上了所以直接通过 `this.prototype` 访问，也就是在模板中的 `{{prototype.d}}`。此时，`setTimeout` 在 1s 之后将 `globalData.d` 进行修改，我们发现模板中的 `globalData.d` 发生了变化。其实上述部分就是 Vuex 依赖 Vue 核心实现数据的“响应式化”。
+上述代码在全局有一个 `globalData`，它被传入一个 `Vue` 对象的 `data` 中，之后在任意 Vue 模板中对该变量进行展示，因为此时 `globalData` 已经在 Vue 的 `prototype` 上了所以直接通过 `this.prototype` 访问，也就是在模板中的 `\{\{prototype.d\}\}`。此时，`setTimeout` 在 1s 之后将 `globalData.d` 进行修改，我们发现模板中的 `globalData.d` 发生了变化。其实上述部分就是 Vuex 依赖 Vue 核心实现数据的“响应式化”。
 
 讲完了 Vuex 最核心的通过 Vue 进行数据的「响应式化」，接下来我们再来介绍两个 `Store` 的 API。
 
