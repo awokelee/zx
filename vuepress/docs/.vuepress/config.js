@@ -119,7 +119,7 @@ module.exports = {
       // 小册
       '/booklet/': [
         '',
-       /*  {
+       {
           title:'npm script 前端工作流', 
           children: [
           './用npm-script打造超溜的前端工作流/00_为什么选择npm_script',
@@ -137,8 +137,8 @@ module.exports = {
           './用npm-script打造超溜的前端工作流/12_实战篇_在git-hooks中运行npm-script',
           './用npm-script打造超溜的前端工作流/13_实战篇_用npm-script实现构建流水线',
           './用npm-script打造超溜的前端工作流/14_实战篇_用npm-script实现服务自动化运维',
-        ]}, */
-        /* {
+        ]},
+        {
           title:'大厂 UI 开发实战手册', 
           children: [
           './大厂UI开发实战手册/0_大厂UI开发概述',
@@ -178,8 +178,8 @@ module.exports = {
           './Git原理详解及实用指南/19高级 10：branch 删过了才想起来有用？',
           './Git原理详解及实用指南/20额外说点：.gitignore——排除不想被管理的文件和目录',
           './Git原理详解及实用指南/21总结',
-        ]}, */
-        /* {
+        ]},
+        {
           title:'剖析 Vue.js 内部运行机制', 
           children: [
           './剖析Vue.js内部运行机制/0_Vue.js运行机制全局概览',
@@ -207,7 +207,7 @@ module.exports = {
           './Web前端面试指南与高频考题解析/9HR 面：谈钱不伤感情',
           './Web前端面试指南与高频考题解析/10其他：面试注意事项',
           './Web前端面试指南与高频考题解析/11总结与补充说明',
-        ]}, */
+        ]},
       ],
       '/': [
         '',
