@@ -6,6 +6,10 @@
 
 `npm install vux --save`
 
+- 安装 `vux-loader`
+
+`npm install vux-loader --save-dev`
+
 - 安装 `less` 和 `less-loader`
 
 `npm install less less-loader --save-dev`
@@ -32,3 +36,5 @@ module.exports = vuxLoader.merge(webpackConfig, {
   plugins: ['vux-ui']
 })
 ```
+
+更新配置后重新运行项目
