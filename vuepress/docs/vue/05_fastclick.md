@@ -1,4 +1,4 @@
-# fastclick 点击穿透
+# fastclick 移动端 点击穿透
 
 > `fastclick` 300ms点击问题
 

@@ -1,4 +1,4 @@
-# vux UI库使用
+# vux 移动端 UI 库使用
 
 > 移动端 UI 库 vux
 

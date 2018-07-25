@@ -64,6 +64,7 @@ module.exports = {
         '06_stylus',
         '07_iconfont',
         '07_vux',
+        '07_elementui',
         '08_axios',
         '08_axios-await',
         '08_axios-promise',
@@ -91,6 +92,7 @@ module.exports = {
         '04_nginx配置vue跨域',
         '05_vue滚动条位置',
         '06_vue项目打包配置工程路径',
+        '07_动态favicon',
       ],
       // 规范
       '/standard/': [
