@@ -1,4 +1,4 @@
-# vue 项目打包配置工程目录
+# vue 项目打包配置工程路径
 
 ::: tip
 正常情况 `npm run build` 将 `dist` 部署 `nginx` 根目录, 然后通过 `www.gaodaqian.com` 访问, 现在需要通过 `www.gaodaqian.com/vip/v1/` 访问

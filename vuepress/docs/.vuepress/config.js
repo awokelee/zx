@@ -90,7 +90,7 @@ module.exports = {
         '03_vue部署nginx404',
         '04_nginx配置vue跨域',
         '05_vue滚动条位置',
-        '06_vue项目打包配置工程目录',
+        '06_vue项目打包配置工程路径',
       ],
       // 规范
       '/standard/': [
