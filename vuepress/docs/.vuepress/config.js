@@ -93,6 +93,8 @@ module.exports = {
         '05_vue滚动条位置',
         '06_vue项目打包配置工程路径',
         '07_动态favicon',
+        '08_vue引入css报错',
+        '09_vue使用swiper',
       ],
       // 规范
       '/standard/': [
