@@ -532,7 +532,7 @@ body {
     margin-bottom: 10px;
     margin-top: 5px;
     margin-left: 5px;
-    height: .58rem;
+    /* height: .58rem; */
     font-size: 12px;
     line-height: 16px
   }
@@ -574,7 +574,7 @@ body {
 
 @media (min-width:380px) and (max-width:480px) {
   .container .main .fe .item .desc {
-    height: .52rem
+    /* height: .52rem */
   }
 }
 
