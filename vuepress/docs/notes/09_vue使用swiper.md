@@ -47,7 +47,7 @@ export default {
 
 这里介绍在组件中局部使用
 
-```html
+```html {33}
 <templete>
   <swiper :options="swiperOption" ref="mySwiper">
     <swiper-slide v-for="(item, index) in Topspeed">
@@ -94,7 +94,7 @@ export default {
 
 主要是利用 `this.swiper.slideTo(索引, 延迟)` 实现, 比如 
 
-```html
+```html {54}
 <templete>
   <swiper :options="swiperOption" ref="mySwiper">
     <swiper-slide v-for="(item, index) in Topspeed">

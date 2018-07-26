@@ -1,10 +1,16 @@
-# fastclick 移动端 点击穿透
+# fastclick 移动端使用
 
-> `fastclick` 300ms点击问题
+::: tip 原因
+移动设备上的浏览器默认会在用户点击屏幕大约延迟 `300` 毫秒后才会触发点击事件，这是为了检查用户是否在做双击。为了能够立即响应用户的点击事件，才有了`FastClick`
+:::
 
-- 安装, `npm install fastclick --save`
+- 安装
 
-- 在 `mian.js` 中引入
+`npm install fastclick --save`
+
+- 引入
+
+在 `mian.js` 中如下引入即可
 
 ```js
 // 引入

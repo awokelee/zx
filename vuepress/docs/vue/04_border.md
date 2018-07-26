@@ -1,12 +1,21 @@
 # border.css 移动端 1px 边框
 
-> `border.css` 解决移动端 `1px` 问题
+::: warning 1px 问题
+因为 `Retine` 屏的分辨率始终是普通屏幕的`2`倍，`1px`的边框在`devicePixelRatio=2`的`retina`屏下会显示成`2px`，所以在高清瓶下看着`1px`总是感觉变胖了
+:::
 
-- 下载 `border.css` 移动到 `src/assets/styles/`
+- 移动端使用 `border.css` 解决移动端 `1px` 问题
 
-- 在 `main.js` 引入, `import './assets/styles/border.css'`
+首先, 下载好 `border.css` 移动到 `src/assets/styles/` 目录
 
-下面是 `border.css` 内容, 可以直接复制
+然后在 `main.js` 引入, `import './assets/styles/border.css'`
+
+下面是 `border.css` 文件的内容, 可以直接复制保存
+
+::: tip 在代码中怎么使用
+观察 `border.css` 文件, 它里面都是 一个个 `.` `css` 类样式, 你需要元素哪个 **方位** 添加边框加上类名即可
+比如: 我想要在 div 元素的上部加上边框, 则 `<div class="border border-top"></div>`
+:::
 
 ```css
 @charset "utf-8";
