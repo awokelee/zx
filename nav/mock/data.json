@@ -111,6 +111,11 @@
         "src": "./static/images/interviewmap.png",
         "name": "面试图谱",
         "desc": "打造最好的面试图谱"
+      },{
+        "href": "https://www.interviewcake.com/",
+        "src": "./static/images/cake.png",
+        "name": "interviewcake",
+        "desc": "国外面试资料网站"
       }]
     },
     { 
@@ -135,6 +140,11 @@
         "src": "./static/images/webpack.png",
         "name": "深入浅出 Webpack",
         "desc": "《深入浅出 Webpack》"
+      },{
+        "href": "https://www.yuque.com/xytech/flutter/sh4fbm",
+        "src": "./static/images/flutter.png",
+        "name": "Flutter 编译原理与优化",
+        "desc": "深入理解 Flutter 的编译原理与优化"
       },{
         "href": "http://webpack.css88.com/",
         "src": "./static/images/webpack4.png",
