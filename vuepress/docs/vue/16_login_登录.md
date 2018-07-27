@@ -1,10 +1,14 @@
 # 登录跳转
 
-> 需要登录访问项目
+::: tip
+登录验证
+:::
 
-在 `main.js` 中
+- 需要登录访问项目
 
-```js
+找到 `main.js` 添加 `router.beforeEach` 案例如下:
+
+```js {5,10,12}
 // 引入路由
 import router from './router'
 
@@ -14,12 +18,7 @@ router.beforeEach((to, from, next) => {
   const isLogin = window.sessionStorage.getItem('isLogin')
   // 未登录则跳转登录
   if (!isLogin && to.name !== 'login') {
-    next({
-      path: '/',
-      query: {
-        from: to.fullPath
-      }
-    })
+    next({ path: '/', query: { from: to.fullPath }})
   } else {
     next()
   }

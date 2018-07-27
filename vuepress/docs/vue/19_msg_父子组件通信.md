@@ -1,10 +1,18 @@
 # 父子组件通信
 
-- 父组件传给子组件
+::: tip
+Vue 是单项数据流
 
-以下是 `Parent.vue`
+父组件传值给子组件(`props`)
 
-```html
+子组件要怎么'传'给父组件? **触发方法**, 通知父组件改变数据
+:::
+
+加入有如下两个组件, 一个是父组件 一个是子组件
+
+`Parent.vue` 如下:
+
+```html {3,12,16}
 <template>
   <div>
     <child :msg="msg"></child>
@@ -29,7 +37,7 @@ export default {
 
 以下是 `Child.vue`
 
-```html
+```html {4,11}
 <template>
   <div>
     <!-- 显示的是 `to child` -->
@@ -49,7 +57,7 @@ export default {
 
 以下是 `Child.vue`
 
-```html
+```html {3,13}
 <template>
   <div>
     <button @click="handleClick">按钮</button>
@@ -71,7 +79,7 @@ export default {
 
 以下是 `Parent.vue`
 
-```html
+```html {3,22}
 <template>
   <div>
     <child @add="handleAdd"></child>

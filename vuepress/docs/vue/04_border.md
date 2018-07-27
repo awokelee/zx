@@ -1,6 +1,6 @@
 # border.css 移动端 1px 边框
 
-::: warning 1px 问题
+::: tip 1px 问题
 因为 `Retine` 屏的分辨率始终是普通屏幕的`2`倍，`1px`的边框在`devicePixelRatio=2`的`retina`屏下会显示成`2px`，所以在高清瓶下看着`1px`总是感觉变胖了
 :::
 

@@ -1,12 +1,16 @@
-# ip 手机访问
+# ip 手机访问
 
-> 在手机通过 ip 访问项目
+::: tip
+有时候需要在手机上查看正在开发的项目
+:::
 
-- 在 `package.json` 文件中的 `scripts` 增加 `--host 0.0.0.0` 参数, `重启项目`
+- 添加配置
 
-```js
+找到 `package.json` 文件, 在 `scripts` 增加 `--host 0.0.0.0` 参数, `npm run dev` **重启项目**
+
+```js {2}
   "scripts": {
-    "dev": "webpack-dev-server --host 0.0.0.0 --inline --progress --disable-host-check --config build/webpack.dev.conf.js",
+    "dev": "webpack-dev-server --host 0.0.0.0 --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
     "lint": "eslint --ext .js,.vue src",
     "build": "node build/build.js"
@@ -19,7 +23,7 @@
 
 `mac` 下执行 `ifconfig` 命令
 
-```shell
+```bash {1,4}
 $ ifconfig
   ...
 	inet6 fe80::108e:1830:89d7:d618%en0 prefixlen 64 secured scopeid 0x8
@@ -29,7 +33,7 @@ $ ifconfig
 	status: active
 ```
 
-- 手机连接跟电脑一个网络（wifi）
+- 手机连接跟电脑一个网络（`wifi`）
 
 假如项目访问地址为 `localhost:8080`
 

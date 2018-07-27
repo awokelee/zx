@@ -1,6 +1,8 @@
 # vux 移动端 UI 库使用
 
-> 移动端 UI 库 vux
+::: tip
+一个凑合的 `Vue.js` 移动端 `UI` 组件库,  [官网地址](https://vux.li/)
+:::
 
 - 安装 `vux`
 
@@ -14,22 +16,24 @@
 
 `npm install less less-loader --save-dev`
 
-- `vux2` 必须配合 `vux-loader` 使用
+- 修改配置
+
+`vux2` 必须配合 `vux-loader` 使用, 找到 `build/webpack.base.conf.js` 文件
 
 原代码为:
 
-```js
+```js {2}
 module.exports = {
-  ...// 这里是相同得
+  ...// 括号内的不变
 }
 ```
 
-修改为:
+新增如下代码:
 
-```js
+```js {3}
 const vuxLoader = require('vux-loader')
 const webpackConfig = {
-  ...// 这里是相同得
+  ...// 括号内的不变
 }
 
 module.exports = vuxLoader.merge(webpackConfig, {
@@ -37,4 +41,4 @@ module.exports = vuxLoader.merge(webpackConfig, {
 })
 ```
 
-更新配置后重新运行项目
+更新配置后重新 `npm run dev` 运行项目

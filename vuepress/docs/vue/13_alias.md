@@ -1,12 +1,20 @@
 # alias 别名配置
 
-> 配置别名，在引入文件和组件时无需自己找目录层级
+::: tip alias
+配置别名前: `import Home from '../../../../../../../../../../components/Index'`
 
-`build/webpack.base.conf.js` 中增加你需要的 `alias`
+层级多容易找错
 
-- 配置案例如下:
+配置别名后: `import '@/components/Index'`
+:::
 
-```js
+- 添加配置
+
+找到 `build/webpack.base.conf.js` 文件增加你需要的 `alias`
+
+配置案例如下:
+
+```js {5}
   resolve: {
     extensions: ['.js', '.vue', '.json'],
     alias: {
@@ -20,18 +28,18 @@
 
 - 使用如下:
 
-`js` 中
+在 `js` 和 **组件** 中使用别名:
 
 ```js
 // 引入 src/assets/styles 目录下的 reset.css
 import 'styles/reset.css'
 // 引入 src 目录下的 reset.css
-import config from '@/api'
+import config from '@/api'
 ```
 
-`css` 中
+在 `css` 中使用别名
 
-```html
+```html {3}
 <style lang="stylus" scoped>
 // 引入 src/assets/styles 目录下的 varibles.styl, 但引入时别名前需要加 ～
 @import '~styles/varibles.styl'

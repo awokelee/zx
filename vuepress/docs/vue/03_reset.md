@@ -1,10 +1,10 @@
 # reset.css 样式初始化
 
-::: tip 为什么需要 RESER.CSS
+::: tip reset.css 作用
 让各个浏览器的 `CSS` 样式有一个统一的基准，而这个基准更多的就是“清零”, 解决虽然写了同样 `CSS` 代码但在不同浏览器最后表现不同的兼容性问题
 :::
 
-- 下载 `reset.css` 文件移动到 `src/assets/styles/` 目录
+- 下载 `reset.css` 文件, 移动到 `src/assets/styles/` 目录
 
 - 在 `main.js` 引入, `import './assets/styles/reset.css'`
 

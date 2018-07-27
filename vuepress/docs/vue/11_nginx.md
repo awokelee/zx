@@ -1,6 +1,8 @@
 # nginx 转发（prod 环境）
 
-> `npm run build` 打完包后将 `dist` 目录部署到服务器, 找到服务器 `nginx` 配置文件，对接口做`代理`和`跨域处理`
+::: tip nginx
+`npm run build` 打完包后将 `dist` 目录部署到服务器, 找到服务器 `nginx` 配置文件，对接口做 **代理** 和 **跨域处理**
+:::
 
 下面案例是对 `poster` 接口做的跨域和转发处理
 

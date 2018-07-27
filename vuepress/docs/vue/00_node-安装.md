@@ -1,16 +1,22 @@
 # Node 安装
 
-- 安装 `node`
+::: tip
+`Vue` 项目开发环境搭建 - `Node` 安装
 
-官网: `https://nodejs.org/zh-cn/`, 下载安装
+[Node 官网](https://nodejs.org/zh-cn/)
+:::
+
+- 下载安装 `node`
+
+在官网: `https://nodejs.org/zh-cn/`, 下载安装
 
 安装完执行 `node -v` 和 `npm -v` 检查是否完成
 
-- `npm`
+- 关于 `npm`
 
 `npm` 是一个 `node` 包管理工具, 安装 `node` 时默认一起安装了
 
-- `cnpm`
+- 使用 `cnpm`
 
 由于 `npm` 默认会去国外仓库下载依赖, 网络等原因可能 `npm install` 安装依赖时失败
 

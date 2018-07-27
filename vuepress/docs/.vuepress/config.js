@@ -4,7 +4,8 @@ module.exports = {
   description: 'some notes',
   search: false,
   searchMaxSuggestions: 10,
-  lastUpdated: 'Last Updated', // string | boolean
+  editLinkText: 'Edit this page on GitHub',
+  lastUpdated: true, // string | boolean
   head: [
     ['link', { rel: 'icon', href: `/logo.png` }],
   ],
@@ -28,7 +29,7 @@ module.exports = {
     ],
     sidebar: {
       '/home/': [
-        '',     /* /foo/ */
+        '',
         'promise',
         'mac-soft',
         '浏览器兼容性问题',
@@ -52,9 +53,10 @@ module.exports = {
       // vue
       '/vue/': [
         '',
-        '00_node安装',
+        '00_给后端介绍前端',
+        '00_node-安装',
         '00_vue-cli',
-        '01_项目目录',
+        '01_dir_项目目录',
         '02_babel',
         '02_favicon',
         '02_meta',
@@ -63,22 +65,23 @@ module.exports = {
         '05_fastclick',
         '06_stylus',
         '07_iconfont',
+        '07_elementui',
         '07_vux',
         '07_elementui',
         '08_axios',
-        '08_axios-await',
         '08_axios-promise',
+        '08_axios-await',
         '09_filter',
         '10_proxyTable',
         '11_nginx',
         '12_sourceMap',
         '13_alias',
-        '14_手机访问',
+        '14_phone_手机访问',
         '15_session',
-        '16_登录',
-        '17_权限',
+        '16_login_登录',
+        '17_permission_权限',
         '18_router',
-        '19_父子组件通信',
+        '19_msg_父子组件通信',
         '20_bus',
         '21_vuex',
       ],

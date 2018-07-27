@@ -1,31 +1,31 @@
 # iconfont 图标
 
-> 项目使用 iconfont
+::: tip iconfont
+图标字体, 可以把图标当作字体来设置颜色、大小
+:::
 
 - 下载 iconfont
 
-在 `http://www.iconfont.cn/`  下载好 `iconfont`
+国内的通常在阿里巴巴`http://www.iconfont.cn/`网站选择好项目需要的图标, 然后 **下载** 到本地
+
+下载时有三种模式让你选择: `Unicode`、`Font class`、`Symbol`, 这里用 `Symbol` 举例
 
 - 添加到项目
 
-在 `src/assets/styles` 目录下新建 `iconfont` 目录, 解压后的其他文件摆在该目录
+下载好后有个压缩文件, 在 `src/assets/styles` 目录下新建 `iconfont` 目录, 把压缩文件解压后的下列文件复制到新建的`iconfont` 目录
 
 ```md
-├── icomoon.eot
-├── icomoon.svg
-├── icomoon.ttf
-├── icomoon.woff
 ├── iconfont.eot
 ├── iconfont.svg
 ├── iconfont.ttf
 └── iconfont.woff
 ```
 
-下载好的压缩文件解压, 将 `iconfont.css` 移到`src/assets/styles` 目录
+把压缩文件中的 `iconfont.css` 移到 `vue` 项目 `src/assets/styles` 目录
 
-修改 `iconfont.css` 中其他引入文件的路径
+修改 `iconfont.css` 中其他引入文件的路径
 
-```css
+```css {4,6,10,12,23}
 
 @font-face {font-family: "iconfont";
   /* IE9*/
@@ -53,6 +53,8 @@
 
 - 组件中使用
 
-```html
+这里 `icon-yanjing` 就是 `iconfont.css` 带有的
+
+```html {1}
 <i class="iconfont icon-yanjing"></i>
 ```

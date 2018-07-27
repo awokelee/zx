@@ -1,5 +1,9 @@
 # axios promise 封装
 
+::: warning
+把自己请求接口的方法 `promise` 化, 这里只是案例, 你喜欢这种方式那就再用
+:::
+
 ```js
 const axios = require('axios')
 
