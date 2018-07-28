@@ -1,9 +1,9 @@
-# bus 通信
+# EventBus 通信
 
 ::: tip
-`BUS` 本质就是 重新 `new` 了个 `Vue`, 将你需要的数据放在 新 `new` 的 `vue` 上
+`EventBus` 事件总线,  本案例中本质就是重新 `new` 了个 `Vue`, 将你需要的数据放在 新 `new` 的 `Vue` 上
 
-利用 `$on`监听 和 `$emit`触发两个方法.
+利用 `$on`监听 和 `$emit`触发方法.
 :::
 
 - 创建

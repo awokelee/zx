@@ -12,7 +12,7 @@
 
 修改前:
 
-```js
+```js {8}
   build: {
       // Template for index.html
       index: path.resolve(__dirname, '../dist/index.html'),
@@ -27,7 +27,7 @@
 
 修改后:
 
-```js
+```js {8}
   build: {
       // Template for index.html
       index: path.resolve(__dirname, '../dist/index.html'),
@@ -56,7 +56,7 @@ const router = new Router({
 
 修改后:
 
-```js
+```js {2}
 const router = new Router({
   base: '/vip/v1', // 新增
   mode: 'history',

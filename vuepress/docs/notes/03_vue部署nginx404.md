@@ -1,10 +1,12 @@
 # Vue 项目 Nginx 显示 404
 
-> 路由设置 `history` 模式在 `nginx` 下 `404`, 或者刷新才出现 `404`
+::: tip 404
+路由设置 `history` 模式在 `nginx` 下 `404`, 或者刷新才出现 `404`
+:::
 
 ## 出现的问题
 
-::: tip
+::: warning
 如果直接访问项目出现 404, 则去检查是否少了项目前缀, 本文都是在项目主页可以正常访问情境下
 :::
 
@@ -22,7 +24,7 @@
 
 - 步骤二
 
-将所有 `.vue` 文件中的 `window.open` (会新开窗口)路径前面加上 `#`(变成 `hash` 模式)
+如果项目中有使用 `window.open`, 则将所有 `.vue` 文件中的 `window.open` (会新开窗口)路径前面加上 `#`(变成 `hash` 模式)
 
 例如:
 
@@ -44,7 +46,7 @@ window.open(path)
 
 - 思路: 把所有请求转到 `index.html`
 
-```bash
+```bash {2}
 location / {
   try_files $uri $uri/ /index.html;
 }
@@ -60,7 +62,7 @@ location / {
 
 ## 地址栏展示
 
-多了个 `#`
+最直观的就是地址栏多了个 `#`
 
 - `history` 模式在地址栏展示为: `http://001.smj123dev.com/newsDetails/2/5`
 

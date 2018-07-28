@@ -8,7 +8,7 @@
 
 执行 `npm install vue-cli -g` 来安装脚手架, 控制台显示大致如下:
 
-```md
+```bash {1}
 $ `npm install vue-cli -g`
 npm WARN deprecated coffee-script@1.12.7:
 CoffeeScript on NPM has moved to "coffeescript" (no hyphen)

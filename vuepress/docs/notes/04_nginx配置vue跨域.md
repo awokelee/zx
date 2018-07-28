@@ -1,6 +1,8 @@
 # Nginx 处理 Vue 跨域
 
-> `Nginx` 配置跨域和 `API` 代理
+::: tip
+`Nginx` 配置跨域和 `API` 代理
+:::
 
 下面是 `nginx` 的 `.conf` 文件
 

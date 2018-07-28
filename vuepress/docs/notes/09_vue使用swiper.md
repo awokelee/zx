@@ -10,11 +10,11 @@
 
 - 全局引入
 
-```js
+```js {2,5,7}
 import Vue from 'vue'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 
-// 引入 css
+// 引入录播图需要的 css
 import 'swiper/dist/css/swiper.css'
 
 Vue.use(VueAwesomeSwiper, /* { default global options } */)
@@ -22,7 +22,7 @@ Vue.use(VueAwesomeSwiper, /* { default global options } */)
 
 - 当前组件引入 (推荐)
 
-```js
+```js {2,3,7,8}
 // 引入 css
 import 'swiper/dist/css/swiper.css'
 import { swiper, swiperSlide } from 'vue-awesome-swiper'

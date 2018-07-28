@@ -29,7 +29,7 @@
 
 在 `README.md` 文件中通常会有说明怎么运行怎么打包
 
-```md
+```bash {9,13,17,21}
 # vue-alc
 
 > A Vue.js project

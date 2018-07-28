@@ -77,5 +77,5 @@ Object.keys(filters).forEach(key => {
 在组件中使用:
 
 ```html
-<span>{{timestamp | parseTime}}</span>
+<span>{{timestamp | currency}}</span>
 ```

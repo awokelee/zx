@@ -30,7 +30,7 @@
 
 在 `js` 和 **组件** 中使用别名:
 
-```js
+```js {4}
 // 引入 src/assets/styles 目录下的 reset.css
 import 'styles/reset.css'
 // 引入 src 目录下的 reset.css

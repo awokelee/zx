@@ -67,7 +67,6 @@ module.exports = {
         '07_iconfont',
         '07_elementui',
         '07_vux',
-        '07_elementui',
         '08_axios',
         '08_axios-promise',
         '08_axios-await',
