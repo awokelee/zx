@@ -3,6 +3,7 @@
     { "id": "vue", "iconfont": "iconfont icon-ui-copy", "text": "Vue 常用" },
     { "id": "code", "iconfont": "iconfont icon-nodejs", "text": "代码片段" },
     { "id": "interview", "iconfont": "iconfont icon-shequ", "text": "面试相关" },
+    { "id": "security", "iconfont": "iconfont icon-debug", "text": "网络安全" },
     { "id": "tutorial", "iconfont": "iconfont icon-shu-copy", "text": "教程文档" }
   ],
   "navList": [
@@ -83,15 +84,15 @@
         "name": "30 Seconds of CSS",
         "desc": "A curated collection of useful CSS snippets you can understand in 30 seconds or less"
       },{
-        "href": "https://lodash.com/docs/4.17.10",
-        "src": "./static/images/lodash.svg",
-        "name": "Lodash",
-        "desc": "Lodash"
-      },{
         "href": "https://www.kancloud.cn/yunye/axios/234845",
         "src": "./static/images/axios.png",
         "name": "Axios 中文说明",
         "desc": "Axios 中文说明"
+      },{
+        "href": "https://lodash.com/docs/4.17.10",
+        "src": "./static/images/lodash.svg",
+        "name": "Lodash",
+        "desc": "Lodash"
       },{
         "href": "https://xluos.github.io/demo/flexbox/",
         "src": "./static/images/flex.png",
@@ -107,6 +108,11 @@
     { 
       "id": "interviewItem", "iconfont": "iconfont icon-shequ", "text": "面试相关", 
       "list": [{
+        "href": "https://elemefe.github.io/node-interview/#/sections/zh-cn/",
+        "src": "./static/images/node-interview.png",
+        "name": "饿了么 Node.js 面试",
+        "desc": "如何通过饿了么 Node.js 面试"
+      },{
         "href": "https://yuchengkai.cn/docs/zh/",
         "src": "./static/images/interviewmap.png",
         "name": "面试图谱",
@@ -116,6 +122,15 @@
         "src": "./static/images/cake.png",
         "name": "interviewcake",
         "desc": "国外面试资料网站"
+      }]
+    },
+    { 
+      "id": "securityItem", "iconfont": "iconfont icon-debug", "text": "网络安全", 
+      "list": [{
+        "href": "https://github.com/trimstray/awesome-ninja-admins",
+        "src": "./static/images/ninja.png",
+        "name": "Awesome Ninja Admins",
+        "desc": "A collection of awesome lists, manuals, blogs, hacks, one-liners and tools for Awesome Ninja Admins."
       }]
     },
     { 
@@ -145,6 +160,11 @@
         "src": "./static/images/flutter.png",
         "name": "Flutter 编译原理与优化",
         "desc": "深入理解 Flutter 的编译原理与优化"
+      },{
+        "href": "https://developer.mozilla.org/zh-CN/docs/WebAssembly",
+        "src": "./static/images/WebAssembly.jpg",
+        "name": "WebAssembly",
+        "desc": "MDN WebAssembly"
       },{
         "href": "http://webpack.css88.com/",
         "src": "./static/images/webpack4.png",

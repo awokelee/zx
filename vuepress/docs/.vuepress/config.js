@@ -1,5 +1,5 @@
 module.exports = {
-  base: '/vue-press/',
+  // base: '/vue-press/',
   title: 'Awoke',
   description: 'some notes',
   search: false,
@@ -14,6 +14,10 @@ module.exports = {
       // { text: '笔记', link: '/home/' },
       { text: 'Vue', link: '/vue/' },
       { text: 'Notes', link: '/notes/' },
+      { text: 'Node', link: '/node/' },
+      { text: 'Protocol', link: '/protocol/' },
+      { text: 'Security', link: '/security/' },
+      { text: 'Interview', link: '/interview/' },
       { text: 'Standard', link: '/standard/' },
       { text: 'Booklet', link: '/booklet/' },
       // { text: 'Guide', link: '/guide/' },
@@ -97,6 +101,21 @@ module.exports = {
         '07_动态favicon',
         '08_vue引入css报错',
         '09_vue使用swiper',
+      ],
+      '/node/': [
+        '',
+        '异步编程的几种方式',
+        'node配置babel使用import',
+        'import与export',
+      ],
+      'protocol': [
+        ''
+      ],
+      '/security/': [
+        ''
+      ],
+      '/interview/': [
+        ''
       ],
       // 规范
       '/standard/': [
