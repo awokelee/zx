@@ -1,5 +1,5 @@
 module.exports = {
-  // base: '/vue-press/',
+  base: '/vue-press/',
   title: 'Awoke',
   description: 'some notes',
   search: false,
@@ -101,6 +101,7 @@ module.exports = {
         '07_动态favicon',
         '08_vue引入css报错',
         '09_vue使用swiper',
+        '10_html打开乱码',
       ],
       '/node/': [
         '',
