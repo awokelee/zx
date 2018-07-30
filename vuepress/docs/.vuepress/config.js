@@ -18,6 +18,7 @@ module.exports = {
       { text: 'Protocol', link: '/protocol/' },
       { text: 'Security', link: '/security/' },
       { text: 'Interview', link: '/interview/' },
+      { text: 'Code', link: '/code/' },
       { text: 'Standard', link: '/standard/' },
       { text: 'Booklet', link: '/booklet/' },
       // { text: 'Guide', link: '/guide/' },
@@ -117,6 +118,10 @@ module.exports = {
       ],
       '/interview/': [
         ''
+      ],
+      '/code/': [
+        '',
+        '数组'
       ],
       // 规范
       '/standard/': [

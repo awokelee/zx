@@ -118,6 +118,36 @@
         "name": "面试图谱",
         "desc": "打造最好的面试图谱"
       },{
+        "href": "https://github.com/CyC2018/Interview-Notebook",
+        "src": "./static/images/github-favicon.png",
+        "name": "Interview-Notebook",
+        "desc": "准备秋招学习笔记"
+      },{
+        "href": "https://github.com/trekhleb/javascript-algorithms/blob/master/README.zh-CN.md",
+        "src": "./static/images/github-favicon.png",
+        "name": "JavaScript 算法与数据结构",
+        "desc": "JavaScript 算法与数据结构"
+      },{
+        "href": "Front-End-Performance-Checklist",
+        "src": "./static/images/logo-front-end-performance-checklist.jpg",
+        "name": "Performance-Checklist",
+        "desc": "前端性能检查清单"
+      },{
+        "href": "https://github.com/BestDingSheng/resources",
+        "src": "./static/images/github-favicon.png",
+        "name": "企业内推资料整理",
+        "desc": "知名互联网企业内推资料整理 持续更新ing"
+      },{
+        "href": "https://github.com/getify/You-Dont-Know-JS",
+        "src": "./static/images/dontkonwjs.jpg",
+        "name": "You-Dont-Know-JS",
+        "desc": "你不知道的 JS"
+      },{
+        "href": "https://github.com/h5bp/Front-end-Developer-Interview-Questions",
+        "src": "./static/images/github-favicon.png",
+        "name": "前端面试问题",
+        "desc": "Front-end-Developer-Interview-Questions"
+      },{
         "href": "https://www.interviewcake.com/",
         "src": "./static/images/cake.png",
         "name": "interviewcake",
