@@ -119,7 +119,7 @@
         "desc": "打造最好的面试图谱"
       },{
         "href": "https://github.com/CyC2018/Interview-Notebook",
-        "src": "./static/images/github-favicon.png",
+        "src": "./static/images/qiuzhao.png",
         "name": "Interview-Notebook",
         "desc": "准备秋招学习笔记"
       },{
@@ -128,15 +128,15 @@
         "name": "JavaScript 算法与数据结构",
         "desc": "JavaScript 算法与数据结构"
       },{
-        "href": "Front-End-Performance-Checklist",
+        "href": "https://github.com/thedaviddias/Front-End-Checklist",
+        "src": "./static/images/logo-front-end-performance-checklist.jpg",
+        "name": "Front-End-Checklist",
+        "desc": "前端清单"
+      },{
+        "href": "https://github.com/thedaviddias/Front-End-Performance-Checklist",
         "src": "./static/images/logo-front-end-performance-checklist.jpg",
         "name": "Performance-Checklist",
         "desc": "前端性能检查清单"
-      },{
-        "href": "https://github.com/BestDingSheng/resources",
-        "src": "./static/images/github-favicon.png",
-        "name": "企业内推资料整理",
-        "desc": "知名互联网企业内推资料整理 持续更新ing"
       },{
         "href": "https://github.com/getify/You-Dont-Know-JS",
         "src": "./static/images/dontkonwjs.jpg",

@@ -1,5 +1,17 @@
 # TODO
 
+## 能提交github
+
+浏览器设置 github.com --> daqian
+
+host 打开
+
+GitHub 设置代理 打开
+
+## 能执行 ./build.sh
+
+没研究好
+
 - NODE 实战
 
 - LAMP LNMP WAMP
