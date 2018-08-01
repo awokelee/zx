@@ -148,6 +148,31 @@
         "name": "前端面试问题",
         "desc": "Front-end-Developer-Interview-Questions"
       },{
+        "href": "https://www.toptal.com/javascript/interview-questions",
+        "src": "./static/images/github-favicon.png",
+        "name": "37 Essential JavaScript",
+        "desc": "37 个必问 JavaScript 面试题"
+      },{
+        "href": "https://www.codementor.io/nihantanu/21-essential-javascript-tech-interview-practice-questions-answers-du107p62z",
+        "src": "./static/images/github-favicon.png",
+        "name": "21 Essential JavaScript",
+        "desc": "21 个必问 JavaScript 面试题"
+      },{
+        "href": "https://www.toptal.com/nodejs/interview-questions",
+        "src": "./static/images/github-favicon.png",
+        "name": "8 Essential Node.js",
+        "desc": "8 个必问 Node.js 面试题"
+      },{
+        "href": "https://www.edureka.co/blog/interview-questions/react-interview-questions/amp/",
+        "src": "./static/images/github-favicon.png",
+        "name": "Top 50 React",
+        "desc": "2018 你必会的 50 个高频 React 面试题"
+      },{
+        "href": "https://blog.risingstack.com/node-js-interview-questions-and-answers-2017/",
+        "src": "./static/images/github-favicon.png",
+        "name": "Node.js Interview",
+        "desc": "Node.js 面试和答案"
+      },{
         "href": "https://www.interviewcake.com/",
         "src": "./static/images/cake.png",
         "name": "interviewcake",
