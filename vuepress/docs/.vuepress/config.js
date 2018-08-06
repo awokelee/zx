@@ -14,23 +14,23 @@ module.exports = {
       // { text: '笔记', link: '/home/' },
       { text: 'Vue', link: '/vue/' },
       { text: 'Notes', link: '/notes/' },
-      { text: 'Node', link: '/node/' },
-      { text: 'Protocol', link: '/protocol/' },
-      { text: 'Security', link: '/security/' },
-      { text: 'Interview', link: '/interview/' },
-      { text: 'Code', link: '/code/' },
-      { text: 'Standard', link: '/standard/' },
-      { text: 'Booklet', link: '/booklet/' },
+      // { text: 'Node', link: '/node/' },
+      // { text: 'Protocol', link: '/protocol/' },
+      // { text: 'Security', link: '/security/' },
+      // { text: 'Code', link: '/code/' },
+      // { text: 'Standard', link: '/standard/' },
       // { text: 'Guide', link: '/guide/' },
-      {
+      /* {
         text: 'Projects',
         items: [
           { text: 'Qunar (去哪儿, Vue)', link: 'http://qunar.gaodaqian.com' },
         ]
-      },
+      }, */
       { text: 'Nav', link: 'http://nav.gaodaqian.com' },
-      { text: 'Blogs', link: 'http://blog.gaodaqian.com' },
+      // { text: 'Blogs', link: 'http://blog.gaodaqian.com' },
       { text: 'GitHub', link: 'https://github.com/awokelee' },
+      { text: '.', link: '/booklet/' },
+      { text: '.', link: '/interview/' },
     ],
     sidebar: {
       '/home/': [
@@ -117,7 +117,15 @@ module.exports = {
         ''
       ],
       '/interview/': [
-        ''
+        '',
+        {
+          title:'Javascript', 
+          children: [
+          './02_javascript/基础',
+          './02_javascript/设计模式',
+          './02_javascript/数据结构',
+          './02_javascript/算法',
+        ]},
       ],
       '/code/': [
         '',

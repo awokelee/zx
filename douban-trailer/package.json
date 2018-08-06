@@ -1,0 +1,24 @@
+{
+  "name": "douban-trailer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "nodemon server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "movie",
+    "trailer"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "koa": "^2.5.2",
+    "mongoose": "^5.2.6",
+    "puppeteer": "^1.6.2",
+    "request": "^2.87.0",
+    "request-promise-native": "^1.0.5"
+  }
+}
