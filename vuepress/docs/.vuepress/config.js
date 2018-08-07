@@ -107,6 +107,11 @@ module.exports = {
           './02_javascript/闭包',
           './02_javascript/高阶函数',
         ]},
+        { title:'设计模式', 
+          children: [
+          './08_设计模式/单例模式',
+          './08_设计模式/策略模式',
+        ]},
         /* { title:'HTML', children: ['./00_html/1',]},
         { title:'CSS', children: ['./01_css/1',]},
         { title:'JavaScript', children: ['./02_javascript/1',]},
@@ -118,8 +123,7 @@ module.exports = {
         { title:'浏览器', children: ['./04_浏览器/1',]},
         { title:'性能优化', children: ['./05_性能优化/1',]},
         { title:'数据结构', children: ['./06_数据结构/1',]},
-        { title:'算法', children: ['./07_算法/1',]},
-        { title:'设计模式', children: ['./08_设计模式/1',]},
+        { title:'算法', children: ['./07_算法/1',]},        
         { title:'网络协议', children: ['./09_网络协议/1',]},
         { title:'网络安全', children: ['./10_网络安全/1',]}, */
       ],
