@@ -18,10 +18,9 @@ module.exports = {
       // { text: 'Protocol', link: '/protocol/' },
       // { text: 'Security', link: '/security/' },
       // { text: 'Code', link: '/code/' },
-      // { text: 'Standard', link: '/standard/' },
-      // { text: 'Guide', link: '/guide/' },
+      { text: 'Standard', link: '/standard/' },
       /* {
-        text: 'Projects',
+        text: 'imooc',
         items: [
           { text: 'Qunar (去哪儿, Vue)', link: 'http://qunar.gaodaqian.com' },
         ]
@@ -39,22 +38,6 @@ module.exports = {
         'mac-soft',
         '浏览器兼容性问题',
       ],
-      // '/guide/': [
-        // '',
-        // 'algorithm',
-        // 'browser-ch',
-        // 'dataStruct-zh',
-        // 'algorithm-ch',
-        // 'framework-zh',
-        // 'git-zh',
-        // 'JS-ch',
-        // 'Network-zh',
-        // 'performance-ch',
-        // 'react-zh',
-        // 'safety-cn',
-        // 'vue-zh',
-        // 'How-to-use-your-time-correctly',
-      // ],
       // vue
       '/vue/': [
         '',
@@ -121,11 +104,24 @@ module.exports = {
         {
           title:'Javascript', 
           children: [
-          './02_javascript/基础',
-          './02_javascript/设计模式',
-          './02_javascript/数据结构',
-          './02_javascript/算法',
+          './02_javascript/闭包',
+          './02_javascript/高阶函数',
         ]},
+        /* { title:'HTML', children: ['./00_html/1',]},
+        { title:'CSS', children: ['./01_css/1',]},
+        { title:'JavaScript', children: ['./02_javascript/1',]},
+        { title:'AngularJS', children: ['./03_angualr/1',]},
+        { title:'React', children: ['./03_react/1',]},
+        { title:'Vue', children: ['./03_vue/1',]},
+        { title:'Git', children: ['./03_git/1',]},
+        { title:'Webpack', children: ['./03_webpack/1',]},
+        { title:'浏览器', children: ['./04_浏览器/1',]},
+        { title:'性能优化', children: ['./05_性能优化/1',]},
+        { title:'数据结构', children: ['./06_数据结构/1',]},
+        { title:'算法', children: ['./07_算法/1',]},
+        { title:'设计模式', children: ['./08_设计模式/1',]},
+        { title:'网络协议', children: ['./09_网络协议/1',]},
+        { title:'网络安全', children: ['./10_网络安全/1',]}, */
       ],
       '/code/': [
         '',

@@ -1,0 +1,4 @@
+DOM事件的绑定的几种方式
+target和currentTarget的区别
+
+解决跨域的。以及后续JSONP的原理和实现以及cors怎么设置。我就说了一下Jason和cors,然后问我JSONP的原理以及cors怎么设置，这一块自己也实践过，所以还是对答如流的。
