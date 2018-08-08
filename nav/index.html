@@ -63,7 +63,7 @@
             <a v-for="(it, idx) in item.list" :id="it.id" :key="idx" target="_blank" :href="it.href">
               <div class="item">
                 <div class="logo">
-                  <img :data-original="it.src" width="100%" class="loaded" :src="it.src">
+                  <img :data-original="it.src" width="100%" class="loaded" v-lazy="it.src">
                   <span v-text="it.name"></span>
                 </div>
                 <div class="desc">
@@ -91,7 +91,9 @@
   <!-- <script src="./build/vendor.js"></script> -->
   <!-- <script src="./build/fe-nav/index.js"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <script src="https://unpkg.com/vue-lazyload/vue-lazyload.js"></script>
   <script>
+    Vue.use(VueLazyload)
     var app = new Vue({
       el: '#container',
       data: {
