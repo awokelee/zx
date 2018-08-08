@@ -4,6 +4,7 @@
     { "id": "code", "iconfont": "iconfont icon-nodejs", "text": "代码片段" },
     { "id": "interview", "iconfont": "iconfont icon-shequ", "text": "面试相关" },
     { "id": "security", "iconfont": "iconfont icon-debug", "text": "网络安全" },
+    { "id": "pattern", "iconfont": "iconfont icon-debug", "text": "JavaScript 深入" },
     { "id": "tutorial", "iconfont": "iconfont icon-shu-copy", "text": "教程文档" }
   ],
   "navList": [
@@ -134,21 +135,6 @@
         "name": "Interview-Notebook",
         "desc": "准备秋招学习笔记"
       },{
-        "href": "https://github.com/trekhleb/javascript-algorithms/blob/master/README.zh-CN.md",
-        "src": "./static/images/github-favicon.png",
-        "name": "JavaScript 算法与数据结构",
-        "desc": "JavaScript 算法与数据结构"
-      },{
-        "href": "https://github.com/thedaviddias/Front-End-Checklist",
-        "src": "./static/images/logo-front-end-performance-checklist.jpg",
-        "name": "Front-End-Checklist",
-        "desc": "前端清单"
-      },{
-        "href": "https://github.com/thedaviddias/Front-End-Performance-Checklist",
-        "src": "./static/images/logo-front-end-performance-checklist.jpg",
-        "name": "Performance-Checklist",
-        "desc": "前端性能检查清单"
-      },{
         "href": "https://github.com/getify/You-Dont-Know-JS",
         "src": "./static/images/dontkonwjs.jpg",
         "name": "You-Dont-Know-JS",
@@ -197,6 +183,45 @@
         "src": "./static/images/ninja.png",
         "name": "Awesome Ninja Admins",
         "desc": "A collection of awesome lists, manuals, blogs, hacks, one-liners and tools for Awesome Ninja Admins."
+      }]
+    },
+    { 
+      "id": "patternItem", "iconfont": "iconfont icon-debug", "text": "JavaScript 深入", 
+      "list": [{
+        "href": "https://github.com/thedaviddias/Front-End-Checklist",
+        "src": "./static/images/logo-front-end-performance-checklist.jpg",
+        "name": "Front-End-Checklist",
+        "desc": "前端清单"
+      },{
+        "href": "https://github.com/thedaviddias/Front-End-Performance-Checklist",
+        "src": "./static/images/logo-front-end-performance-checklist.jpg",
+        "name": "Performance-Checklist",
+        "desc": "前端性能检查清单"
+      },{
+        "href": "https://github.com/trekhleb/javascript-algorithms/blob/master/README.zh-CN.md",
+        "src": "./static/images/github-favicon.png",
+        "name": "JavaScript 算法与数据结构",
+        "desc": "JavaScript 算法与数据结构"
+      },{
+        "href": "https://learn-vuejs.github.io/vue-patterns/",
+        "src": "./static/images/learn-vue-logo.png",
+        "name": "vue-patterns",
+        "desc": "vue 模式与技巧."
+      },{
+        "href": "https://github.com/shichuan/javascript-patterns",
+        "src": "./static/images/js-patterns.png",
+        "name": "javascript-patterns",
+        "desc": "javascript 模式."
+      },{
+        "href": "https://github.com/tcorral/Design-Patterns-in-Javascript",
+        "src": "./static/images/github-favicon.png",
+        "name": "Design-Patterns-in-Javascript",
+        "desc": "javascript 设计模式."
+      },{
+        "href": "https://github.com/addyosmani/essential-js-design-patterns",
+        "src": "./static/images/js-pattern-cover.png",
+        "name": "essential-js-design-patterns",
+        "desc": "javascript 设计模式."
       }]
     },
     { 
