@@ -4,6 +4,7 @@
     { "id": "code", "iconfont": "iconfont icon-nodejs", "text": "代码片段" },
     { "id": "interview", "iconfont": "iconfont icon-shequ", "text": "面试相关" },
     { "id": "security", "iconfont": "iconfont icon-debug", "text": "网络安全" },
+    { "id": "primer", "iconfont": "iconfont icon-debug", "text": "架构" },
     { "id": "pattern", "iconfont": "iconfont icon-debug", "text": "JavaScript 深入" },
     { "id": "tutorial", "iconfont": "iconfont icon-shu-copy", "text": "教程文档" }
   ],
@@ -183,6 +184,20 @@
         "src": "./static/images/ninja.png",
         "name": "Awesome Ninja Admins",
         "desc": "A collection of awesome lists, manuals, blogs, hacks, one-liners and tools for Awesome Ninja Admins."
+      }]
+    },
+    { 
+      "id": "primerItem", "iconfont": "iconfont icon-debug", "text": "架构", 
+      "list": [{
+        "href": "https://github.com/xingshaocheng/architect-awesome",
+        "src": "./static/images/ninja.png",
+        "name": "architect-awesome",
+        "desc": "后端架构师技术图谱."
+      },{
+        "href": "https://github.com/donnemartin/system-design-primer/blob/master/README-zh-Hans.md",
+        "src": "./static/images/ninja.png",
+        "name": "system-design-primer",
+        "desc": "系统设计入门."
       }]
     },
     { 
