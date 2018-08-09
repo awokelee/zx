@@ -86,6 +86,7 @@ module.exports = {
         '08_vue引入css报错',
         '09_vue使用swiper',
         '10_html打开乱码',
+        '11_H5与NATIVE交互',
       ],
       '/node/': [
         '',
