@@ -87,6 +87,7 @@ module.exports = {
         '09_vue使用swiper',
         '10_html打开乱码',
         '11_H5与NATIVE交互',
+        '12_营销目录',
       ],
       '/node/': [
         '',
