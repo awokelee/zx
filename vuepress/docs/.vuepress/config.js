@@ -18,7 +18,6 @@ module.exports = {
       // { text: 'Protocol', link: '/protocol/' },
       // { text: 'Security', link: '/security/' },
       // { text: 'Code', link: '/code/' },
-      { text: 'Standard', link: '/standard/' },
       /* {
         text: 'imooc',
         items: [
@@ -28,6 +27,7 @@ module.exports = {
       { text: 'Nav', link: 'http://nav.gaodaqian.com' },
       // { text: 'Blogs', link: 'http://blog.gaodaqian.com' },
       { text: 'GitHub', link: 'https://github.com/awokelee' },
+      { text: '.', link: '/standard/' },
       { text: '.', link: '/booklet/' },
       { text: '.', link: '/interview/' },
     ],
