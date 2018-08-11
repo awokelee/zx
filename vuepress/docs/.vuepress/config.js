@@ -105,12 +105,12 @@ module.exports = {
       '/interview/': [
         '',
         {
-          title:'Javascript', 
+          title:'Javascript 基础(未完待续)', 
           children: [
           './02_javascript/闭包',
           './02_javascript/高阶函数',
         ]},
-        { title:'设计模式', 
+        { title:'JavaScript 设计模式(未完待续)', 
           children: [
           './08_设计模式/单例模式',
           './08_设计模式/策略模式',
