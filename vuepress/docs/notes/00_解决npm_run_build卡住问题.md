@@ -1,4 +1,4 @@
-# npm run build 卡死
+# 执行 npm run build 打包时卡死
 
 - `npm run build` 卡住
 

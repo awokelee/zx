@@ -1,4 +1,4 @@
-# GitHub 超时
+# GitHub 超时
 
 - 提交代码到 `github`, 控制台提示如下
 
