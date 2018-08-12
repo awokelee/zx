@@ -297,6 +297,11 @@
         "name": "Git 教程",
         "desc": "廖雪峰 Git 教程"
       },{
+        "href": "https://github.com/i0natan/nodebestpractices/blob/master/README.chinese.md",
+        "src": "./static/images/nodejs-best-practices.jpg",
+        "name": "Node.js 最佳实践",
+        "desc": "Node.js 最佳实践"
+      },{
         "href": "https://github.com/alsotang/node-lessons",
         "src": "./static/images/node.jpeg",
         "name": "Node.js 包教不包会",
