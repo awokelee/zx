@@ -27,9 +27,9 @@ module.exports = {
       { text: 'Nav', link: 'http://nav.gaodaqian.com' },
       // { text: 'Blogs', link: 'http://blog.gaodaqian.com' },
       { text: 'GitHub', link: 'https://github.com/awokelee' },
-      { text: 'i', link: '/standard/' },
-      { text: 'n', link: '/booklet/' },
-      { text: 'g', link: '/interview/' },
+      { text: '_', link: '/standard/' },
+      { text: '_', link: '/booklet/' },
+      { text: '_', link: '/interview/' },
     ],
     sidebar: {
       '/home/': [
@@ -117,6 +117,7 @@ module.exports = {
           './08_设计模式/代理模式',
           './08_设计模式/迭代器模式',
           './08_设计模式/发布订阅模式',
+          './08_设计模式/组合模式',
         ]},
         /* { title:'HTML', children: ['./00_html/1',]},
         { title:'CSS', children: ['./01_css/1',]},
