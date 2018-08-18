@@ -1,5 +1,9 @@
 # React 项目用到的知识点
 
+::: tip
+一些开发 `React` 用到的, 零基础开始搭建 `React` `SPA` 应用
+:::
+
 - create-reaact-app
 
 - jsx

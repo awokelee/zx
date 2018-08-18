@@ -117,6 +117,36 @@ class App extends Component {
 export default App;
 ```
 
+**绑定 this 的方式:**
+
+直接绑定在 jsx 中
+
+```js
+<button onClick={this.handleBtnClick.bind(this, 'test')}>点击</button>
+```
+
+在构造函数中, 性能更好
+
+```js
+import React, { Component } from 'react'
+
+class TodoItem extends Component {
+  constructor(props) {
+    super(props)
+    // 绑定 this, 性能比直接绑定在 render 中好
+    this.handleClick = this.handleClick.bind(this) 
+  }
+
+  render() {
+    const { content } = this.props
+    return <div onClick={this.handleClick}>{content}</div>
+  }
+}
+
+export default TodoItem
+```
+
+
 - `map` 循环
 
 当需要循环展示数据时, 在 `JSX` 中 用 `{}` 然后返回即可. 下面案例就是把 `list` 数据每一项展示在一个 `li` 元素中.

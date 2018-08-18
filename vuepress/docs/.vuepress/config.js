@@ -52,6 +52,9 @@ module.exports = {
         '03_react定义组件',
         '04_jsx一些细节',
         '05_todolist',
+        '06_16版本的setState',
+        '07_父子组件传值',
+        '08_todolist优化代码',
       ],
       // vue
       '/vue/': [
