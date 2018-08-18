@@ -14,6 +14,7 @@ module.exports = {
       // { text: '笔记', link: '/home/' },
       { text: 'Vue', link: '/vue/' },
       { text: 'Notes', link: '/notes/' },
+      { text: 'React', link: '/react/' },
       // { text: 'Node', link: '/node/' },
       // { text: 'Protocol', link: '/protocol/' },
       // { text: 'Security', link: '/security/' },
@@ -22,7 +23,7 @@ module.exports = {
         text: 'Projects',
         items: [
           { text: 'Qunar (去哪儿, Vue)', link: 'http://qunar.gaodaqian.com' },
-          { text: '智能营销系统', link: '/smarketing/' },
+          { text: 'Smarketing(智能营销系统, Vue)', link: '/smarketing/' },
         ]
       },
       { text: 'Nav', link: 'http://nav.gaodaqian.com' },
@@ -42,6 +43,15 @@ module.exports = {
       '/smarketing/': [
         '',
         '00_营销',
+      ],
+      '/react/': [
+        '',
+        '00_react基础',
+        '01_create-react-app',
+        '02_create-react-app目录介绍',
+        '03_react定义组件',
+        '04_jsx一些细节',
+        '05_todolist',
       ],
       // vue
       '/vue/': [
