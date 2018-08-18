@@ -18,12 +18,13 @@ module.exports = {
       // { text: 'Protocol', link: '/protocol/' },
       // { text: 'Security', link: '/security/' },
       // { text: 'Code', link: '/code/' },
-      /* {
-        text: 'imooc',
+      {
+        text: 'Projects',
         items: [
           { text: 'Qunar (去哪儿, Vue)', link: 'http://qunar.gaodaqian.com' },
+          { text: '智能营销系统', link: '/smarketing/' },
         ]
-      }, */
+      },
       { text: 'Nav', link: 'http://nav.gaodaqian.com' },
       // { text: 'Blogs', link: 'http://blog.gaodaqian.com' },
       { text: 'GitHub', link: 'https://github.com/awokelee' },
@@ -37,6 +38,10 @@ module.exports = {
         'promise',
         'mac-soft',
         '浏览器兼容性问题',
+      ],
+      '/smarketing/': [
+        '',
+        '00_营销',
       ],
       // vue
       '/vue/': [
