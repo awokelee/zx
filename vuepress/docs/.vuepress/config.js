@@ -9,6 +9,9 @@ module.exports = {
   head: [
     ['link', { rel: 'icon', href: `/logo.png` }],
   ],
+  markdown: {
+    lineNumbers: true
+  },
   themeConfig: {
     nav: [
       // { text: '笔记', link: '/home/' },
@@ -66,6 +69,13 @@ module.exports = {
         '17_axios',
         '18_react动画',
         '19_react-transition-group实现动画',
+        '22_antd-ui库使用',
+        '20_redux介绍',
+        '21_redux工作流程',
+        '23_redux的store',
+        '24_redux的action和reducer',
+        '25_redux使用actionTypes拆分',
+        '26_redux使用actionCreators创建action',
       ],
       // vue
       '/vue/': [
