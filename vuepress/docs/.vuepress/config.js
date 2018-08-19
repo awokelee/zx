@@ -62,6 +62,10 @@ module.exports = {
         '13_虚拟dom中的diff算法',
         '14_ref的使用',
         '15_生命周期函数',
+        '16_生命周期使用场景',
+        '17_axios',
+        '18_react动画',
+        '19_react-transition-group实现动画',
       ],
       // vue
       '/vue/': [
