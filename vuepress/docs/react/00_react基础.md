@@ -28,4 +28,4 @@
 
 - `React Native`
 
-- `React VR` / React 360
+- `React VR` / `React 360`

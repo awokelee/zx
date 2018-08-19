@@ -55,6 +55,13 @@ module.exports = {
         '06_16版本的setState',
         '07_父子组件传值',
         '08_todolist优化代码',
+        '09_react调试工具',
+        '10_propTypes和defaultProps',
+        '11_props-state-render',
+        '12_虚拟DOM',
+        '13_虚拟dom中的diff算法',
+        '14_ref的使用',
+        '15_生命周期函数',
       ],
       // vue
       '/vue/': [
