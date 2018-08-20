@@ -83,6 +83,9 @@ module.exports = {
         '31_redux中间件介绍',
         '32_redux-saga',
         '33_react-redux',
+        '34_styled-components',
+        '35_styled-components使用',
+        '36_styled-components使用iconfont',
       ],
       // vue
       '/vue/': [
