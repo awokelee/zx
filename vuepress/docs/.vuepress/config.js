@@ -86,6 +86,7 @@ module.exports = {
         '34_styled-components',
         '35_styled-components使用',
         '36_styled-components使用iconfont',
+        '37_redux的combineReducers及完整案例',
       ],
       // vue
       '/vue/': [

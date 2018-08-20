@@ -228,6 +228,11 @@
         "name": "vue-patterns",
         "desc": "vue 模式与技巧."
       },{
+        "href": "https://github.com/SangKa/react-in-patterns-cn",
+        "src": "./static/images/react-in-patterns.jpg",
+        "name": "react-in-patterns",
+        "desc": "react 模式中文版"
+      },{
         "href": "https://github.com/shichuan/javascript-patterns",
         "src": "./static/images/js-patterns.png",
         "name": "javascript-patterns",
