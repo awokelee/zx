@@ -25,3 +25,5 @@
 - `store.dispatch`
 
 - `store.getState`
+
+- `store.subscribe`
