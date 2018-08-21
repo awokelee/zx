@@ -90,6 +90,8 @@ module.exports = {
         '37_redux的combineReducers及完整案例',
         '38_immutable',
         '39_redux-immutable',
+        '40_react路由',
+        '41_PureComponent',
       ],
       // vue
       '/vue/': [
