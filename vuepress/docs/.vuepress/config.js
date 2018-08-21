@@ -67,6 +67,7 @@ module.exports = {
         '15_生命周期函数',
         '16_生命周期使用场景',
         '17_axios',
+        '17_本地mock数据',
         '18_react动画',
         '19_react-transition-group实现动画',
         '22_antd-ui库使用',
@@ -87,6 +88,8 @@ module.exports = {
         '35_styled-components使用',
         '36_styled-components使用iconfont',
         '37_redux的combineReducers及完整案例',
+        '38_immutable',
+        '39_redux-immutable',
       ],
       // vue
       '/vue/': [
