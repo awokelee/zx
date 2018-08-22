@@ -92,7 +92,9 @@ module.exports = {
         '39_redux-immutable',
         '40_react路由',
         '40_路由传参',
+        '40_路由Redirect',
         '41_PureComponent',
+        '42_react异步组件',
       ],
       // vue
       '/vue/': [
