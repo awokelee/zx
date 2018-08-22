@@ -26,6 +26,7 @@ module.exports = {
         text: 'Projects',
         items: [
           { text: 'Qunar (去哪儿, Vue)', link: 'http://qunar.gaodaqian.com' },
+          { text: 'JianShu (简书, React)', link: 'http://jianshu.gaodaqian.com' },
           { text: 'Smarketing(智能营销系统, Vue)', link: '/smarketing/' },
         ]
       },
