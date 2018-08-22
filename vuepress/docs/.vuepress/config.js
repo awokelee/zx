@@ -95,6 +95,7 @@ module.exports = {
         '40_路由Redirect',
         '41_PureComponent',
         '42_react异步组件',
+        '43_react项目上线',
       ],
       // vue
       '/vue/': [
