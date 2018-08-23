@@ -25,8 +25,9 @@ module.exports = {
       {
         text: 'Projects',
         items: [
-          { text: 'Qunar (去哪儿, Vue)', link: 'http://qunar.gaodaqian.com' },
           { text: 'JianShu (简书, React)', link: 'http://jianshu.gaodaqian.com' },
+          { text: 'ALC (爱理财, React)', link: 'https://bcapp.alc.com.cn/mapp/' },
+          { text: 'Qunar (去哪儿, Vue)', link: 'http://qunar.gaodaqian.com' },
           { text: 'Smarketing(智能营销系统, Vue)', link: '/smarketing/' },
         ]
       },
@@ -46,7 +47,7 @@ module.exports = {
       ],
       '/smarketing/': [
         '',
-        '00_营销',
+        '00_营销系统代码目录'
       ],
       '/react/': [
         '',
@@ -135,7 +136,10 @@ module.exports = {
       // 遇到的问题
       '/notes/': [
         '',
-        '12_营销目录',
+        '14_生产环境配置',
+        '15_发布脚本',
+        '16_nginx发布配置',
+        '00_yarn和npm',
         '13_视图不更新',
         '08_vue引入css报错',
         '09_vue使用swiper',
