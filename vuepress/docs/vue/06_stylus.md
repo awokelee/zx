@@ -6,11 +6,11 @@
 `stylus` 跟 `CSS` 最直观的不同就是 省略了 `{}` 和 `;`
 :::
 
-- 安装
+- 安装 `stylus` 和 `stylus-loader`
 
-安装 `stylus`, `npm install stylus --save`
-
-安装 `stylus-loader`, `npm install stylus-loader --save`
+```bash
+npm i stylus stylus-loader -D
+```
 
 - 使用
 

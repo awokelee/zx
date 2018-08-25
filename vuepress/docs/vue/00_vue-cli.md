@@ -35,6 +35,11 @@ $ vue init webpack tutorial
 # 作者, 不写就默认
 ? Author `awokelee <awokelee@gmail.com>`
 ? Vue build standalone
+  # 运行 + 编译, 运行时做编译, 可以不基于 .vue 文件开发. (webpack  vue-loader 编译模版)
+> Runtime + Compiler: recommended for most users
+  # 基于 .vue 文件开发, 比上面小 6k
+  Runtime-only: about 6KB lighter min+gzip, but templates (or any Vue-specific HTML) are ONLY allowed in .vue files - r ender functions are required elsewhere
+
 
 # 是否安装路由, 如果你是要做 SPA 单页应用需要路由就 Yes (大部分正常项目需要)
 ? Install vue-router? `Yes`
@@ -42,7 +47,7 @@ $ vue init webpack tutorial
 # 是否需要开启 ESLint 代码规范检查, 如果是团队开发最好 YES 开启(统一风格)
 ? Use ESLint to lint your code? `Yes`
 
-# 选择哪种代码风格, standard 是'标准'的,
+# 选择哪种代码风格, standard 是'标准'的, 语句结束不加分号
 # airbnb 是 爱彼迎公司的规范, 区别就是 语句结束 加分号和不加分号这些
 ? Pick an ESLint preset `Standard`
 

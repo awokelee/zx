@@ -15,15 +15,16 @@ module.exports = {
   themeConfig: {
     nav: [
       // { text: '笔记', link: '/home/' },
-      { text: 'Vue', link: '/vue/' },
-      { text: 'Notes', link: '/notes/' },
-      { text: 'React', link: '/react/' },
+      { text: 'Vue 基础', link: '/vue/' },
+      { text: '遇到的问题', link: '/notes/' },
+      { text: 'React 基础', link: '/react/' },
+      { text: 'JavaScript 知识点', link: '/Effective-JavaScript/' },
       // { text: 'Node', link: '/node/' },
       // { text: 'Protocol', link: '/protocol/' },
       // { text: 'Security', link: '/security/' },
       // { text: 'Code', link: '/code/' },
       {
-        text: 'Projects',
+        text: '做过的项目',
         items: [
           { text: 'JianShu (简书, React)', link: 'http://jianshu.gaodaqian.com' },
           { text: 'ALC (爱理财, React)', link: 'https://bcapp.alc.com.cn/mapp/' },
@@ -31,12 +32,12 @@ module.exports = {
           { text: 'Smarketing(智能营销系统, Vue)', link: '/smarketing/' },
         ]
       },
-      { text: 'Nav', link: 'http://nav.gaodaqian.com' },
+      { text: '自己常用导航', link: 'http://nav.gaodaqian.com' },
       // { text: 'Blogs', link: 'http://blog.gaodaqian.com' },
       { text: 'GitHub', link: 'https://github.com/awokelee' },
-      { text: '_', link: '/standard/' },
+      { text: '规范', link: '/standard/' },
       { text: '_', link: '/booklet/' },
-      { text: '_', link: '/interview/' },
+      { text: '设计模式', link: '/interview/' },
     ],
     sidebar: {
       '/home/': [
@@ -44,6 +45,19 @@ module.exports = {
         'promise',
         'mac-soft',
         '浏览器兼容性问题',
+      ],
+      '/Effective-JavaScript/': [
+        '',
+        '00_use-strict',
+        '01_defer-async',
+        '01_数据类型',
+        '01_对象的引用',
+        '01_number',
+        '01_转Boolean',
+        '01_转Number',
+        '01_转String',
+        '02_typeof',
+        '03_instanceof',
       ],
       '/smarketing/': [
         '',
@@ -155,6 +169,8 @@ module.exports = {
         '02_GitHub设置代理',
         '07_动态favicon',
         '10_html打开乱码',
+        '17_编辑器stylus设置',
+        '18_jsonp',
       ],
       '/node/': [
         '',
