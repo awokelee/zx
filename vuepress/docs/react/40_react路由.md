@@ -1,5 +1,13 @@
 # react-router-dom 路由
 
+:::tip
+4.0 版本已不需要路由配置, 一切皆组件.
+
+react-router: 提供一些 router 的核心 api, 包括 Router, Route, Switch 等.
+
+react-router-dom (跟浏览器有关): 提供了 BrowserRouter, HashRouter, Route, Link, Switch, NavLink.
+:::
+
 - 安装
 
 这里安装的是 `react-router 4.0`, 执行 `yarn add react-router-dom`
@@ -68,4 +76,34 @@ class App extends Component {
 export default App;
 ```
 
-代码中每个 `Route` 表示一个个路由规则, `path` 表示路径, `exact` 指精确匹配, `render` 函数可以直接写内容, `component` 表示对应的组件, 注意 `BrowserRouter` 里面要有个根元素, 这里用了个 div.
+代码中每个 `Route` 表示一个个路由规则, `path` 表示路径, `exact` 指精确匹配, `render` 函数可以直接写内容, `component` 表示对应的组件, 注意 `BrowserRouter` 里面要有个根元素, 这里用了个 `div`.
+
+- `react-router-dom` 核心用法
+
+`HashRouter` 和 `BrowserRouter`, `hash` 带 `#`.
+
+`Route`: `path`、`exact`、`component`、`render`
+
+```js
+<Route path="/detail/:id" />
+......
+// 获取
+this.props.match.params.id
+```
+
+`NavLink`、`Link`
+
+```js
+<Link to="/">Home</Link>
+```
+
+`Switch`
+
+`Switch` 匹配到就不会继续往下.
+
+```js
+<Switch>
+  <Route path="/admin/list" component={List} />
+  <Route path="/admin/detail" component={Detail} />
+</Switch>
+```
