@@ -14,7 +14,7 @@ module.exports = {
   },
   themeConfig: {
     nav: [
-      // { text: '笔记', link: '/home/' },
+      { text: '笔记', link: '/home/' },
       { text: 'Vue', link: '/vue/' },
       { text: 'Notes', link: '/notes/' },
       { text: 'React', link: '/react/' },
@@ -42,9 +42,11 @@ module.exports = {
     sidebar: {
       '/home/': [
         '',
-        'promise',
         'mac-soft',
-        '浏览器兼容性问题',
+        'vscode',
+        'eslint',
+        // 'promise',
+        // '浏览器兼容性问题',
       ],
       '/Effective-JavaScript/': [
         '',

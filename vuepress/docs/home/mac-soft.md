@@ -6,11 +6,9 @@
 
 ![](./media/15310664432830/15311477870240.jpg)
 
-
 - 执行以下操作：
 
 ![](./media/15310664432830/15311478241327.jpg)
-
 
 在右侧面板选择`服务`收到选定的`文件夹`，位于`Finder.app`，该选项是为了从`Finder`中接收一个`文件夹`；
 
@@ -29,7 +27,6 @@ done
 
 ![](./media/15310664432830/15311478742968.jpg)
 
-
 ## iStat Menus 优秀的系统监控工具
 
 - 下载地址：`http://xclient.info/s/istat-menus-for-mac.html?t=64a5c270c4a7c9777a6a341e2ad66a41c0b0fdc3`
@@ -40,16 +37,13 @@ done
 
 个人主要是为了看`上传/下载`流量
 
-
 ## 显示器分辨率(含外接)
 
 ### SwitchResX
 
 ![](./media/15310664432830/15310668614080.jpg)
 
-
 ![](./media/15310664432830/15310672314268.jpg)
-
 
 下载地址: `http://xclient.info/s/switchresx.html?t=64a5c270c4a7c9777a6a341e2ad66a41c0b0fdc3`
 
@@ -71,19 +65,15 @@ done
 
 ![](./media/15310664432830/15310670434000.jpg)
 
-
 ![](./media/15310664432830/15310670489647.jpg)
 
-
 ![](./media/15310664432830/15310670593148.jpg)
-
 
 ### 修改为任何来源
 
 - 打开终端，输入`sudo spctl --master-disable` 然后按回车
 
 ![](./media/15310664432830/15310671293769.jpg)
-
 
 ## 显示隐藏文件/文件夹
 
@@ -98,6 +88,3 @@ defaults write com.apple.finder AppleShowAllFiles -boolean true ; killall Finder
 ```md
 defaults write com.apple.finder AppleShowAllFiles -boolean false ; killall Finder
 ```
-
-
-
