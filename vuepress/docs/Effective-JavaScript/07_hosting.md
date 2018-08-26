@@ -12,23 +12,26 @@ function catName(name) {
 }
 ```
 
-即使我们在定义这个函数之前调用它，函数仍然可以工作。这是因为在 `JavaScript` 中执行上下文的工作方式造成的。
+理解 `JavaScript` 变量声明行为的一个好办法是吧变量声明看作由两部分组成, 即声明和赋值.
 
-变量提升也适用于其他数据类型和变量。变量可以在声明之前进行初始化和使用。但是如果没有初始化，就不能使用它们
-
-`JavaScript` 仅提升声明，而不提升初始化。如果你先使用的变量，再声明并初始化它，变量的值将是 `undefined`
+`JavaScript` 隐式地提升(`hoists`) 声明部分到封闭函数的顶部, 而将赋值留在原地.
 
 ```js
-var x = 1;                 // 声明 + 初始化 x
-console.log(x + " " + y);  // '1 undefined'
-var y = 2;                 // 声明 + 初始化 y
+function abc() {
+    console.log(foo);
+    var foo = 9;
+}
+abc();
+```
 
+上面的代码, `JavaScript` 会做隐式提升, 可以用下面代码理解:
 
-//上面的代码和下面的代码是一样的 
-var x = 1;                 // 声明 + 初始化 x
-var y;                     //声明 y
-console.log(x + " " + y);  //y 是未定义的
-y = 2;                     // 初始化  y 
+```js {2,4}
+function abc() {
+    var foo; // 1. 声明
+    console.log(foo);
+    foo = 9; // 2. 赋值
+}
 ```
 
 ::: tip 相关链接:

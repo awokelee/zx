@@ -15,16 +15,16 @@ module.exports = {
   themeConfig: {
     nav: [
       // { text: '笔记', link: '/home/' },
-      { text: 'Vue 基础', link: '/vue/' },
-      { text: '遇到的问题', link: '/notes/' },
-      { text: 'React 基础', link: '/react/' },
-      { text: 'JavaScript 知识点', link: '/Effective-JavaScript/' },
+      { text: 'Vue', link: '/vue/' },
+      { text: 'Notes', link: '/notes/' },
+      { text: 'React', link: '/react/' },
+      { text: 'JavaScript', link: '/Effective-JavaScript/' },
       // { text: 'Node', link: '/node/' },
       // { text: 'Protocol', link: '/protocol/' },
       // { text: 'Security', link: '/security/' },
       // { text: 'Code', link: '/code/' },
       {
-        text: '做过的项目',
+        text: 'Projects',
         items: [
           { text: 'JianShu (简书, React)', link: 'http://jianshu.gaodaqian.com' },
           { text: 'ALC (爱理财, React)', link: 'https://bcapp.alc.com.cn/mapp/' },
@@ -32,12 +32,12 @@ module.exports = {
           { text: 'Smarketing(智能营销系统, Vue)', link: '/smarketing/' },
         ]
       },
-      { text: '自己常用导航', link: 'http://nav.gaodaqian.com' },
+      { text: 'Nav', link: 'http://nav.gaodaqian.com' },
       // { text: 'Blogs', link: 'http://blog.gaodaqian.com' },
       { text: 'GitHub', link: 'https://github.com/awokelee' },
-      { text: '规范', link: '/standard/' },
+      { text: '_', link: '/standard/' },
       { text: '_', link: '/booklet/' },
-      { text: '设计模式', link: '/interview/' },
+      { text: '_', link: '/interview/' },
     ],
     sidebar: {
       '/home/': [
@@ -64,6 +64,11 @@ module.exports = {
         '07_hosting',
         '08_this',
         '09_new',
+        '10_闭包',
+        '11_高阶函数',
+        '12_proptotype',
+        '13_call-apply-bind',
+        '14_继承',
       ],
       '/smarketing/': [
         '',
