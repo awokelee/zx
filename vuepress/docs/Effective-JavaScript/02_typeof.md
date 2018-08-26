@@ -124,10 +124,13 @@ if (typeof v === "undefined") {
 
 ```js
 let a
+
 // 我们也可以这样判断 undefined
 a === undefined
+
 // 但是 undefined 不是保留字，能够在低版本浏览器被赋值
 let undefined = 1
+
 // 这样判断就会出错
 // 所以可以用下面的方式来判断，并且代码量更少
 // 因为 void 后面随便跟上一个组成表达式

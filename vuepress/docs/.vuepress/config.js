@@ -58,6 +58,12 @@ module.exports = {
         '01_转String',
         '02_typeof',
         '03_instanceof',
+        '04_double-equals',
+        '05_执行上下文',
+        '06_作用域链',
+        '07_hosting',
+        '08_this',
+        '09_new',
       ],
       '/smarketing/': [
         '',
