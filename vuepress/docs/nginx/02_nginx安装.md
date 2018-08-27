@@ -2,17 +2,17 @@
 
 [Nginx 官网](http://nginx.org/)
 
-## 版本介绍
+- `Nginx` 版本介绍
 
-- `Mainline version`, 开发版
+`Mainline version`, 开发版
 
-- `Stable version`, 稳定版
+`Stable version`, 稳定版
 
-- `Legacy version`, 历史版本
+`Legacy version`, 历史版本
 
-## 安装
+- `Nginx` 安装
 
-- 查看 centos 版本
+查看 `centos` 版本:
 
 ```bash {1}
 [root yum.repos.d]# lsb_release -a
@@ -52,14 +52,14 @@ gpgcheck=0
 enabled=1
 ```
 
-- `yum list|grep nginx`, 查看 `nginx yum`
+`yum list|grep nginx`, 查看 `nginx yum`
 
-- `yum install nginx`, 安装
+`yum install nginx`, 安装
 
-- `nginx -v`, 查看版本
+`nginx -v`, 查看版本
 
-- `nginx -V`,查看参数
+`nginx -V`,查看参数
 
-- `nginx -s reload -c /etc/nginx/nginx.conf` 重新加载配置文件
+`nginx -s reload -c /etc/nginx/nginx.conf` 重新加载配置文件
 
-- `vim /etc/nginx/conf.d/static_server.conf` 配置自定义的静态服务配置
+`vim /etc/nginx/conf.d/static_server.conf` 配置自定义的静态服务配置

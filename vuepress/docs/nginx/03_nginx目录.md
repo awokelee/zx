@@ -1,6 +1,6 @@
-# Nginx 目录及安装编译参数
+# Nginx 目录介绍
 
-## 目录列表
+- 目录列表
 
 采用 `yum` 方式安装的可以利用 `rpm -ql nginx` 命令查看对应软件的文件.
 
@@ -49,7 +49,7 @@
 /var/log/nginx
 ```
 
-## 安装目录讲解
+- 安装目录介绍
 
 下面的是以 `nginx-1.12.0` 列出的.
 
@@ -66,73 +66,3 @@
 `/usr/share/doc/nginx-1.12.2`<br>`/usr/share/man/man8/nginx.8.gz` | 文件、目录 | `Nginx` 手册和帮助文件
 `/var/cache/nginx` | 目录 | `Nginx` 的缓存目录
 `/var/log/nginx` | 目录 | `Nginx` 的日志目录
-
-## 安装编译参数
-
-```bash {1}
-[root yum.repos.d]# nginx -V
-nginx version: nginx/1.12.2
-built by gcc 4.8.5 20150623 (Red Hat 4.8.5-16) (GCC)
-built with OpenSSL 1.0.2k-fips  26 Jan 2017
-TLS SNI support enabled
-configure arguments:
---prefix=/usr/share/nginx
---sbin-path=/usr/sbin/nginx
---modules-path=/usr/lib64/nginx/modules
---conf-path=/etc/nginx/nginx.conf
---error-log-path=/var/log/nginx/error.log
---http-log-path=/var/log/nginx/access.log
---http-client-body-temp-path=/var/lib/nginx/tmp/client_body
---http-proxy-temp-path=/var/lib/nginx/tmp/proxy
---http-fastcgi-temp-path=/var/lib/nginx/tmp/fastcgi
---http-uwsgi-temp-path=/var/lib/nginx/tmp/uwsgi
---http-scgi-temp-path=/var/lib/nginx/tmp/scgi
---pid-path=/run/nginx.pid
---lock-path=/run/lock/subsys/nginx
---user=nginx
---group=nginx
---with-file-aio
---with-ipv6
---with-http_auth_request_module
---with-http_ssl_module
---with-http_v2_module
---with-http_realip_module
---with-http_addition_module
---with-http_xslt_module=dynamic
---with-http_image_filter_module=dynamic
---with-http_geoip_module=dynamic
---with-http_sub_module
---with-http_dav_module
---with-http_flv_module
---with-http_mp4_module
---with-http_gunzip_module
---with-http_gzip_static_module
---with-http_random_index_module
---with-http_secure_link_module
---with-http_degradation_module
---with-http_slice_module
---with-http_stub_status_module
---with-http_perl_module=dynamic
---with-mail=dynamic
---with-mail_ssl_module
---with-pcre
---with-pcre-jit
---with-stream=dynamic
---with-stream_ssl_module
---with-google_perftools_module
---with-debug
---with-cc-opt='-O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions
--fstack-protector-strong
---param=ssp-buffer-size=4 -grecord-gcc-switches
--specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -m64 -mtune=generic'
---with-ld-opt='-Wl,-z,relro
--specs=/usr/lib/rpm/redhat/redhat-hardened-ld -Wl,-E'
-```
-
-编译选项 | 作用
----------|---------
-`--prefix=/usr/share/nginx`<br>`--sbin-path=/usr/sbin/nginx`<br>`--modules-path=/usr/lib64/nginx/modules`<br>`--error-log-path=/var/log/nginx/error.log`<br>`--http-log-path=/var/log/nginx/access.log`<br>`--conf-path=/etc/nginx/nginx.conf`<br>`--pid-path=/run/nginx.pid`<br>`--lock-path=/run/lock/subsys/nginx`| 安装的目录或路径
-`--http-client-body-temp-path=/var/lib/nginx/tmp/client_body`<br>`--http-proxy-temp-path=/var/lib/nginx/tmp/proxy`<br>`--http-fastcgi-temp-path=/var/lib/nginx/tmp/fastcgi`<br>`--http-uwsgi-temp-path=/var/lib/nginx/tmp/uwsgi`<br>`--http-scgi-temp-path=/var/lib/nginx/tmp/scgi`| 执行对应模块时, Nginx 所保留的临时性文件
-`--user=nginx`<br>`--group=nginx` | 设定 `Nginx` 进程启动的用户和用户组
-`--with-cc-opt=parameters` | 设置额外的参数将被添加到 `CFLAGS` 变量
-`--with-ld-opt=parameters` | 设置附加的参数, 链接系统库

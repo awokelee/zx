@@ -53,14 +53,18 @@ module.exports = {
       '/nginx/': [
         '',
         '00_环境调试',
+        '00_nginx常用命令',
         '01_nginx介绍',
         '02_nginx安装',
         '03_nginx目录',
-        '04_静态资源WEB服务',
-        '04_浏览器缓存',
-        '05_代理服务',
-        '06_负载均衡调度器SLB',
-        '07_动态缓存',
+        '04_安装编译参数',
+        '05_nginx_conf',
+
+        /* '33_静态资源WEB服务',
+        '33_sendfile',
+        '33_tcp_nopush',
+        '33_tcp_nodelay',
+        '33_gzip', */
       ],
       '/Effective-JavaScript/': [
         '',
