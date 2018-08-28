@@ -439,6 +439,8 @@ function genNginxList() {
       '36_https介绍',
       '37_ca证书',
       '38_https配置',
+      '39_配置苹果要求的证书',
+      // '40_https服务优化',
     ]
   }]
 }
