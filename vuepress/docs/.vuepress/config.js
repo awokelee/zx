@@ -59,6 +59,13 @@ module.exports = {
         '03_nginx目录',
         '04_安装编译参数',
         '05_nginx_conf',
+        '06_http',
+        '07_log',
+        '08_http_stub_status_module',
+        '09_http_random_index_module',
+        '10_http_sub_module',
+        '11_请求限制',
+        '12_访问控制',
 
         /* '33_静态资源WEB服务',
         '33_sendfile',
