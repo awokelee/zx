@@ -39,6 +39,11 @@ nginx -V
 # 查看 nginx 对应软件的文件
 rpm -ql nginx
 
+# 查看 openssl 版本
+openssl version
+# 查看是否安装 openssl
+rpm -qa|grep open
+
 # 检查 nginx 配置文件是否正确
 nginx -t
 
@@ -46,9 +51,28 @@ nginx -t
 nginx -s reload
 # 重新加载 nginx 指定配置文件
 nginx -s reload -c /etc/nginx/nginx.conf
+# 停 nginx
+nginx -s stop -c /etc/nginx/nginx.conf
+# 启 nginx
+nginx -c /etc/nginx/nginx.conf
+
+# 查看 https
+netstat -luntp|grep 443
 
 # 不对外开放 8002 端口的请求
 iptables -I INPUT -p tcp --dport 8002 -j DROP
+
+# 查看 nginx 进程
+ps -aux|grep nginx
+
+# 查看端口
+netstat -luntp|grep 8080
+
+# 结束进程
+kill pid
+
+# 启动 tomcat 打开日志
+sh catalina.sh start;tail -f ../logs/catalina.out
 ```
 
 - `ab(ApacheBench)` 压力测试工具

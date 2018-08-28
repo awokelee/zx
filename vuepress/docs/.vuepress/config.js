@@ -18,7 +18,7 @@ module.exports = {
       { text: 'Vue', link: '/vue/' },
       { text: 'Notes', link: '/notes/' },
       { text: 'React', link: '/react/' },
-      { text: 'Nginx', link: '/nginx/' },
+      { text: 'Nginx 中间件', link: '/nginx/' },
       { text: 'JavaScript', link: '/Effective-JavaScript/' },
       // { text: 'Node', link: '/node/' },
       // { text: 'Protocol', link: '/protocol/' },
@@ -406,7 +406,7 @@ function genNginxList() {
       '23_重定向',
       '24_header',
       '25_timeout',
-      '26.真实服务器配置',
+      '26_真实服务器配置',
     ]
   }, {
     title: 'Nginx 作为负载均衡服务',
@@ -417,12 +417,28 @@ function genNginxList() {
       '29_轮询策略',
       '30_缓存类型',
       '31_分片请求',
+      '32_动静分离',
     ]
-  }, {
-    title: 'Nginx 作为缓存服务',
+  },{
+    title: 'Nginx 的 rewrite 规则',
     collapsable: false,
     children: [
-
+      '33_rewrite',
+    ]
+  }, {
+    title: 'Nginx 高级模块',
+    collapsable: false,
+    children: [
+      '34_secure_link_module',
+      '35_geoip_module',
+    ]
+  }, {
+    title: 'Nginx 中的 HTTPS',
+    collapsable: false,
+    children: [
+      '36_https介绍',
+      '37_ca证书',
+      '38_https配置',
     ]
   }]
 }
