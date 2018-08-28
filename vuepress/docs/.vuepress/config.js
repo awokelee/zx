@@ -50,29 +50,7 @@ module.exports = {
         // 'promise',
         // '浏览器兼容性问题',
       ],
-      '/nginx/': [
-        '',
-        '00_环境调试',
-        '00_nginx常用命令',
-        '01_nginx介绍',
-        '02_nginx安装',
-        '03_nginx目录',
-        '04_安装编译参数',
-        '05_nginx_conf',
-        '06_http',
-        '07_log',
-        '08_http_stub_status_module',
-        '09_http_random_index_module',
-        '10_http_sub_module',
-        '11_请求限制',
-        '12_访问控制',
-
-        /* '33_静态资源WEB服务',
-        '33_sendfile',
-        '33_tcp_nopush',
-        '33_tcp_nodelay',
-        '33_gzip', */
-      ],
+      '/nginx/': genNginxList(),
       '/Effective-JavaScript/': [
         '',
         '00_use-strict',
@@ -384,3 +362,68 @@ module.exports = {
     }
   }
 }
+
+
+function genNginxList() {
+  return [{
+    title: 'Nginx 基础',
+    collapsable: false,
+    children: [
+      '00_nginx常用命令',
+      '00_环境调试',
+      '01_nginx介绍',
+      '02_nginx安装',
+      '03_nginx目录',
+      '04_安装编译参数',
+      '05_nginx_conf',
+      '06_http',
+      '07_log',
+      '08_http_stub_status_module',
+      '09_http_random_index_module',
+      '10_http_sub_module',
+      '11_请求限制',
+      '12_访问控制',
+    ]
+  }, {
+    title: 'Nginx 作为静态资源 WEB 服务',
+    collapsable: false,
+    children: [
+      '13_静态资源WEB服务',
+      '14_sendfile',
+      '15_tcp_nodelay',
+      '16_tcp_nopush',
+      '17_gzip',
+      '18_cache',
+      '19_跨域配置',
+      '20_防盗链',
+    ]
+  }, {
+    title: 'Nginx 作为代理服务',
+    collapsable: false,
+    children: [
+      '21_代理',
+      '22_配置缓冲区',
+      '23_重定向',
+      '24_header',
+      '25_timeout',
+      '26.真实服务器配置',
+    ]
+  }, {
+    title: 'Nginx 作为负载均衡服务',
+    collapsable: false,
+    children: [
+      '27_负载均衡介绍',
+      '28_负载均衡配置',
+      '29_轮询策略',
+      '30_缓存类型',
+      '31_分片请求',
+    ]
+  }, {
+    title: 'Nginx 作为缓存服务',
+    collapsable: false,
+    children: [
+
+    ]
+  }]
+}
+

@@ -1,10 +1,10 @@
-# gzip
+# gzip 压缩
 
 压缩传输
 
 ![](./media/gzip.png)
 
-- 配置语法
+### 配置语法
 
 ```md
 Syntax: gzip  on|off;
@@ -12,7 +12,7 @@ Default: gzip off;
 Context: http, server, location, if in location
 ```
 
-- 压缩比
+### 压缩比
 
 压缩比越高文件越小, 但是耗服务性能.
 
@@ -22,7 +22,7 @@ Default: gzip_comp_level 1;
 Context: http, server, location
 ```
 
-- 压缩的协议
+### 压缩的协议
 
 ```md
 Syntax: gzip_http_version 1.0|1.1;
@@ -30,14 +30,14 @@ Default: gzip_http_version 1.1;
 Context: http, server, location
 ```
 
-- 扩展 `Nginx` 压缩模块
+### 扩展 `Nginx` 压缩模块
 
 `http_gzip_static_module` 预读 `gzip` 功能.
 `http_gunzip_module` 应用支持 `gunzip` 的压缩方式.
 `http_gzip_static_module` 预读 `gzip` 功能.
 `http_gzip_static_module` 预读 `gzip` 功能.
 
-- 配置文件内容
+### 配置文件内容
 
 新建 `/etc/nginx/conf.d/static_server.conf` 文件内容如下:
 

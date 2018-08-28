@@ -46,6 +46,9 @@ nginx -t
 nginx -s reload
 # 重新加载 nginx 指定配置文件
 nginx -s reload -c /etc/nginx/nginx.conf
+
+# 不对外开放 8002 端口的请求
+iptables -I INPUT -p tcp --dport 8002 -j DROP
 ```
 
 - `ab(ApacheBench)` 压力测试工具
