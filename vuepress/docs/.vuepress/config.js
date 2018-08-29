@@ -14,16 +14,14 @@ module.exports = {
   },
   themeConfig: {
     nav: [
-      { text: '笔记', link: '/home/' },
       { text: 'Vue', link: '/vue/' },
-      { text: 'Notes', link: '/notes/' },
       { text: 'React', link: '/react/' },
-      { text: 'Nginx 中间件', link: '/nginx/' },
-      { text: 'JavaScript', link: '/Effective-JavaScript/' },
+      { text: 'Nginx', link: '/nginx/' },
       // { text: 'Node', link: '/node/' },
       // { text: 'Protocol', link: '/protocol/' },
       // { text: 'Security', link: '/security/' },
       // { text: 'Code', link: '/code/' },
+      { text: 'Nav', link: 'http://nav.gaodaqian.com' },
       {
         text: 'Projects',
         items: [
@@ -33,12 +31,19 @@ module.exports = {
           { text: 'Smarketing(智能营销系统, Vue)', link: '/smarketing/' },
         ]
       },
-      { text: 'Nav', link: 'http://nav.gaodaqian.com' },
-      // { text: 'Blogs', link: 'http://blog.gaodaqian.com' },
       { text: 'GitHub', link: 'https://github.com/awokelee' },
-      { text: '_', link: '/standard/' },
-      { text: '_', link: '/booklet/' },
-      { text: '_', link: '/interview/' },
+      {
+        text: '.',
+        items: [
+          { text: '遇到的问题', link: '/notes/' },
+          { text: 'Blogs', link: 'http://blog.gaodaqian.com' },
+          { text: 'JavaScript', link: '/Effective-JavaScript/' },
+          { text: '规范', link: '/standard/' },
+          { text: '小册', link: '/booklet/' },
+          { text: '基础', link: '/interview/' },
+          { text: '其他', link: '/home/' },
+        ]
+      },
     ],
     sidebar: {
       '/home/': [
@@ -369,6 +374,7 @@ function genNginxList() {
     title: 'Nginx 基础',
     collapsable: false,
     children: [
+      '00_一份通用配置',
       '00_nginx常用命令',
       '00_环境调试',
       '01_nginx介绍',
@@ -440,7 +446,56 @@ function genNginxList() {
       '37_ca证书',
       '38_https配置',
       '39_配置苹果要求的证书',
-      // '40_https服务优化',
+      '40_https服务优化',
+    ]
+  }, {
+    title: 'Nginx 与 Lua 开发',
+    collapsable: false,
+    children: [
+      '41_Lua基础语法',
+      '42_nginx的lua环境',
+      '43_nginx调用lua模块指令',
+      '44_灰度发布',
+    ]
+  }, {
+    title: 'Nginx 常见问题',
+    collapsable: false,
+    children: [
+      '45_server_name优先级',
+      '46_location匹配优先级',
+      '47_try_files使用',
+      '48_alias和root区别',
+      '49_传递用户真实ip',
+      '50_nginx常见错误码',
+    ]
+  }, {
+    title: 'Nginx 性能优化',
+    collapsable: false,
+    children: [
+     '51_性能优化考虑的点',
+     '52_压测工具ab',
+     '53_系统与nginx性能优化',
+     '54_文件句柄设置',
+     '55_cpu亲和配置',
+     '56_通用配置优化',
+    ]
+  }, {
+    title: 'Nginx 安全',
+    collapsable: false,
+    children: [
+     '57_常见恶意行为',
+     '58_暴力破解',
+     '58_文件上传漏洞',
+     '59_sql注入',
+     '60_waf',
+     '66_cc攻击',
+     '67_nginx漏洞和新特性',
+    ]
+  }, {
+    title: 'Nginx 架构设计',
+    collapsable: false,
+    children: [
+     '68_nginx架构'
     ]
   }]
 }

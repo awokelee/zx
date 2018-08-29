@@ -1,5 +1,7 @@
 # Nginx 常用命令
 
+### 用到的命令
+
 ```bash
 # 确认 `yum` 可用
 yum list|grep gcc
@@ -73,16 +75,20 @@ kill pid
 
 # 启动 tomcat 打开日志
 sh catalina.sh start;tail -f ../logs/catalina.out
+
+# 解压
+gunzip GeoIP.dat.gz
+gunzip GeoLiteCity.dat.gz
 ```
 
-- `ab(ApacheBench)` 压力测试工具
+### `ab(ApacheBench)` 压力测试工具
 
 `ab -n 50 -c 20 http://gaodaqian.com`
 
 总共 50 个请求数, 并发 20.
 
 ```bash
-[root@iZbp13kacqfe8vs6elfunrZ ~]# ab -n 50 -c 20 http://www.gaodaqian.com/wei.png
+[root ~]# ab -n 50 -c 20 http://www.gaodaqian.com/wei.png
 This is ApacheBench, Version 2.3 <$Revision: 1430300 $>
 Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
 Licensed to The Apache Software Foundation, http://www.apache.org/
