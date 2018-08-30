@@ -1,12 +1,11 @@
+<template>
+  <div>个人中心1</div>
+</template>
 <script>
 export default {
-  created () {
-    console.log('hello')
-  }
+
 }
 </script>
-
 <style>
 
 </style>
-

@@ -512,8 +512,8 @@ function genMpvueList(){
         '00_微信开发者工具',
         '01_小程序目录介绍',
         '03_为什么用vuejs',
-        '05_koa2入门',
-        '06_koa_router',
+        // '05_koa2入门',
+        // '06_koa_router',
         '04_mpvue介绍',
         '07_本地开发环境搭建',
         
