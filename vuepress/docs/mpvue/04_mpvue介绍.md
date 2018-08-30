@@ -1,4 +1,4 @@
-# mpvue 起步
+# mpvue 客户端环境搭建
 
 `mpvue` [github 地址](https://github.com/Meituan-Dianping/mpvue) `Vue.js` 开发小程序的前端框架。
 

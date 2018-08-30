@@ -7,7 +7,8 @@
 		"minified": true,
 		"newFeature": true
 	},
-	"miniprogramRoot": "./dist/",
+  "miniprogramRoot": "./dist/",
+  "qcloudRoot": "./server",
 	"compileType": "miniprogram",
 	"appid": "wx2ec046bd6405c9c6",
 	"projectname": "mpvue-project",
