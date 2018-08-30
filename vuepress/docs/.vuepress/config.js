@@ -506,12 +506,14 @@ function genNginxList() {
 function genMpvueList(){
   return [
     {
-      title: 'MPVue 小程序基础',
+      title: 'myvue 开发小程序基础',
       collapsable: false,
       children: [
         '00_微信开发者工具',
         '01_小程序目录介绍',
         '03_为什么用vuejs',
+        '04_mpvue介绍',
+        '05_koa2入门',
         
       ]
     }
