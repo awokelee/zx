@@ -511,6 +511,7 @@ function genMpvueList(){
       children: [
         '00_微信开发者工具',
         '01_小程序目录介绍',
+        '03_为什么用vuejs',
         
       ]
     }
