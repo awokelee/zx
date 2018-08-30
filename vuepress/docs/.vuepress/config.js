@@ -17,6 +17,7 @@ module.exports = {
       { text: 'Vue', link: '/vue/' },
       { text: 'React', link: '/react/' },
       { text: 'Nginx', link: '/nginx/' },
+      { text: '小程序', link: '/mpvue/' },
       // { text: 'Node', link: '/node/' },
       // { text: 'Protocol', link: '/protocol/' },
       // { text: 'Security', link: '/security/' },
@@ -29,6 +30,7 @@ module.exports = {
           { text: 'ALC (爱理财, React)', link: 'https://bcapp.alc.com.cn/mapp/' },
           { text: 'Qunar (去哪儿, Vue)', link: 'http://qunar.gaodaqian.com' },
           { text: 'Smarketing(智能营销系统, Vue)', link: '/smarketing/' },
+          { text: 'ALC (爱理财, AngularJS)', link: 'https://bcapp.alc.com.cn/bcapph5v19/#/balanceManagement' },
         ]
       },
       { text: 'GitHub', link: 'https://github.com/awokelee' },
@@ -56,6 +58,7 @@ module.exports = {
         // '浏览器兼容性问题',
       ],
       '/nginx/': genNginxList(),
+      '/mpvue/': genMpvueList(),
       '/Effective-JavaScript/': [
         '',
         '00_use-strict',
@@ -500,3 +503,16 @@ function genNginxList() {
   }]
 }
 
+function genMpvueList(){
+  return [
+    {
+      title: 'MPVue 小程序基础',
+      collapsable: false,
+      children: [
+        '00_微信开发者工具',
+        '01_小程序目录介绍',
+        
+      ]
+    }
+  ]
+}
