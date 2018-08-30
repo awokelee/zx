@@ -1,5 +1,5 @@
 <template>
-  <div>个人中心1</div>
+  <div>评论</div>
 </template>
 <script>
 export default {

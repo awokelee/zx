@@ -516,7 +516,9 @@ function genMpvueList(){
         // '06_koa_router',
         '04_mpvue介绍',
         '07_本地开发环境搭建',
-        
+        '08_wafer2_client_sdk',
+        '09_授权获取用户信息',
+        '10_使用sass'
       ]
     }
   ]
