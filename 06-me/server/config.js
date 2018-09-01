@@ -2,12 +2,13 @@ const CONF = {
     serverHost: 'localhost',
     tunnelServerUrl: '',
     tunnelSignatureKey: '27fb7d1c161b7ca52d73cce0f1d833f9f5b5ec89',
-    // 腾讯云相关配置可以查看云 API 密钥控制台：https://console.cloud.tencent.com/capi
-    qcloudAppId: '1257430707',
-    qcloudSecretId: 'AKIDyQgkdNesgKoAKLltwBICQtCJRUM7v9RW',
-    qcloudSecretKey: 'd9YltqbjlS0SluBLlCWudKwOeibI7pQq',
+      // 腾讯云相关配置可以查看云 API 秘钥控制台：https://console.cloud.tencent.com/capi
+    qcloudAppId: '1256390202',
+    qcloudSecretId: 'AKIDZx89wVivnRpyrVv4ze7MM6brvoTu62jA',
+    qcloudSecretKey: 'JM9gxykGcjaBZidKn11nKdleJlzzlPqY',
     wxMessageToken: 'weixinmsgtoken',
     networkTimeout: 30000,
+
 
     port: '5757',
     rootPathname: '',
@@ -26,12 +27,13 @@ const CONF = {
      * 若使用了腾讯云微信小程序解决方案
      * 开发环境下，MySQL 的初始密码为您的微信小程序 appid
      */
+    // create database cAuth
     mysql: {
         host: 'localhost',
         port: 3306,
         user: 'root',
         db: 'cAuth',
-        pass: '123456',
+        pass: '',
         char: 'utf8mb4'
     },
 
@@ -48,7 +50,8 @@ const CONF = {
     },
 
     // 微信登录态有效期
-    wxLoginExpires: 7200
+    wxLoginExpires: 7200,
+    wxMessageToken: 'abcdefgh'
 }
 
 module.exports = CONF

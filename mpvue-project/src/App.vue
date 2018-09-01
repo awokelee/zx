@@ -14,7 +14,7 @@ export default {
   margin-bottom: 10rpx;
   padding-left: 10rpx;
   border-radius: 2rpx;
-  font-size: 16rpx;
+  font-size: 16px;
   line-height: 60rpx;
   height: 60rpx;
   width: 100%;

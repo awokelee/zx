@@ -17,7 +17,6 @@ export default {
   },
   created() {
     this.userInfo = wx.getStorageSync('userInfo')
-    console.log(this.userInfo, 44)
   }
 }
 </script>

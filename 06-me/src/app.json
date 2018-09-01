@@ -1,6 +1,5 @@
 {
   "pages": [
-    "pages/login/main",
     "pages/me/main",
     "pages/books/main",
     "pages/comments/main"

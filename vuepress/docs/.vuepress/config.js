@@ -518,7 +518,8 @@ function genMpvueList(){
         '07_本地开发环境搭建',
         '08_wafer2_client_sdk',
         '09_授权获取用户信息',
-        '10_使用sass'
+        '10_使用sass',
+        '99_遇到的问题'
       ]
     }
   ]
