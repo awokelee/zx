@@ -8,6 +8,9 @@ export default {
 </script>
 
 <style>
+.text-primary {
+  color: #EA5A49;
+}
 .btn{
   color: #fff;
   background: #EA5A49;

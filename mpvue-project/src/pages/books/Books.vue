@@ -1,31 +1,38 @@
 <template>
-  <div class="container">
-    <div class="userInfo">
-      <img src="" alt="">
-      <p></p>
-    </div>
-    <YearProgress></YearProgress>
-    <button class="btn">我的</button>
+  <div>
+    <Card v-for='book in books' :key='book.id' :book='book'></Card>
   </div>
 </template>
 <script>
+import { get } from '@/util'
+import Card from '@/components/Card'
 export default {
+  components: {
+    Card
+  },
   data() {
     return {
-      userInfo: {}
+      books: []
     }
   },
   created() {
-    this.userInfo = wx.getStorageSync('userInfo')
+    this.getList()
+  },
+  onPullDownRefresh () {
+    this.getList()
+    console.log('下拉')
+  },
+  methods: {
+    async getList(){
+      wx.showNavigationBarLoading()
+      const books = await get('/weapp/booklist')
+      this.books = books.list
+      wx.stopPullDownRefresh()
+      wx.hideNavigationBarLoading()
+    }
   }
 }
 </script>
 <style lang="scss">
-.container {
-  padding: 0 30rpx;
-  .userInfo {
-    margin-top: 100rpx;
-  }
-}
 </style>
 

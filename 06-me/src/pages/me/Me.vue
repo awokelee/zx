@@ -75,7 +75,7 @@ export default {
 .container{
   padding:0 30rpx;
 
-}  
+}
 .userinfo{
   margin-top:100rpx;
   text-align:center;
