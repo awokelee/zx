@@ -11,6 +11,11 @@ export default {
 .text-primary {
   color: #EA5A49;
 }
+.text-footer {
+  text-align: center;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
 .btn{
   color: #fff;
   background: #EA5A49;
