@@ -1,4 +1,5 @@
-const host = 'http://localhost:5757'
+const host = 'https://gaodaqian.com'
+// const host = 'http://localhost:5757'
 
 const config = {
   host,
