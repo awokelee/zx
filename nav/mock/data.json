@@ -252,6 +252,11 @@
     { 
       "id": "tutorialItem", "iconfont": "iconfont icon-shu-copy", "text": "教程文档", 
       "list": [{
+        "href": "https://loremwalker.github.io/fq-book/#/",
+        "src": "./static/images/冲出你的窗口.png",
+        "name": "这本书能让你连接互联网",
+        "desc": "科学上网 《这本书能让你连接互联网 》"
+      },{
         "href": "http://es6.ruanyifeng.com/",
         "src": "./static/images/cover-3rd.jpg",
         "name": "ECMAScript 6 入门",
