@@ -13,6 +13,7 @@ const security = require('./category/security')
 const interview = require('./category/interview')
 const code = require('./category/code')
 const home = require('./category/home')
+const vueAdvanced = require('./category/vueAdvanced')
 
 module.exports = {
   // base: '/vue-press/',
@@ -33,6 +34,7 @@ module.exports = {
       { text: 'Vue', link: '/vue/' },
       { text: 'React', link: '/react/' },
       { text: 'Nginx', link: '/nginx/' },
+      { text: 'Vue 进阶', link: '/vue-advanced/' },
       { text: '小程序', link: '/mpvue/' },
       // { text: 'Node', link: '/node/' },
       // { text: 'Protocol', link: '/protocol/' },
@@ -79,6 +81,7 @@ module.exports = {
       '/code/': code.getList(),
       '/standard/': standard.getList(),
       '/booklet/': booklet.getList(),
+      '/vue-advanced/': vueAdvanced.getList(),
       '/': [ '', 'contact', 'about']
     }
   }
