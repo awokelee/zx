@@ -1,4 +1,4 @@
-# redux 的 combineReducers 及完整案例
+# redux 的 combineReducers 及案例
 
 `redux` 的 `combineReducers` 主要是拆分 `reducer`, 分块管理, 便于维护和管理.
 
