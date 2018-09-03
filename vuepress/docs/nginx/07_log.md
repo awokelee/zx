@@ -1,4 +1,4 @@
-# log_fromat 日志相关
+# log_format 日志相关
 
 - `error.log`
 
@@ -21,15 +21,15 @@ request: "GET //wp-login.php HTTP/1.1", host: "gaodaqian.com"
 
 记录每次 `http` 请求的访问状态.
 
-- `log_fromat`
+- `log_format`
 
-`nginx` `log` 记录了很多信息, 每个信息可以理解为 `nginx` 的变量, `log_fromat` 就是把变量都记录到日志里去.
+`nginx` `log` 记录了很多信息, 每个信息可以理解为 `nginx` 的变量, `log_format` 就是把变量都记录到日志里去.
 
 配置语法:
 
 ```bash
-Syntax: log_fromat name [escape=default|json] string ...;
-Default: log_fromat combined "...";
+Syntax: log_format name [escape=default|json] string ...;
+Default: log_format combined "...";
 Context: http
 ```
 

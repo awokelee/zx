@@ -1,4 +1,4 @@
-# Navicat 图形化远程操作数据库
+# Navicat 图形化远程操作数据库 10060
 
 每次远程连接到阿里云服务器, 再用命令行操作数据库, 麻烦不方便, 我这里用的是 `Navicat` 连接 `mysql` 的客户端. [Navicat](http://www.formysql.com/)
 
