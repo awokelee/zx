@@ -81,7 +81,16 @@ module.exports = {
       '/code/': code.getList(),
       '/standard/': standard.getList(),
       '/booklet/': booklet.getList(),
-      '/vue-advanced/': vueAdvanced.getList(),
+      '/vue-advanced/': [
+        {
+          title: 'Vue 进阶',
+          collapsable: false,
+          children: [
+            '00_vue实例',
+            '01_vue生命周期',
+          ]
+        },
+      ],
       '/': [ '', 'contact', 'about']
     }
   }
