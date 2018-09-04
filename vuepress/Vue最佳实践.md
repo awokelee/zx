@@ -1,5 +1,16 @@
 # 笔记
 
+分情况使用 v-show 少用 v-if
+
+watch 和 computed
+
+v-for
+
+v-model.lazy
+
+路由传参 用 props: true
+
+
 Angular: 2009年发布, 被 google 收购, 基于 html 的大而全的 MVC 框架, 后端构建 crud 应用.
 
 React: 2013年5月开源, Facebook, 最新版本 16.x, 基于 js 的视图层框架, 适合构建复杂的 web 应用.
