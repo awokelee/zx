@@ -34,7 +34,7 @@ mounted() {
 
 会把 `/app/:id` 的 参数 `:id` 当作 `props` 传进去, 可以不通过 `this.$route.params` 去获取.
 
-这里的 `:id` 可以通过组件的 `props:['id']` 获取. 用于解耦. 推荐!
+这里的 `:id` 可以通过组件的 `props:['id']` 获取. 用于解耦. **推荐!**
 
 ```js
 {

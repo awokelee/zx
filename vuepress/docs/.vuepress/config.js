@@ -110,7 +110,8 @@ module.exports = {
           children: [
             '10_router集成',
             '11_router配置',
-            '12_router参数传递'
+            '12_router参数传递',
+            '13_router高级'
           ]
         },
       ],
