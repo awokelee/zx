@@ -1,5 +1,11 @@
 # vuex 集成
 
+### vuex 流程
+
+![](./media/vuex.png)
+
+![](./media/vuex2.png)
+
 ### 安装
 
 `npm i vuex -S`
