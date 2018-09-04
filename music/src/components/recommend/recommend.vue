@@ -13,7 +13,7 @@ export default {
   methods: {
     _getRecommend () {
       getRecommend().then(res => {
-        console.log(res)
+        console.log('======', res)
       })
     }
   }
