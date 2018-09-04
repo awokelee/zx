@@ -31,10 +31,16 @@ module.exports = {
   },
   themeConfig: {
     nav: [
-      { text: 'Vue', link: '/vue/' },
+      {
+        text: 'Vue',
+        items: [
+          { text: 'Vue 零基础搭建项目', link: '/vue/' },
+          { text: 'Vue 项目中遇到的问题', link: '/notes/' },
+          { text: 'Vue 核心技术(Vue+Vue-Router+Vuex+SSR)', link: '/vue-advanced/' },
+        ]
+      },
       { text: 'React', link: '/react/' },
       { text: 'Nginx', link: '/nginx/' },
-      { text: 'Vue 进阶', link: '/vue-advanced/' },
       { text: '小程序', link: '/mpvue/' },
       // { text: 'Node', link: '/node/' },
       // { text: 'Protocol', link: '/protocol/' },
@@ -55,7 +61,6 @@ module.exports = {
       {
         text: '.',
         items: [
-          { text: '遇到的问题', link: '/notes/' },
           { text: 'Blogs', link: 'http://blog.gaodaqian.com' },
           { text: 'JavaScript', link: '/Effective-JavaScript/' },
           { text: '规范', link: '/standard/' },
@@ -81,52 +86,7 @@ module.exports = {
       '/code/': code.getList(),
       '/standard/': standard.getList(),
       '/booklet/': booklet.getList(),
-      '/vue-advanced/': [
-        {
-          title: 'Vue 进阶基础',
-          collapsable: false,
-          children: [
-            '00_vue实例',
-            '01_vue生命周期',
-            '02_数据绑定',
-            '03_computed和watch',
-            '04_vue的原生指令',
-          ]
-        },
-        {
-          title: 'Vue 组件相关',
-          collapsable: false,
-          children: [
-            '05_定义组件',
-            '06_组件继承',
-            '07_双向绑定',
-            '08_高级属性',
-            '09_render函数',
-          ]
-        },
-        {
-          title: 'Vue-router 路由相关',
-          collapsable: false,
-          children: [
-            '10_router集成',
-            '11_router配置',
-            '12_router参数传递',
-            '13_router高级'
-          ]
-        },
-        {
-          title: 'Vuex 相关',
-          collapsable: false,
-          children: [
-            '14_vuex集成',
-            '15_state和getters',
-            '16_mutation和action',
-            '17_vuex模块',
-            '18_vuex热更替',
-            '19_vuex其他api',
-          ]
-        },
-      ],
+      '/vue-advanced/': vueAdvanced.getList(),
       '/': [ '', 'contact', 'about']
     }
   }

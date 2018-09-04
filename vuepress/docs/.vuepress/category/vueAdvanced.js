@@ -41,6 +41,8 @@ module.exports = {
           '15_state和getters',
           '16_mutation和action',
           '17_vuex模块',
+          '18_vuex热更替',
+          '19_vuex其他api',
         ]
       },
     ]
