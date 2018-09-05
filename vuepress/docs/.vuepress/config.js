@@ -50,12 +50,12 @@ module.exports = {
       {
         text: 'Projects',
         items: [
-          { text: 'Books (前端书籍推荐, mpvue 小程序)', link: '/mpvue/' },
-          { text: 'JianShu (简书, React)', link: 'http://jianshu.gaodaqian.com' },
+          { text: 'Books (前端书籍推荐, mpvue 小程序 + MySQL + Linux)', link: '/mpvue/' },
+          { text: 'JianShu (简书, React + Redux)', link: 'http://jianshu.gaodaqian.com' },
           { text: 'ALC (爱理财, React)', link: 'https://bcapp.alc.com.cn/mapp/' },
-          { text: 'Qunar (去哪儿, Vue)', link: 'http://qunar.gaodaqian.com' },
-          { text: 'Smarketing(智能营销系统, Vue)', link: '/smarketing/' },
-          { text: 'ALC (爱理财, AngularJS)', link: 'https://bcapp.alc.com.cn/bcapph5v19/#/balanceManagement' },
+          { text: 'Qunar (去哪儿, Vue + Vuex)', link: 'http://qunar.gaodaqian.com' },
+          { text: 'Smarketing(智能营销系统, Vue + Vuex)', link: '/smarketing/' },
+          { text: 'ALC (爱理财, AngularJS + Ionic)', link: 'https://bcapp.alc.com.cn/bcapph5v19/#/balanceManagement' },
         ]
       },
       { text: 'GitHub', link: 'https://github.com/awokelee' },
