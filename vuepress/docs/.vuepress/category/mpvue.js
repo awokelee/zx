@@ -23,6 +23,7 @@ module.exports = {
         title: '阿里云部署小程序服务端',
         collapsable: false,
         children: [
+          '11_客户端上传代码及审核',
           '11_新建数据库',
           '12_navicat远程操作数据库',
           '13_nodejs环境搭建',
