@@ -5,3 +5,7 @@
 
 该部分内容根据慕课网 [全网首发mpvue课程 小程序全栈开发](https://coding.imooc.com/class/218.html) 整理.
 :::
+
+### 自己的小程序 DEMO
+
+![](./media/books.png)

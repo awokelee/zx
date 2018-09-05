@@ -50,6 +50,7 @@ module.exports = {
       {
         text: 'Projects',
         items: [
+          { text: 'Books (前端书籍推荐, mpvue 小程序)', link: '/mpvue/' },
           { text: 'JianShu (简书, React)', link: 'http://jianshu.gaodaqian.com' },
           { text: 'ALC (爱理财, React)', link: 'https://bcapp.alc.com.cn/mapp/' },
           { text: 'Qunar (去哪儿, Vue)', link: 'http://qunar.gaodaqian.com' },
