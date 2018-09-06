@@ -72,17 +72,7 @@ module.exports = {
       },
     ],
     sidebar: {
-      '/home/': [
-        '',
-        'mac-soft',
-        'vscode',
-        'eslint',
-        'securecrt',
-        'puppeteer在linux下报错',
-        'pm2',
-        // 'promise',
-        // '浏览器兼容性问题',
-      ],
+      '/home/': home.getList(),
       '/nginx/': nginx.getList(),
       '/mpvue/': mpvue.getList(),
       '/Effective-JavaScript/': EffectiveJavaScript.getList(),
