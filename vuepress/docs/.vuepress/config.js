@@ -37,11 +37,13 @@ module.exports = {
           { text: 'Vue 零基础搭建项目', link: '/vue/' },
           { text: 'Vue 项目中遇到的问题', link: '/notes/' },
           { text: 'Vue 核心技术(Vue+Vue-Router+Vuex+SSR)', link: '/vue-advanced/' },
+          { text: 'Vue 最佳实践', link: '/vue-best-practice/' },
         ]
       },
       { text: 'React', link: '/react/' },
       { text: 'Nginx', link: '/nginx/' },
       { text: '小程序', link: '/mpvue/' },
+      { text: '面试', link: '/fe-interview/' },
       // { text: 'Node', link: '/node/' },
       // { text: 'Protocol', link: '/protocol/' },
       // { text: 'Security', link: '/security/' },
@@ -50,7 +52,7 @@ module.exports = {
       {
         text: 'Projects',
         items: [
-          { text: 'Books (前端书籍推荐, mpvue 小程序 + MySQL + Linux)', link: '/mpvue/' },
+          { text: 'Books (前端书籍推荐, 小程序 mpvue + Koa + HTTPS + Nginx)', link: '/mpvue/' },
           { text: 'JianShu (简书, React + Redux)', link: 'http://jianshu.gaodaqian.com' },
           { text: 'ALC (爱理财, React)', link: 'https://bcapp.alc.com.cn/mapp/' },
           { text: 'Qunar (去哪儿, Vue + Vuex)', link: 'http://qunar.gaodaqian.com' },
@@ -88,6 +90,33 @@ module.exports = {
       '/standard/': standard.getList(),
       '/booklet/': booklet.getList(),
       '/vue-advanced/': vueAdvanced.getList(),
+      '/vue-best-practice/': [
+        '',
+        {
+          title: 'Vuex',
+          collapsable: true,
+          children: [
+            './vuex/index.js',
+            './vuex/state.js',
+            './vuex/getters.js',
+            './vuex/mutation-types.js',
+            './vuex/mutations.js',
+            './vuex/actions.js',
+          ]
+        },
+      ],
+      '/fe-interview/': [
+        {
+          title: '高级',
+          collapsable: true,
+          children: [
+            './senior/00_require-exports',
+            './senior/01_import-export',
+            './senior/02_AMD-CMD',
+            './senior/03_babel开发环境配置',
+          ]
+        },
+      ],
       '/': [ '', 'contact', 'about']
     }
   }

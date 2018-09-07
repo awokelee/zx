@@ -2,6 +2,7 @@ module.exports = {
   getList(){
     return  [
       '',
+      'win-open-with-vscode',
       'mac-soft',
       'vscode',
       'eslint',
