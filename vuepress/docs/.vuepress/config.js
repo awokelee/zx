@@ -114,6 +114,10 @@ module.exports = {
             './senior/01_import-export',
             './senior/02_AMD-CMD',
             './senior/03_babel开发环境配置',
+            './senior/04_rollup',
+            './senior/05_js构造函数和class',
+            './senior/06_js继承',
+            './senior/07_promise',
           ]
         },
       ],

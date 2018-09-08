@@ -1,4 +1,4 @@
-# requirejs 的 AMD 和 seajs 的 CMD
+# Requirejs 的 AMD 和 Seajs 的 CMD
 
 ### AMD 和 CMD 定义模块
 
