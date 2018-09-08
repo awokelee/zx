@@ -1,4 +1,4 @@
-# Snabbdom - Vue 2.0 的虚拟 DOM 方案
+# Snabbdom - Vue 2.0 的虚拟 DOM
 
 `vue 2.0` 的 `虚拟 DOM` 就是基于 [snabbdom](https://github.com/snabbdom/snabbdom).
 

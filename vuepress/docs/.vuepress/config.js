@@ -43,7 +43,7 @@ module.exports = {
       { text: 'React', link: '/react/' },
       { text: 'Nginx', link: '/nginx/' },
       { text: '小程序', link: '/mpvue/' },
-      { text: '面试', link: '/fe-interview/' },
+      { text: 'FE-必知必会', link: '/fe-interview/' },
       // { text: 'Node', link: '/node/' },
       // { text: 'Protocol', link: '/protocol/' },
       // { text: 'Security', link: '/security/' },
@@ -92,6 +92,7 @@ module.exports = {
       '/vue-advanced/': vueAdvanced.getList(),
       '/vue-best-practice/': [
         '',
+        '滚动条样式',
         {
           title: 'Vuex',
           collapsable: true,
@@ -102,30 +103,57 @@ module.exports = {
             './vuex/mutation-types.js',
             './vuex/mutations.js',
             './vuex/actions.js',
+            './vuex/actions.js',
           ]
         },
       ],
       '/fe-interview/': [
         {
-          title: '高级',
-          collapsable: true,
+          title: '模块化',
+          collapsable: false,
           children: [
             './senior/00_require-exports',
             './senior/01_import-export',
             './senior/02_AMD-CMD',
             './senior/03_babel开发环境配置',
             './senior/04_rollup',
+          ]
+        },
+        {
+          title: '构造函数和原型',
+          collapsable: false,
+          children: [
             './senior/05_js构造函数和class',
             './senior/06_js继承',
             './senior/08_zepto和jquery原型',
+          ]
+        },
+        {
+          title: '异步',
+          collapsable: false,
+          children: [
             './senior/09_单线程和异步',
             './senior/10_event-loop',
             './senior/11_jQuery的deferred',
             './senior/12_promise',
             './senior/13_async-await',
+          ]
+        },
+        {
+          title: '虚拟 DOM',
+          collapsable: false,
+          children: [
             './senior/14_virtual-dom',
             './senior/15_snabbdom',
             './senior/16_diff算法',
+          ]
+        },
+        {
+          title: 'MVVM',
+          collapsable: false,
+          children: [
+            './senior/17_从jquery到框架',
+            './senior/18_mvvm',
           ]
         },
       ],
