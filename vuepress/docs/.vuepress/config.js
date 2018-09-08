@@ -117,7 +117,12 @@ module.exports = {
             './senior/04_rollup',
             './senior/05_js构造函数和class',
             './senior/06_js继承',
-            './senior/07_promise',
+            './senior/08_zepto和jquery原型',
+            './senior/09_单线程和异步',
+            './senior/10_event-loop',
+            './senior/11_jQuery的deferred',
+            './senior/12_promise',
+            './senior/13_async-await',
           ]
         },
       ],
