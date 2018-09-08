@@ -1,4 +1,4 @@
-# Promise
+# Promise 标准
 
 - `Promise` 实例必须实现 `then` 这个方法
 

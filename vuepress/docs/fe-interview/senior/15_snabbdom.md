@@ -1,4 +1,4 @@
-# Snabbdom
+# Snabbdom - Vue 2.0 的虚拟 DOM 方案
 
 `vue 2.0` 的 `虚拟 DOM` 就是基于 [snabbdom](https://github.com/snabbdom/snabbdom).
 
@@ -128,7 +128,7 @@ var vnode = h('ul#list', {}, [
 
 ![](./media/snabbdom-tutorial.png)
 
-### 表格案例
+### snabbdom 表格案例
 
 ```html
 <!DOCTYPE html>

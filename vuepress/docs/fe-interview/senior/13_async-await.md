@@ -1,4 +1,4 @@
-# `Async/Await`
+# `Async/Await` ES7 新特性
 
 `koa2` 用的就是 `async/await`.
 
