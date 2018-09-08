@@ -123,6 +123,8 @@ module.exports = {
             './senior/11_jQuery的deferred',
             './senior/12_promise',
             './senior/13_async-await',
+            './senior/14_virtual-dom',
+            './senior/15_snabbdom',
           ]
         },
       ],

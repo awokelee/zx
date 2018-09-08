@@ -1,4 +1,4 @@
-# async-await
+# `Async/Await`
 
 `koa2` 用的就是 `async/await`.
 
