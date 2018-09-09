@@ -154,8 +154,31 @@ module.exports = {
           children: [
             './senior/17_从jquery到框架',
             './senior/18_mvvm',
+            './senior/19_vue的响应式',
+            './senior/20_vue解析模版',
+            './senior/21_vue的render函数',
+            './senior/22_vue的render源码',
+            './senior/23_vue的render后模版生成html',
+            './senior/24_vue的整个实现流程',
           ]
         },
+        {
+          title: 'React 相关',
+          collapsable: false,
+          children: [
+            './senior/25_jsx本质',
+            './senior/26_jsx和vdom',
+            './senior/27_setState',
+          ]
+        },
+        {
+          title: 'React 和 Vue 对比',
+          collapsable: false,
+          children: [
+            './senior/28_react和vue对比',
+          ]
+        },
+        
       ],
       '/': [ '', 'contact', 'about']
     }
