@@ -1,3 +1,6 @@
+# getPrototypeOf
+
+```js
 (function(){
   if(typeof Object.getPrototypeOf === 'undefined') {
     Object.getPrototypeOf = function(obj) {
@@ -9,3 +12,4 @@
     };
   }
 })();
+```

@@ -1,4 +1,4 @@
-# store/getters.js
+# /store/getters.js
 
 ```js
 export const singer = state => state.singer

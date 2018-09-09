@@ -1,4 +1,4 @@
-# store/mutation-types.js
+# /store/mutation-types.js
 
 ```js
 export const SET_SINGER = 'SET_SINGER'

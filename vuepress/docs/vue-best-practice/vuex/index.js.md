@@ -1,4 +1,4 @@
-# store/index.js
+# /store/index.js
 
 ```js
 import Vue from 'vue'

@@ -7,13 +7,12 @@ const booklet = require('./category/booklet')
 const vue = require('./category/vue')
 const react = require('./category/react')
 const smarketing = require('./category/smarketing')
-const node = require('./category/node')
 const protocol = require('./category/protocol')
 const security = require('./category/security')
 const interview = require('./category/interview')
-const code = require('./category/code')
 const home = require('./category/home')
 const vueAdvanced = require('./category/vueAdvanced')
+const feInterviewSenior = require('./category/feInterviewSenior')
 
 module.exports = {
   // base: '/vue-press/',
@@ -43,11 +42,16 @@ module.exports = {
       { text: 'React', link: '/react/' },
       { text: 'Nginx', link: '/nginx/' },
       { text: '小程序', link: '/mpvue/' },
-      { text: 'FE-必知必会', link: '/fe-interview/' },
-      // { text: 'Node', link: '/node/' },
+      {
+        text: 'FE-必知必会',
+        items: [
+          { text: '初级', link: '/fe-interview-junior/' },
+          { text: '高级', link: '/fe-interview-senior/' },
+          { text: '饿了么 Node.js 面试', link: 'https://elemefe.github.io/node-interview/#/sections/zh-cn/' },
+        ]
+      },
       // { text: 'Protocol', link: '/protocol/' },
       // { text: 'Security', link: '/security/' },
-      // { text: 'Code', link: '/code/' },
       { text: 'Nav', link: 'http://nav.gaodaqian.com' },
       {
         text: 'Projects',
@@ -82,16 +86,16 @@ module.exports = {
       '/react/': react.getList(),
       '/vue/': vue.getList(),
       '/notes/': notes.getList(),
-      '/node/': node.getList(),
       '/protocol/': protocol.getList(),
       '/security/': security.getList(),
       '/interview/': interview.getList(),
-      '/code/': code.getList(),
       '/standard/': standard.getList(),
       '/booklet/': booklet.getList(),
       '/vue-advanced/': vueAdvanced.getList(),
       '/vue-best-practice/': [
         '',
+        '数组',
+        'getPrototypeOf',
         '滚动条样式',
         {
           title: 'Vuex',
@@ -107,88 +111,40 @@ module.exports = {
           ]
         },
       ],
-      '/fe-interview/': [
+      '/fe-interview-junior/': [
+        '',
         {
-          title: '模块化',
-          collapsable: false,
+          title: 'HTML',
+          collapsable: true,
           children: [
-            './senior/00_require-exports',
-            './senior/01_import-export',
-            './senior/02_AMD-CMD',
-            './senior/03_babel开发环境配置',
-            './senior/04_rollup',
+            'html'
           ]
         },
         {
-          title: '构造函数和原型',
-          collapsable: false,
+          title: 'CSS',
+          collapsable: true,
           children: [
-            './senior/05_js构造函数和class',
-            './senior/06_js继承',
-            './senior/08_zepto和jquery原型',
+            'css'
           ]
         },
         {
-          title: '异步',
-          collapsable: false,
+          title: 'JS基础',
+          collapsable: true,
           children: [
-            './senior/09_单线程和异步',
-            './senior/10_event-loop',
-            './senior/11_jQuery的deferred',
-            './senior/12_promise',
-            './senior/13_async-await',
+            'js',
+            'Javascript-Interview',
+            'Frontend-Interview'
           ]
         },
         {
-          title: '虚拟 DOM',
-          collapsable: false,
+          title: 'React',
+          collapsable: true,
           children: [
-            './senior/14_virtual-dom',
-            './senior/15_snabbdom',
-            './senior/16_diff算法',
-          ]
-        },
-        {
-          title: 'MVVM',
-          collapsable: false,
-          children: [
-            './senior/17_从jquery到框架',
-            './senior/18_mvvm',
-            './senior/19_vue的响应式',
-            './senior/20_vue解析模版',
-            './senior/21_vue的render函数',
-            './senior/22_vue的render源码',
-            './senior/23_vue的render后模版生成html',
-            './senior/24_vue的整个实现流程',
-          ]
-        },
-        {
-          title: 'React 相关',
-          collapsable: false,
-          children: [
-            './senior/25_jsx本质',
-            './senior/26_jsx和vdom',
-            './senior/27_setState',
-          ]
-        },
-        {
-          title: 'React 和 Vue 对比',
-          collapsable: false,
-          children: [
-            './senior/28_react和vue对比',
-          ]
-        },
-        {
-          title: 'Hybrid',
-          collapsable: false,
-          children: [
-            './senior/29_hybrid',
-            './senior/30_hybrid更新上线流程',
-            './senior/31_hybrid和h5区别',
-            './senior/32_js和客户端通讯',
+            'React-Interview'
           ]
         },
       ],
+      '/fe-interview-senior/': feInterviewSenior.getList(),
       '/': [ '', 'contact', 'about']
     }
   }

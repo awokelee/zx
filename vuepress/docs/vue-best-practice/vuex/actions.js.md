@@ -1,4 +1,4 @@
-# store/actions.js
+# /store/actions.js
 
 ```js
 import * as types from './mutation-types'

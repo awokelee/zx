@@ -7,8 +7,9 @@ module.exports = {
       'vscode',
       'eslint',
       'securecrt',
-      'puppeteer在linux下报错',
       'pm2',
+      'puppeteer在linux下报错',
+      'node配置babel使用import',
       // 'promise',
       // '浏览器兼容性问题',
     ]
