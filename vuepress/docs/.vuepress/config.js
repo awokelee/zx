@@ -178,7 +178,16 @@ module.exports = {
             './senior/28_react和vue对比',
           ]
         },
-        
+        {
+          title: 'Hybrid',
+          collapsable: false,
+          children: [
+            './senior/29_hybrid',
+            './senior/30_hybrid更新上线流程',
+            './senior/31_hybrid和h5区别',
+            './senior/32_js和客户端通讯',
+          ]
+        },
       ],
       '/': [ '', 'contact', 'about']
     }
