@@ -45,9 +45,10 @@ module.exports = {
       {
         text: 'FE-必知必会',
         items: [
-          { text: '初级', link: '/fe-interview-junior/' },
-          { text: '高级', link: '/fe-interview-senior/' },
-          { text: '饿了么 Node.js 面试', link: 'https://elemefe.github.io/node-interview/#/sections/zh-cn/' },
+          // { text: '初级', link: '/fe-interview-junior/' },
+          { text: '前端跳槽面试必备技巧', link: '/fe-interview-skill/' },
+          { text: '揭秘一线互联网企业 前端JavaScript高级面试', link: '/fe-interview-senior/' },
+          // { text: '饿了么 Node.js 面试', link: 'https://elemefe.github.io/node-interview/#/sections/zh-cn/' },
         ]
       },
       // { text: 'Protocol', link: '/protocol/' },
@@ -112,7 +113,6 @@ module.exports = {
         },
       ],
       '/fe-interview-junior/': [
-        '',
         {
           title: 'HTML',
           collapsable: true,
@@ -145,7 +145,81 @@ module.exports = {
         },
       ],
       '/fe-interview-senior/': feInterviewSenior.getList(),
+      '/fe-interview-skill/': [
+        {
+          title: '页面布局',
+          collapsable: false,
+          children: [
+            '01_三栏布局',
+            '02_float方案',
+            '03_absolute方案',
+            '04_flex方案',
+            '05_table方案',
+            '06_grid方案',
+            '07_每个方案优缺点',
+            '08_高度不确定下的情况会怎样',
+            '09_页面布局的变通',
+          ]
+        },
+        {
+          title: 'CSS 盒模型',
+          collapsable: false,
+          children: [
+            '10_标准模型和IE模型',
+            '11_css如何设置这两种模型',
+            '12_js如何设置获取盒模型对应的宽和高',
+            '13_根据盒模型解释边距重叠',
+            '14_BFC边距重叠解决方案',
+            '15_BFC原理',
+            '16_如何创建BFC',
+            '17_BFC使用场景',
+          ]
+        },
+        {
+          title: 'DOM 事件类',
+          collapsable: false,
+          children: [
+            '18_事件级别',
+            '19_事件模型',
+            '20_事件流',
+            '21_DOM事件捕获的具体流程',
+            '22_ 获取html标签',
+            '23_Event对象的常见应用',
+            '24_自定义事件',
+            '25_捕获演示',
+            '26_自定义事件演示',
+          ]
+        },
+        {
+          title: 'HTTP 协议类',
+          collapsable: false,
+          children: [
+            '27_HTTP协议的主要特点',
+            '28_HTTP报文的组成部分',
+            '29_HTTP方法',
+            '30_POST和GET 的区别',
+            '31_HTTP状态码',
+            '32_HTTP持久连接',
+            '33_管线化',
+          ]
+        },
+        {
+          title: '原型链类',
+          collapsable: false,
+          children: [
+            '34_创建对象几种方法',
+            '35_原型、构造函数、实例、原型链',
+            '36_instanceof原理',
+            '37_new运算符',
+          ]
+        },
+      ],
       '/': [ '', 'contact', 'about']
     }
   }
 }
+
+
+
+
+
