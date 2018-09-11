@@ -225,6 +225,41 @@ module.exports = {
             '43_组合继承的优化2',
           ]
         },
+        {
+          title: '通信类',
+          collapsable: false,
+          children: [
+            '44_同源策略及限制',
+            '45_前后端如何通信',
+            '46_如何创建Ajax',
+            '47_跨域通信的几种方式',
+            '48_jsonp处理跨域',
+            '49_hash处理跨域',
+            '50_postMessage处理跨域',
+            '51_websocket处理跨域',
+            '52_cors处理跨域'
+          ]
+        },
+        {
+          title: '前端安全类',
+          collapsable: false,
+          children: [
+            '53_csrf',
+            '54_xss'
+          ]
+        },
+        {
+          title: '算法类',
+          collapsable: false,
+          children: [
+            '55_排序',
+            '56_冒泡排序',
+            '57_选择排序',
+            '59_归并排序',
+            '58_插入排序',
+            '60_希尔排序',
+          ]
+        },
       ],
       '/': [ '', 'contact', 'about']
     }

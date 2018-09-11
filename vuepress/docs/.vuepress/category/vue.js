@@ -26,6 +26,7 @@ module.exports = {
         collapsable: false,
         children: [
           '08_axios',
+          '08_axios请求本地json',
           '08_axios-promise',
           '08_axios-await',
           '09_filter',
