@@ -25,6 +25,7 @@ module.exports = {
         title: 'Vue 项目常用',
         collapsable: false,
         children: [
+          '08_vconsole',
           '08_axios',
           '08_axios请求本地json',
           '08_axios-promise',
