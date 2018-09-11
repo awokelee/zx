@@ -61,6 +61,7 @@ module.exports = {
           { text: 'JianShu (简书, React + Redux)', link: 'http://jianshu.gaodaqian.com' },
           { text: 'ALC (爱理财, React)', link: 'https://bcapp.alc.com.cn/mapp/' },
           { text: 'Qunar (去哪儿, Vue + Vuex)', link: 'http://qunar.gaodaqian.com' },
+          { text: 'Music (音乐, Vue + Vuex)', link: 'http://music.gaodaqian.com' },
           { text: 'Smarketing(智能营销系统, Vue + Vuex)', link: '/smarketing/' },
           { text: 'ALC (爱理财, AngularJS + Ionic)', link: 'https://bcapp.alc.com.cn/bcapph5v19/#/balanceManagement' },
         ]
@@ -261,6 +262,16 @@ module.exports = {
             '61_堆栈、队列、链表',
             '62_递归',
             '63_波兰式和逆波兰式',
+          ]
+        },
+        {
+          title: '渲染机制',
+          collapsable: false,
+          children: [
+            '64_什么是doctype及作用',
+            '65_浏览器渲染过程',
+            '66_重排reflow',
+            '67_重绘repaint',
           ]
         },
       ],
