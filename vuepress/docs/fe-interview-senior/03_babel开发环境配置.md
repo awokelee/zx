@@ -7,7 +7,7 @@
 - 安装 `babel`
 
 ```bash
-npm i babel-core babel-preset-es2015 babel-preset-lates -D
+npm i babel-core babel-preset-es2015 babel-preset-latest -D
 ```
 
 - 创建 `.babelrc` 文件, 内容如下:
