@@ -15,6 +15,7 @@ const vueAdvanced = require('./category/vueAdvanced')
 const feInterviewSenior = require('./category/feInterviewSenior')
 const feInterviewSkill = require('./category/feInterviewSkill')
 const designPatterns = require('./category/designPatterns')
+const feInterviewJunior = require('./category/feInterviewJunior')
 
 module.exports = {
   // base: '/vue-press/',
@@ -48,8 +49,9 @@ module.exports = {
         text: 'FE-必知必会',
         items: [
           // { text: '初级', link: '/fe-interview-junior/' },
+          { text: '前端 JavaScript 面试技巧', link: '/fe-interview-junior/' },
           { text: '前端跳槽面试必备技巧', link: '/fe-interview-skill/' },
-          { text: '揭秘一线互联网企业 前端JavaScript高级面试', link: '/fe-interview-senior/' },
+          { text: '揭秘一线互联网企业 前端 JavaScript 高级面试', link: '/fe-interview-senior/' },
           { text: 'Javascript 设计模式系统讲解与应用', link: '/design-patterns/' },
           // { text: '饿了么 Node.js 面试', link: 'https://elemefe.github.io/node-interview/#/sections/zh-cn/' },
         ]
@@ -116,7 +118,7 @@ module.exports = {
           ]
         },
       ],
-      '/fe-interview-junior/': [
+      '/fe-interview-questions/': [
         {
           title: 'HTML',
           collapsable: true,
@@ -148,6 +150,7 @@ module.exports = {
           ]
         },
       ],
+      '/fe-interview-junior/': feInterviewJunior.getList(),
       '/fe-interview-senior/': feInterviewSenior.getList(),
       '/fe-interview-skill/': feInterviewSkill.getList(),
       '/design-patterns/': designPatterns.getList(),
@@ -155,8 +158,3 @@ module.exports = {
     }
   }
 }
-
-
-
-
-
