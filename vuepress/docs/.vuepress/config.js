@@ -14,6 +14,7 @@ const home = require('./category/home')
 const vueAdvanced = require('./category/vueAdvanced')
 const feInterviewSenior = require('./category/feInterviewSenior')
 const feInterviewSkill = require('./category/feInterviewSkill')
+const designPatterns = require('./category/designPatterns')
 
 module.exports = {
   // base: '/vue-press/',
@@ -43,13 +44,13 @@ module.exports = {
       { text: 'React', link: '/react/' },
       { text: 'Nginx', link: '/nginx/' },
       { text: '小程序', link: '/mpvue/' },
-      { text: 'patterns', link: '/patterns/' },
       {
         text: 'FE-必知必会',
         items: [
           // { text: '初级', link: '/fe-interview-junior/' },
           { text: '前端跳槽面试必备技巧', link: '/fe-interview-skill/' },
           { text: '揭秘一线互联网企业 前端JavaScript高级面试', link: '/fe-interview-senior/' },
+          { text: 'Javascript 设计模式系统讲解与应用', link: '/design-patterns/' },
           // { text: '饿了么 Node.js 面试', link: 'https://elemefe.github.io/node-interview/#/sections/zh-cn/' },
         ]
       },
@@ -149,42 +150,7 @@ module.exports = {
       ],
       '/fe-interview-senior/': feInterviewSenior.getList(),
       '/fe-interview-skill/': feInterviewSkill.getList(),
-      '/patterns/': [
-        '',
-        {
-          title: '常用的设计模式',
-          collapsable: false,
-          children: [
-            '05_工厂模式',
-            '06_单例模式',
-            '07_适配器模式',
-            '08_装饰器模式',
-            '09_代理模式',
-            '10_外观模式',
-            '11_观察者模式',
-            '12_迭代器模式',
-            '13_状态模式',
-          ]
-        },
-        {
-          title: '其他设计模式',
-          collapsable: false,
-          children: [
-            '14_原型模式',
-            '15_桥接模式',
-            '16_组合模式',
-            '17_享元模式',
-            '18_策略模式',
-            '19_模版方法模式',
-            '20_职责链模式',
-            '21_命令模式',
-            '22_备忘录模式',
-            '23_中介者模式',
-            '24_访问者模式',
-            '25_解释器模式',
-          ]
-        },
-      ],
+      '/design-patterns/': designPatterns.getList(),
       '/': [ '', 'contact', 'about']
     }
   }
