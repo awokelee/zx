@@ -3,11 +3,9 @@ const nginx = require('./category/nginx')
 const EffectiveJavaScript = require('./category/EffectiveJavaScript')
 const notes = require('./category/notes')
 const standard = require('./category/standard')
-const booklet = require('./category/booklet')
 const vue = require('./category/vue')
 const react = require('./category/react')
 const smarketing = require('./category/smarketing')
-const protocol = require('./category/protocol')
 const security = require('./category/security')
 const interview = require('./category/interview')
 const home = require('./category/home')
@@ -17,6 +15,11 @@ const feInterviewSkill = require('./category/feInterviewSkill')
 const designPatterns = require('./category/designPatterns')
 const feInterviewJunior = require('./category/feInterviewJunior')
 const http = require('./category/http')
+const bookletGit = require('./category/bookletGit')
+const bookletInterviewGuide = require('./category/bookletInterviewGuide')
+const bookletNpmScript = require('./category/bookletNpmScript')
+const bookletUi = require('./category/bookletUi')
+const bookletVueCore = require('./category/bookletVueCore')
 
 module.exports = {
   // base: '/vue-press/',
@@ -46,20 +49,23 @@ module.exports = {
       { text: 'React', link: '/react/' },
       { text: 'Nginx', link: '/nginx/' },
       { text: '小程序', link: '/mpvue/' },
+      { text: 'Security', link: '/security/' },
       {
         text: 'FE-必知必会',
         items: [
           // { text: '初级', link: '/fe-interview-junior/' },
+          { text: 'Web 前端面试指南', link: '/booklet-interview-guide/' },
           { text: '前端 JavaScript 面试技巧', link: '/fe-interview-junior/' },
           { text: '前端跳槽面试必备技巧', link: '/fe-interview-skill/' },
           { text: '揭秘一线互联网企业 前端 JavaScript 高级面试', link: '/fe-interview-senior/' },
           { text: 'Javascript 设计模式系统讲解与应用', link: '/design-patterns/' },
-          { text: 'HTTP协议原理+实践', link: '/http/' },
-          // { text: '饿了么 Node.js 面试', link: 'https://elemefe.github.io/node-interview/#/sections/zh-cn/' },
+          { text: 'HTTP 协议原理 + 实践', link: '/http/' },
+          { text: '剖析 Vue.js 内部运行机制', link: '/booklet-vue-core/' },
+          { text: 'Git 原理详解及实用指南', link: '/booklet-git/' },
+          { text: 'npm script 前端工作流', link: '/booklet-npm-script/' },
+          { text: '大厂 UI 开发实战手册', link: '/booklet-ui/' },
         ]
       },
-      // { text: 'Protocol', link: '/protocol/' },
-      // { text: 'Security', link: '/security/' },
       { text: 'Nav', link: 'http://nav.gaodaqian.com' },
       {
         text: 'Projects',
@@ -80,7 +86,6 @@ module.exports = {
           { text: 'Blogs', link: 'http://blog.gaodaqian.com' },
           { text: 'JavaScript', link: '/Effective-JavaScript/' },
           { text: '规范', link: '/standard/' },
-          { text: '小册', link: '/booklet/' },
           { text: '基础', link: '/interview/' },
           { text: '其他', link: '/home/' },
         ]
@@ -95,11 +100,8 @@ module.exports = {
       '/react/': react.getList(),
       '/vue/': vue.getList(),
       '/notes/': notes.getList(),
-      '/protocol/': protocol.getList(),
-      '/security/': security.getList(),
       '/interview/': interview.getList(),
       '/standard/': standard.getList(),
-      '/booklet/': booklet.getList(),
       '/vue-advanced/': vueAdvanced.getList(),
       '/vue-best-practice/': [
         '',
@@ -157,6 +159,15 @@ module.exports = {
       '/fe-interview-skill/': feInterviewSkill.getList(),
       '/design-patterns/': designPatterns.getList(),
       '/http/': http.getList(),
+      '/booklet-git/': bookletGit.getList(),
+      '/booklet-interview-guide/': bookletInterviewGuide.getList(),
+      '/booklet-npm-script/': bookletNpmScript.getList(),
+      '/booklet-ui/': bookletUi.getList(),
+      '/booklet-vue-core/': bookletVueCore.getList(),
+      // '/security/': security.getList(),
+      '/security/': [
+        ''
+      ],
       '/': [ '', 'contact', 'about']
     }
   }
