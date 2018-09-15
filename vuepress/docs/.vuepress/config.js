@@ -164,10 +164,7 @@ module.exports = {
       '/booklet-npm-script/': bookletNpmScript.getList(),
       '/booklet-ui/': bookletUi.getList(),
       '/booklet-vue-core/': bookletVueCore.getList(),
-      // '/security/': security.getList(),
-      '/security/': [
-        ''
-      ],
+      '/security/': security.getList(),
       '/': [ '', 'contact', 'about']
     }
   }
