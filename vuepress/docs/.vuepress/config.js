@@ -20,6 +20,7 @@ const bookletInterviewGuide = require('./category/bookletInterviewGuide')
 const bookletNpmScript = require('./category/bookletNpmScript')
 const bookletUi = require('./category/bookletUi')
 const bookletVueCore = require('./category/bookletVueCore')
+const performance = require('./category/performance')
 
 module.exports = {
   // base: '/vue-press/',
@@ -49,7 +50,6 @@ module.exports = {
       { text: 'React', link: '/react/' },
       { text: 'Nginx', link: '/nginx/' },
       { text: '小程序', link: '/mpvue/' },
-      { text: 'Security', link: '/security/' },
       {
         text: 'FE-必知必会',
         items: [
@@ -58,12 +58,14 @@ module.exports = {
           { text: '前端 JavaScript 面试技巧', link: '/fe-interview-junior/' },
           { text: '前端跳槽面试必备技巧', link: '/fe-interview-skill/' },
           { text: '揭秘一线互联网企业 前端 JavaScript 高级面试', link: '/fe-interview-senior/' },
-          { text: 'Javascript 设计模式系统讲解与应用', link: '/design-patterns/' },
-          { text: 'HTTP 协议原理 + 实践', link: '/http/' },
           { text: '剖析 Vue.js 内部运行机制', link: '/booklet-vue-core/' },
           { text: 'Git 原理详解及实用指南', link: '/booklet-git/' },
           { text: 'npm script 前端工作流', link: '/booklet-npm-script/' },
           { text: '大厂 UI 开发实战手册', link: '/booklet-ui/' },
+          { text: 'Web 前后端漏洞分析与防御技巧', link: '/security/' },
+          { text: 'HTTP 协议原理 + 实践', link: '/http/' },
+          { text: 'Web前端性能优化', link: '/performance/' },
+          { text: 'Javascript 设计模式系统讲解与应用', link: '/design-patterns/' },
         ]
       },
       { text: 'Nav', link: 'http://nav.gaodaqian.com' },
@@ -165,6 +167,7 @@ module.exports = {
       '/booklet-ui/': bookletUi.getList(),
       '/booklet-vue-core/': bookletVueCore.getList(),
       '/security/': security.getList(),
+      '/performance/': performance.getList(),
       '/': [ '', 'contact', 'about']
     }
   }
