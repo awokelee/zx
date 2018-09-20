@@ -15,6 +15,7 @@ module.exports = {
           '03_reset',
           '04_border',
           '05_fastclick',
+          '06_less',
           '06_stylus',
           '07_iconfont',
           '07_elementui',

@@ -21,6 +21,7 @@ const bookletNpmScript = require('./category/bookletNpmScript')
 const bookletUi = require('./category/bookletUi')
 const bookletVueCore = require('./category/bookletVueCore')
 const performance = require('./category/performance')
+const webpack = require('./category/webpack')
 
 module.exports = {
   // base: '/vue-press/',
@@ -59,12 +60,10 @@ module.exports = {
           { text: '前端跳槽面试必备技巧', link: '/fe-interview-skill/' },
           { text: '揭秘一线互联网企业 前端 JavaScript 高级面试', link: '/fe-interview-senior/' },
           { text: '剖析 Vue.js 内部运行机制', link: '/booklet-vue-core/' },
-          { text: 'Git 原理详解及实用指南', link: '/booklet-git/' },
-          { text: 'npm script 前端工作流', link: '/booklet-npm-script/' },
-          { text: '大厂 UI 开发实战手册', link: '/booklet-ui/' },
-          { text: 'Web 前后端漏洞分析与防御技巧', link: '/security/' },
+          { text: '四大维度解锁 Webpack 3.0 前端工程化', link: '/webpack/' },
           { text: 'HTTP 协议原理 + 实践', link: '/http/' },
-          { text: 'Web前端性能优化', link: '/performance/' },
+          { text: 'Web 前端性能优化', link: '/performance/' },
+          { text: 'Web 前后端漏洞分析与防御技巧', link: '/security/' },
           { text: 'Javascript 设计模式系统讲解与应用', link: '/design-patterns/' },
         ]
       },
@@ -90,6 +89,9 @@ module.exports = {
           { text: '规范', link: '/standard/' },
           { text: '基础', link: '/interview/' },
           { text: '其他', link: '/home/' },
+          { text: 'Git 原理详解及实用指南', link: '/booklet-git/' },
+          { text: 'npm script 前端工作流', link: '/booklet-npm-script/' },
+          { text: '大厂 UI 开发实战手册', link: '/booklet-ui/' },
         ]
       },
     ],
@@ -110,6 +112,7 @@ module.exports = {
         '数组',
         'getPrototypeOf',
         '滚动条样式',
+        '设置chunk名称',
         {
           title: 'Vuex',
           collapsable: true,
@@ -168,6 +171,7 @@ module.exports = {
       '/booklet-vue-core/': bookletVueCore.getList(),
       '/security/': security.getList(),
       '/performance/': performance.getList(),
+      '/webpack/': webpack.getList(),
       '/': [ '', 'contact', 'about']
     }
   }
