@@ -51,6 +51,11 @@
         "src": "./static/images/awesomevue.png",
         "name": "Awesome Vue",
         "desc": "Github 的 Awesome Vue"
+      },{
+        "href": "https://panjiachen.github.io/vue-element-admin-site/zh/guide/",
+        "src": "./static/images/vue-element-admin.svg",
+        "name": "vue-element-admin",
+        "desc": "后台集成解决方案，它基于 vue 和 element, 最新的前端技术栈"
       }]
     },
     { 
