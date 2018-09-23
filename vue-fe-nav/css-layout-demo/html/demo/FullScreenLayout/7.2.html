@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>全屏布局-使用flex实现</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html,body,#parent{height:100%;}
+        #parent {
+            display: flex;
+            flex-direction: column;
+        }
+        #parent div{
+            border: 1px solid #2dc1e8;
+        }
+        #top {height: 100px;}
+        #bottom {height: 50px;}
+        #middle {
+            flex: 1;
+            display: flex;
+        }
+        #left {width: 200px;}
+        #right {
+            flex: 1;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+<div id="parent">
+    <div id="top">top</div>
+    <div id="middle">
+        <div id="left">left</div>
+        <div id="right">right</div>
+    </div>
+    <div id="bottom">bottom</div>
+</div>
+</body>
+</html>

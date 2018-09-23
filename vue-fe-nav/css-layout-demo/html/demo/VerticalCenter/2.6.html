@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>垂直居中-单个块级元素-使用flex实现</title>
+    <style>
+        #parent{
+        display: flex;
+        align-items: center;
+        border: 1px solid #000;
+        height: 300px;
+        }
+        #son{
+        width: 50px;
+        height: 50px;
+        background-color: #0086b3;
+        }
+
+        /*或*/
+
+        /*#parent {*/
+        /*display: flex;*/
+        /*height: 300px;*/
+        /*border: 1px solid #000;*/
+        /*}*/
+
+        /*#son {*/
+        /*align-self: center;*/
+        /*width: 50px;*/
+        /*height: 50px;*/
+        /*background-color: #0086b3;*/
+        /*}*/
+
+        /*或*/
+        /*!*原理：这个尚未搞清楚，应该是flex使margin上下边界无限延伸至剩余空间并平分了*!*/
+        /*#parent {*/
+            /*display: flex;*/
+            /*border: 1px solid #000;*/
+            /*height: 300px;*/
+        /*}*/
+        /*#son {*/
+            /*width: 50px;*/
+            /*height: 50px;*/
+            /*background-color: #0086b3;*/
+            /*margin: auto 0;*/
+        /*}*/
+    </style>
+</head>
+<body>
+<div id="parent">
+    <div id="son"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>四列等宽-使用flex实现</title>
+    <style>
+        #parent {
+            margin-left: -15px;  /*使内容看起来居中*/
+            height: 500px;
+            display: flex;
+        }
+        .column{
+            flex: 1; /*一起平分#parent*/
+            margin-left: 15px; /*设置间距*/
+        }
+        .column:nth-child(odd){background-color: #f00;}
+        .column:nth-child(even){background-color: #0f0;}
+    </style>
+</head>
+<body>
+<div id="parent">
+    <div class="column">1 <p>我是文字我是文字我输文字我是文字我是文字</p></div>
+    <div class="column">2 <p>我是文字我是文字我输文字我是文字我是文字</p></div>
+    <div class="column">3 <p>我是文字我是文字我输文字我是文字我是文字</p></div>
+    <div class="column">4 <p>我是文字我是文字我输文字我是文字我是文字</p></div>
+</div>
+</body>
+</html>

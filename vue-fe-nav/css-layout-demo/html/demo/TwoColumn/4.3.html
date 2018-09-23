@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>左列定宽,右列自适应-使用float+overflow</title>
+    <style>
+        #left {
+            background-color: #00F7DE;
+            float: left;
+            width: 100px;
+            height: 500px;
+        }
+        #right {
+            background-color: #0f0;
+            height: 500px;
+            overflow: hidden; /*触发bfc达到自适应*/
+        }
+    </style>
+</head>
+<body>
+<div id="left">左列定宽</div>
+<div id="right">右列自适应</div>
+</body>
+</html>

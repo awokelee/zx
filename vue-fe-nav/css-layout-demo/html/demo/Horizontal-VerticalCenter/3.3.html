@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>水平垂直居中-button作为父元素</title>
+    <style>
+        button#parent{  /*改掉button默认样式就好了,不需要居中处理*/
+            height: 150px;
+            width: 300px;
+            outline: none;
+            border: none;
+            background-color: transparent;
+            border: 1px solid #000;
+        }
+        #son{
+            display: inline-block; /*button自带text-align: center,改为行内水平居中生效*/
+            background-color: #f00;
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+<button id="parent">
+    <div id="son"></div>
+</button>
+</body>
+</html>

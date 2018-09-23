@@ -28,6 +28,7 @@ module.exports = {
   title: 'Awoke',
   description: 'some notes',
   search: false,
+  sidebarDepth: 2,
   searchMaxSuggestions: 10,
   editLinkText: 'Edit this page on GitHub',
   lastUpdated: true,
@@ -57,10 +58,11 @@ function getNavList() {
     { text: 'React', link: '/react/' },
     { text: 'Nginx', link: '/nginx/' },
     { text: '小程序', link: '/mpvue/' },
+    { text: '面试', link: '/fe-interview-questions/' },
+    { text: '前端开发规范', link: '/standard/' },
     {
       text: 'FE-必知必会',
       items: [
-        // { text: '初级', link: '/fe-interview-junior/' },
         {
           text: '面试相关',
           items: [
@@ -131,8 +133,7 @@ function getNavList() {
       text: '.',
       items: [
         { text: 'Blogs', link: 'http://blog.gaodaqian.com' },
-        { text: 'JavaScript', link: '/Effective-JavaScript/' },
-        { text: '规范', link: '/standard/' },
+        { text: 'JavaScript', link: '/Effective-JavaScript/' },        
         { text: '基础', link: '/interview/' },
         { text: '其他', link: '/home/' },
         { text: 'Git 原理详解及实用指南', link: '/booklet-git/' },
@@ -178,35 +179,83 @@ function getSidebar() {
     ],
     '/fe-interview-questions/': [
       {
-        title: 'HTML',
-        collapsable: true,
+        title: '面试技巧',
+        collapsable: false,
         children: [
-          'html'
+          '00_面试题',
+          '面试技巧',
+          './cz/Promise',
+          './cz/AngularJS',
+          './cz/ES6',
+          './cz/Promise',
+          './cz/React',
+          './cz/Vue',
+          './cz/Webpack',
         ]
       },
       {
         title: 'CSS',
-        collapsable: true,
+        collapsable: false,
         children: [
-          'css'
+          '00_水平垂直居中'
         ]
       },
       {
-        title: 'JS基础',
-        collapsable: true,
+        title: 'JS面试题',
+        collapsable: false,
         children: [
-          'js',
-          'Javascript-Interview',
-          'Frontend-Interview'
+          '01_JS面试题'
         ]
       },
       {
-        title: 'React',
-        collapsable: true,
+        title: '02_浏览器相关',
+        collapsable: false,
         children: [
-          'React-Interview'
+          '02_浏览器相关',
         ]
       },
+      {
+        title: '03_webpack',
+        collapsable: false,
+        children: [
+          '03_webpack'
+        ]
+      },
+      {
+        title: '04_react',
+        collapsable: false,
+        children: [
+          '04_react'
+        ]
+      },
+      {
+        title: '05_vue',
+        collapsable: false,
+        children: [
+          '05_vue'
+        ]
+      },
+      {
+        title: '06_网络',
+        collapsable: false,
+        children: [
+          '06_网络'
+        ]
+      },
+      {
+        title: '07_数据结构和算法',
+        collapsable: false,
+        children: [
+          '07_数据结构和算法'
+        ]
+      },
+      {
+        title: '08_设计模式',
+        collapsable: false,
+        children: [
+          '08_设计模式'
+        ]
+      }
     ],
     '/fe-interview-junior/': feInterviewJunior.getList(),
     '/fe-interview-senior/': feInterviewSenior.getList(),

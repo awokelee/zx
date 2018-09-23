@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>左列定宽,右列自适应-利用float+margin(fix)</title>
+    <style>
+        #left {
+            background-color: #0086b3;
+            float: left;
+            width: 100px;
+            height: 500px;
+        }
+        #right-fix {
+            float: right;
+            width: 100%;
+            margin-left: -100px; /*正值大于或等于#left的宽度,才能上移一行*/
+        }
+        #right{
+            margin-left: 100px; /*大于或等于#left的宽度,才不会遮挡#left*/
+            background-color: #0f0;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+<div id="left">左列定宽</div>
+<div id="right-fix">
+    <div id="right">右列自适应</div>
+</div>
+</body>
+</html>

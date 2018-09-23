@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>垂直居中-多行文本/行内/行内块级</title>
+    <style>
+        #parent{  /*或者用span把所有文字包裹起来，设置display：inline-block转换成图片的方式解决*/
+            height: 150px;
+            line-height: 30px;  /*元素在页面呈现为5行,则line-height的值为height/5*/
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+<div id="parent">
+   <div class="son">我是测试段落</div>
+   <div class="son">我是测试段落</div>
+   <div class="son">我是测试段落</div>
+   <div class="son">我是测试段落</div>
+   <div class="son">我是测试段落</div>
+</div>
+</body>
+</html>

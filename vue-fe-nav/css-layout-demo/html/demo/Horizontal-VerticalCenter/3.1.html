@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>水平垂直居中-行内/行内块级/图片</title>
+    <style>
+        #parent{
+            height: 300px;
+            line-height: 300px;  /*行高的值与height相等*/
+            text-align: center;
+            font-size: 0;   /*消除幽灵空白节点的bug*/
+            border: 1px solid #000;
+        }
+        #son{
+            /*display: inline-block;*/  /*如果是块级元素需改为行内或行内块级才生效*/
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+<div id="parent">
+    <img id="son" src="../../../images/googlelogo_color_272x92dp.png" tppabs="https://www.sweet-kk.top/css-layout-demo/images/googlelogo_color_272x92dp.png" alt="">
+</div>
+</body>
+</html>

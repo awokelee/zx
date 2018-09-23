@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>水平居中-使用position实现</title>
+    <style>
+        #parent{
+            height: 200px;
+            position: relative;  /*父相*/
+            border: 1px solid #000;
+        }
+        #son{
+            position: absolute;  /*子绝*/
+            left: 50%;  /*父元素宽度一半,这里等同于left:100px*/
+            transform: translateX(-50%);  /*自身宽度一半,等同于margin-left: -50px;*/
+            width: 100px;  /*定宽*/
+            height: 100px;
+            background-color: #00ff00;
+        }
+    </style>
+</head>
+<body>
+<div id="parent">
+    <div id="son"></div>
+</div>
+</body>
+</html>

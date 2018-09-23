@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>入口1例子</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../lib/layui/css/layui.css">
+
+
+  <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+
+  <div class="layui-container index-title">
+    <h1>布局demo</h1>
+  </div>
+  <div class="layui-container">
+    <a href="https://github.com/Sweet-KK/css-layout">原文地址</a>
+  </div>
+  <div class="layui-container entrance-list"></div>
+
+  <!-- <script src="../lib/jquery/jquery-1.11.1.min.js"></script> -->
+  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+  <script src="../lib/layui/layui.js"></script>
+  <script id="entranceTpl" type="text/html">
+    {{#  layui.each(d, function(index, item){ }}
+        <div class="layui-row">
+            <div class="layui-col-xs12">
+                <a title="{{ item.title }}" target="_blank" href="{{ item.href }}">{{ item.title }}</a>
+            </div>
+            {{#  if(item.children.length>0){ }}
+                {{#  layui.each(item.children, function(i, child){ }}
+                    <div class="layui-col-xs6 layui-col-sm4 layui-col-md4 layui-col-lg3">
+                        <a title="{{ child.title }}" target="_blank" href="{{ child.href }}">{{ child.title }}</a>
+                    </div>
+                {{#  }); }}
+            {{#  } }}
+        </div>
+        {{#  }); }}
+</script>
+  <script>
+    $(function () {
+      layui.use('laytpl', function () {
+        var laytpl = layui.laytpl;
+
+        var data = [{
+            title: '一、水平居中',
+            href: 'javascript:;',
+            children: [{
+                title: '(1)文本/行内/行内块级▲',
+                href: './demo/HorizontalCenter/1.1.html'
+              },
+              {
+                title: '(2)单个块级元素▲',
+                href: './demo/HorizontalCenter/1.2.html'
+              },
+              {
+                title: '(3)多个块级元素',
+                href: './demo/HorizontalCenter/1.3.html'
+              },
+              {
+                title: '(4)使用position实现▲',
+                href: './demo/HorizontalCenter/1.4.html'
+              },
+              {
+                title: '(5)任意个元素(flex)',
+                href: './demo/HorizontalCenter/1.5.html'
+              }
+            ]
+          },
+          {
+            title: '二、垂直居中',
+            href: 'javascript:;',
+            children: [{
+                title: '(1)单行文本/行内/行内块级▲',
+                href: './demo/VerticalCenter/2.1.html'
+              },
+              {
+                title: '(2)多行文本/行内/行内块级',
+                href: './demo/VerticalCenter/2.2.html'
+              },
+              {
+                title: '(3)图片▲',
+                href: './demo/VerticalCenter/2.3.html'
+              },
+              {
+                title: '(4-1)单个块级-tabel-cell实现',
+                href: './demo/VerticalCenter/2.4.html'
+              },
+              {
+                title: '(4-2)单个块级-position实现:▲',
+                href: './demo/VerticalCenter/2.5.html'
+              },
+              {
+                title: '(4-3)单个块级-flex实现',
+                href: './demo/VerticalCenter/2.6.html'
+              },
+              {
+                title: '(5)任意个元素(flex)',
+                href: './demo/VerticalCenter/2.7.html'
+              }
+            ]
+          },
+          {
+            title: '三、水平垂直居中',
+            href: 'javascript:;',
+            children: [{
+                title: '(1)行内/行内块级/图片▲',
+                href: './demo/Horizontal-VerticalCenter/3.1.html'
+              },
+              {
+                title: '(2)table-cell',
+                href: './demo/Horizontal-VerticalCenter/3.2.html'
+              },
+              {
+                title: '(3)button作为父元素',
+                href: './demo/Horizontal-VerticalCenter/3.3.html'
+              },
+              {
+                title: '(4)绝对定位▲',
+                href: './demo/Horizontal-VerticalCenter/3.4.html'
+              },
+              {
+                title: '(5)绝对居中▲',
+                href: './demo/Horizontal-VerticalCenter/3.5.html'
+              },
+              {
+                title: '(6)flex',
+                href: './demo/Horizontal-VerticalCenter/3.6.html'
+              },
+              {
+                title: '(7)视窗居中',
+                href: './demo/Horizontal-VerticalCenter/3.7.html'
+              },
+            ]
+          },
+          {
+            title: '四(1)、两列布局--左列定宽,右列自适应',
+            href: 'javascript:;',
+            children: [{
+                title: '(1)利用float+margin▲',
+                href: './demo/TwoColumn/4.1.html'
+              },
+              {
+                title: '(2)利用float+margin(fix)',
+                href: './demo/TwoColumn/4.2.html'
+              },
+              {
+                title: '(3)使用float+overflow▲',
+                href: './demo/TwoColumn/4.3.html'
+              },
+              {
+                title: '(4)使用table实现',
+                href: './demo/TwoColumn/4.4.html'
+              },
+              {
+                title: '(5)使用position实现',
+                href: './demo/TwoColumn/4.5.html'
+              },
+              {
+                title: '(6)使用flex实现',
+                href: './demo/TwoColumn/4.6.html'
+              },
+              {
+                title: '(7)使用Grid实现',
+                href: './demo/TwoColumn/4.7.html'
+              },
+            ]
+          },
+          {
+            title: '四(2)、两列布局--左列自适应,右列定宽',
+            href: 'javascript:;',
+            children: [{
+                title: '(1)使用float+margin▲',
+                href: './demo/TwoColumn/4.8.html'
+              },
+              {
+                title: '(2)使用float+overflow▲',
+                href: './demo/TwoColumn/4.9.html'
+              },
+              {
+                title: '(3)使用table实现',
+                href: './demo/TwoColumn/4.10.html'
+              },
+              {
+                title: '(4)使用position实现',
+                href: './demo/TwoColumn/4.11.html'
+              },
+              {
+                title: '(5)使用flex实现',
+                href: './demo/TwoColumn/4.12.html'
+              },
+              {
+                title: '(6)使用Grid实现',
+                href: './demo/TwoColumn/4.13.html'
+              },
+            ]
+          },
+          {
+            title: '四(3)、两列布局--一列不定,一列自适应',
+            href: 'javascript:;',
+            children: [{
+                title: '(1)使用float+overflow▲',
+                href: './demo/TwoColumn/4.14.html'
+              },
+              {
+                title: '(2)使用flex实现',
+                href: './demo/TwoColumn/4.15.html'
+              },
+              {
+                title: '(3)使用Grid实现',
+                href: './demo/TwoColumn/4.16.html'
+              },
+            ]
+          },
+          {
+            title: '五(1)、三列布局--两列定宽,一列自适应',
+            href: 'javascript:;',
+            children: [{
+                title: '(1)使用float+margin',
+                href: './demo/ThreeColumn/5.1.html'
+              },
+              {
+                title: '(2)使用float+overflow▲',
+                href: './demo/ThreeColumn/5.2.html'
+              },
+              {
+                title: '(3)使用position实现▲',
+                href: './demo/ThreeColumn/5.3.html'
+              },
+              {
+                title: '(4)使用table实现▲',
+                href: './demo/ThreeColumn/5.4.html'
+              },
+              {
+                title: '(5)使用flex实现',
+                href: './demo/ThreeColumn/5.5.html'
+              },
+              {
+                title: '(6)使用Grid实现',
+                href: './demo/ThreeColumn/5.6.html'
+              },
+            ]
+          },
+          {
+            title: '五(2)、三列布局--两侧定宽,中间自适应',
+            href: 'javascript:;',
+            children: [{
+                title: '5.2.1 双飞翼布局方法▲',
+                href: './demo/ThreeColumn/5.7.html'
+              },
+              {
+                title: '5.2.2 圣杯布局方法',
+                href: './demo/ThreeColumn/5.8.html'
+              },
+              {
+                title: '5.2.3 使用Grid实现',
+                href: './demo/ThreeColumn/5.9.html'
+              },
+              {
+                title: '5.2.4.1 使用table实现▲',
+                href: './demo/ThreeColumn/5.10.html'
+              },
+              {
+                title: '5.2.4.2 使用flex实现',
+                href: './demo/ThreeColumn/5.11.html'
+              },
+              {
+                title: '5.2.4.3 使用position实现▲',
+                href: './demo/ThreeColumn/5.12.html'
+              },
+            ]
+          },
+          {
+            title: '六(1)、多列等宽布局--四列等宽',
+            href: 'javascript:;',
+            children: [{
+                title: '(1)使用float实现▲',
+                href: './demo/MultipleColumn/6.1.html'
+              },
+              {
+                title: '(2)使用table实现▲',
+                href: './demo/MultipleColumn/6.2.html'
+              },
+              {
+                title: '(3)使用flex实现',
+                href: './demo/MultipleColumn/6.3.html'
+              },
+            ]
+          },
+          {
+            title: '六(2)、多列等宽布局--多列等宽',
+            href: 'javascript:;',
+            children: [{
+                title: '(1)使用float实现▲',
+                href: './demo/MultipleColumn/6.4.html'
+              },
+              {
+                title: '(2)使用table实现▲',
+                href: './demo/MultipleColumn/6.5.html'
+              },
+              {
+                title: '(3)使用flex实现',
+                href: './demo/MultipleColumn/6.6.html'
+              },
+              {
+                title: '(4)使用Grid实现',
+                href: './demo/MultipleColumn/6.7.html'
+              },
+            ]
+          },
+          {
+            title: '六(3)、多列等宽布局--九宫格布局',
+            href: 'javascript:;',
+            children: [{
+                title: '(1)使用table实现▲',
+                href: './demo/MultipleColumn/6.8.html'
+              },
+              {
+                title: '(2-1)使用flex实现',
+                href: './demo/MultipleColumn/6.9.html'
+              },
+              {
+                title: '(2-2)flex优化版（无需遵守三个嵌套一行）',
+                href: './demo/MultipleColumn/6.10.html'
+              },
+              {
+                title: '(2-3)flex再优化版（高度等宽）',
+                href: './demo/MultipleColumn/6.11.html'
+              },
+              {
+                title: '(3)使用Grid实现',
+                href: './demo/MultipleColumn/6.12.html'
+              },
+            ]
+          },
+          {
+            title: '七、全屏布局',
+            href: 'javascript:;',
+            children: [{
+                title: '(1)使用position实现▲',
+                href: './demo/FullScreenLayout/7.1.html'
+              },
+              {
+                title: '(2)使用flex实现',
+                href: './demo/FullScreenLayout/7.2.html'
+              },
+              {
+                title: '(3)使用Grid实现',
+                href: './demo/FullScreenLayout/7.3.html'
+              },
+            ]
+          },
+          {
+            title: '八、其他布局',
+            href: 'javascript:;',
+            children: [{
+                title: '(1)后台常见布局1',
+                href: './demo/OthersLayout/8.1.html'
+              },
+              {
+                title: '(2)后台常见布局2 (点击可以收缩展开菜单栏)',
+                href: './demo/OthersLayout/8.2.html'
+              },
+            ]
+          },
+        ]
+        var getTpl = $('#entranceTpl').html();
+        var $view = $('.entrance-list');
+        laytpl(getTpl).render(data, function (html) {
+          $view.html(html)
+        });
+
+      })
+    })
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>两列定宽,一列自适应-使用float+overflow</title>
+    <style>
+        #parent{min-width: 320px;} /*100+10+200+20,防止宽度不够,子元素换行*/
+        #left {
+            margin-right: 10px; /*间隔*/
+            float: left;
+            width: 100px;
+            height: 500px;
+            background-color: #0086b3;
+        }
+        #center{
+            margin-right: 10px; /*在此定义和#right的间隔*/
+            float: left;
+            width: 200px;
+            height: 500px;
+            background-color: #eb7350;
+        }
+        #right {
+            overflow: hidden;  /*触发bfc*/
+            height: 500px;
+            background-color: #00FFFF;
+        }
+    </style>
+</head>
+<body>
+<div id="parent">
+    <div id="left">左列定宽</div>
+    <div id="center">中间定宽</div>
+    <div id="right">右列自适应</div>
+</div>
+</body>
+</html>

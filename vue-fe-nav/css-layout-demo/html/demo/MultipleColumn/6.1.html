@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>四列等宽-使用float实现</title>
+    <style>
+        /*使整体内容看起来居中,抵消padding-left的影响*/
+        #parent {margin-left: -20px;}
+        .column{
+            padding-left: 20px;  /*盒子的边距*/
+            width: 25%;
+            float: left;
+            box-sizing: border-box;
+            border: 1px solid #000;
+            background-clip: content-box; /*背景色从内容开始绘制,方便观察*/
+            height: 500px;
+        }
+        .column:nth-child(odd){background-color: #f00;}
+        .column:nth-child(even){background-color: #0f0;}
+    </style>
+</head>
+<body>
+<div id="parent">
+    <div class="column">1 <p>我是文字我是文字我输文字我是文字我是文字</p></div>
+    <div class="column">2 <p>我是文字我是文字我输文字我是文字我是文字</p></div>
+    <div class="column">3 <p>我是文字我是文字我输文字我是文字我是文字</p></div>
+    <div class="column">4 <p>我是文字我是文字我输文字我是文字我是文字</p></div>
+</div>
+</body>
+</html>

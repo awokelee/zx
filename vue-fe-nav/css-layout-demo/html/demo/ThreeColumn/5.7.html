@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>两侧定宽,中间自适应-双飞翼布局方法</title>
+    <style>
+        #header {
+            height: 60px;
+            background-color: #ccc;
+        }
+        #left {
+            float: left;
+            width: 60px;
+            height: 500px;
+            margin-left: -100%; /*调整#left的位置,值等于自身宽度*/
+            background-color: #f00;
+            opacity: 0.5;
+        }
+        #center {
+            height: 500px;
+            float: left;
+            width: 100%;
+            background-color: #eeff2b;
+        }
+        #center_inbox{
+            height: 480px;
+            border: 1px solid #000;
+            margin: 0 150px 0 80px;  /*关键!!!左右边界等于左右盒子的宽度,多出来的为盒子间隔*/
+        }
+        #right {
+            float: left;
+            width: 130px;
+            height: 500px;
+            margin-left: -130px;  /*使right到指定的位置,值等于自身宽度*/
+            background-color: #0f0;
+            opacity: 0.5;
+        }
+        #footer {
+            clear: both;  /*注意清除浮动!!*/
+            height: 60px;
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+<div id="header"></div>
+<!--中间栏需要放在前面-->
+<div id="parent">
+    <div id="center">
+        <div id="center_inbox">中间自适应</div>
+        <hr>  <!--方便观察原理-->
+    </div>
+    <div id="left">左列定宽</div>
+    <div id="right">右列定宽</div>
+</div>
+<div id="footer"></div>
+</body>
+</html>

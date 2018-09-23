@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>两侧定宽,中间自适应-使用flex实现</title>
+    <style>
+        #parent {
+            height: 500px;
+            display: flex;
+        }
+        #left {
+            width: 100px;
+            background-color: #f00;
+        }
+        #center {
+            flex: 1;  /*均分#parent剩余的部分*/
+            background-color: #eeff2b;
+        }
+        #right {
+            width: 150px;
+            background-color: #FF00FF;
+        }
+    </style>
+</head>
+<body>
+<div id="parent">
+    <div id="left">左列定宽</div>
+    <div id="center">中间自适应</div>
+    <div id="right">右列定宽</div>
+</div>
+</body>
+</html>

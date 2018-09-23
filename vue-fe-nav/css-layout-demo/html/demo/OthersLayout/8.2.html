@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>其他布局-后台常见布局2 (点击可以收缩展开菜单栏)</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .header{
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 40px;
+            border: 2px solid #000;
+            box-sizing: border-box;
+            line-height: 40px;
+        }
+        .header .header-box{
+            position: absolute;
+            left: 200px;  /*对应nav的宽度*/
+            right: 0;
+            bottom: 0;
+            top: 0;
+            background-color: #f00;
+            transition: all 0.2s;
+        }
+        .header .header-box.hidden{
+            left: 40px;  /*对应收缩后nav的宽度*/
+        }
+        .header h1{
+            float: left;
+        }
+        .header .admin{
+            float: right;
+        }
+        .nav{
+            position: fixed;
+            width: 200px;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            background-color: #339933;
+            transition: all 0.2s;
+        }
+        .nav.hidden{
+            width: 40px;  /*收缩后nav的宽度*/
+        }
+        .nav li{
+            margin-left: 30px; /*只是为了能看到小黑点，此处可省略*/
+            width: 100%;
+            line-height: 30px;
+        }
+        .main{
+            margin-top: 50px;  /*对应header的高度*/
+            margin-left: 200px;  /*对应nav的宽度*/
+            border: 2px solid #000;
+            transition: all 0.2s;
+        }
+        .main.hidden{
+            margin-left: 40px;  /*对应收缩后nav的宽度*/
+        }
+        .main .content{
+            min-height: 500px;
+            background: #ccc;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="header-box">
+        <a id="toggle" href="javascript:;">toggle</a>
+        <div class="admin">admin</div>
+    </div>
+</div>
+<div class="nav">
+    <ul>
+        <li>0001</li>
+        <li>0002</li>
+        <li>0003</li>
+        <li>0004</li>
+        <li>0005</li>
+        <li>0006</li>
+        <li>0007</li>
+        <li>0008</li>
+        <li>0009</li>
+        <li>0010</li>
+        <li>0011</li>
+        <li>0012</li>
+        <li>0013</li>
+        <li>0014</li>
+        <li>0015</li>
+        <li>0016</li>
+        <li>0017</li>
+        <li>0018</li>
+        <li>0019</li>
+        <li>0020</li>
+    </ul>
+</div>
+<div class="main">
+    <div class="content">
+        内容区
+    </div>
+</div>
+
+<script src="../../../../../cdn.bootcss.com/jquery/1.11.1/jquery.min.js" tppabs="https://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="../../../../../cdn.bootcss.com/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js" tppabs="https://cdn.bootcss.com/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
+<script>
+  $(function () {
+    // 滚动条美化
+    $('.nav').niceScroll('ul',{
+      cursorwidth: "0px",  // 滚动条宽度
+      bouncescroll: false, // 回弹效果
+    });
+
+    // 菜单栏展开/收缩
+    $('#toggle').click(function () {
+      $('https://www.sweet-kk.top/css-layout-demo/html/demo/OthersLayout/.header-box,.main,.nav').toggleClass('hidden')
+      // 滚动条随着div的伸缩调整位置
+      $('.nav').getNiceScroll().resize()
+    })
+  })
+
+</script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>两列定宽,一列自适应-使用table实现</title>
+    <style>
+        #parent {
+            width: 100%;
+            height: 520px; /*抵消上下间距10*2的高度影响*/
+            margin: -10px 0;  /*抵消上下边间距10的位置影响*/
+            display: table;
+            /*左右两边间距无法消除,子元素改用padding设置盒子间距就没有这个问题*/
+            border-spacing: 10px;  /*关键!!!设置间距*/
+        }
+        #left {
+            display: table-cell;
+            width: 100px;
+            background-color: #f00;
+        }
+        #center {
+            display: table-cell;
+            width: 200px;
+            background-color: #eeff2b;
+        }
+        #right {
+            display: table-cell;
+            background-color: cornflowerblue;
+        }
+    </style>
+</head>
+<body>
+<div id="parent">
+    <div id="left">左列定宽</div>
+    <div id="center">中间定宽</div>
+    <div id="right">右列自适应</div>
+</div>
+</body>
+</html>

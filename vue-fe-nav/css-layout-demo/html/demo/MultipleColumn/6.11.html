@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>九宫格布局-flex再优化版（高度等宽）</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+            background-color: #ccc;
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        ul>li{
+            width: 33.33333%;
+            padding-top: 33.33333%;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            border: 1px solid #000;
+            position: relative;
+            height: 0;
+        }
+        ul>li>span{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #2dc1e8;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li>
+        <span>1</span>
+    </li>
+    <li>
+        <span>1</span>
+    </li>
+    <li>
+        <span>1</span>
+    </li>
+    <li>
+        <span>1</span>
+    </li>
+    <li>
+        <span>1</span>
+    </li>
+    <li>
+        <span>1</span>
+    </li>
+    <li>
+        <span>1</span>
+    </li>
+    <li>
+        <span>1</span>
+    </li>
+    <li>
+        <span>1</span>
+    </li>
+</ul>
+</body>
+</html>

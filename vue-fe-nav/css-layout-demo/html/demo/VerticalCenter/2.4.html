@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>垂直居中-单个块级元素-使用tabel-cell实现</title>
+    <style>
+        #parent{
+            display: table-cell;
+            vertical-align: middle;
+            border: 1px solid #000;
+            width: 300px;
+            height: 300px;
+        }
+        #son{
+            width: 100px;
+            height: 100px;
+            background-color: #f00;
+        }
+    </style>
+</head>
+<body>
+<div id="parent">
+    <div id="son"></div>
+</div>
+</body>
+</html>

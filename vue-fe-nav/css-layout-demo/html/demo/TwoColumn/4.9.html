@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>左列自适应,右列定宽-使用float+overflow</title>
+    <style>
+        #left {
+            overflow: hidden;  /*触发bfc*/
+            height: 500px;
+            background-color: #2D93CA;
+        }
+        #right {
+            margin-left: 10px;  /*margin需要定义在#right中*/
+            float: right;
+            width: 100px;
+            height: 500px;
+            background-color: #FFB800;
+        }
+    </style>
+</head>
+<body>
+<div id="parent">
+    <div id="right">右列定宽</div>
+    <div id="left">左列自适应</div>   <!--顺序要换一下-->
+</div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>多列等宽-使用float实现</title>
+    <style>
+        #parent {height: 500px;}
+        .column{
+            float: left;  /*添加浮动*/
+            width: 16.66666666666667%;  /*100÷列数,得出百分比*/
+            height: 500px;
+        }
+        .column:nth-child(odd){background-color: #2dc1e8;}
+        .column:nth-child(even){background-color: #0f0;}
+    </style>
+</head>
+<body>
+<div id="parent">
+    <div class="column">1 <p>我是文字我是文字我输文字我是文字我是文字</p></div>
+    <div class="column">2 <p>我是文字我是文字我输文字我是文字我是文字</p></div>
+    <div class="column">3 <p>我是文字我是文字我输文字我是文字我是文字</p></div>
+    <div class="column">4 <p>我是文字我是文字我输文字我是文字我是文字</p></div>
+    <div class="column">5 <p>我是文字我是文字我输文字我是文字我是文字</p></div>
+    <div class="column">6 <p>我是文字我是文字我输文字我是文字我是文字</p></div>
+</div>
+</body>
+</html>
