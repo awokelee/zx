@@ -21,7 +21,8 @@ const bookletNpmScript = require('./category/bookletNpmScript')
 const bookletUi = require('./category/bookletUi')
 const bookletVueCore = require('./category/bookletVueCore')
 const performance = require('./category/performance')
-const webpack = require('./category/webpack')
+const webpack3 = require('./category/webpack3')
+const webpack4 = require('./category/webpack4')
 
 module.exports = {
   // base: '/vue-press/',
@@ -58,11 +59,16 @@ function getNavList() {
     { text: 'React', link: '/react/' },
     { text: 'Nginx', link: '/nginx/' },
     { text: '小程序', link: '/mpvue/' },
-    { text: '面试', link: '/fe-interview-questions/' },
-    { text: '前端开发规范', link: '/standard/' },
+    // { text: '面试', link: '/fe-interview-questions/' },
     {
       text: 'FE-必知必会',
       items: [
+        {
+          text: '规范',
+          items: [
+            { text: '前端开发规范', link: '/standard/' },
+          ]
+        },
         {
           text: '面试相关',
           items: [
@@ -89,10 +95,19 @@ function getNavList() {
           text: '其他深入',
           items: [
             { text: '剖析 Vue.js 内部运行机制', link: '/booklet-vue-core/' },
-            { text: '四大维度解锁 Webpack 3.0 前端工程化', link: '/webpack/' },
+            { text: '四大维度解锁 Webpack 3.0 前端工程化', link: '/webpack3/' },
+            { text: '使用 webpack 定制前端开发环境(webpack 4.x)', link: '/webpack4/' },
             { text: 'Javascript 设计模式系统讲解与应用', link: '/design-patterns/' },
           ]
         },
+        {
+          text: '小册',
+          items: [
+            { text: 'Git 原理详解及实用指南', link: '/booklet-git/' },
+            { text: 'npm script 前端工作流', link: '/booklet-npm-script/' },
+            { text: '大厂 UI 开发实战手册', link: '/booklet-ui/' },
+          ]
+        }
       ]
     },
     { text: 'Nav', link: 'http://nav.gaodaqian.com' },
@@ -136,9 +151,7 @@ function getNavList() {
         { text: 'JavaScript', link: '/Effective-JavaScript/' },        
         { text: '基础', link: '/interview/' },
         { text: '其他', link: '/home/' },
-        { text: 'Git 原理详解及实用指南', link: '/booklet-git/' },
-        { text: 'npm script 前端工作流', link: '/booklet-npm-script/' },
-        { text: '大厂 UI 开发实战手册', link: '/booklet-ui/' },
+        
       ]
     },
   ]
@@ -269,7 +282,8 @@ function getSidebar() {
     '/booklet-vue-core/': bookletVueCore.getList(),
     '/security/': security.getList(),
     '/performance/': performance.getList(),
-    '/webpack/': webpack.getList(),
+    '/webpack3/': webpack3.getList(),
+    '/webpack4/': webpack4.getList(),
     '/': [ '', 'contact', 'about']
   }
 }
