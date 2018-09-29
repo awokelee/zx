@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>03_模板解析_表达式_vue</title>
+  <script src="js/mvvm/compile.js"></script>
+  <script src="js/mvvm/mvvm.js"></script>
+  <script src="js/mvvm/observer.js"></script>
+  <script src="js/mvvm/watcher.js"></script>
+</head>
+
+<body>
+  <div id="test">
+    <p>{{name}}</p>
+  </div>
+
+  <script>
+    new MVVM({
+      el: '#test',
+      data: {
+        name: 'SADAMU'
+      }
+    })
+  </script>
+</body>
+
+</html>

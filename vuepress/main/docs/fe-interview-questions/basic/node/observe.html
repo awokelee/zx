@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script>
+    function example() {
+      return Promise.resolve(1).then(()=>{
+        return Promise.resolve(2)
+      }).then(value =>{
+        return Promise.reject(3)
+      })
+    }
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

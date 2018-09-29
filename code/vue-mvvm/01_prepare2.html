@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<div id="test">尚硅谷IT教育</div>
+
+<div id="app">
+  <ul>
+    <li>test1</li>
+    <li>test2</li>
+    <li>test3</li>
+    <li>test3</li>
+    <li>test3</li>
+    <li>test3</li>
+    <li>test3</li>
+    <li>test3</li>
+    <li>test3</li>
+    <li>test3</li>
+    <li>test3</li>
+    <li>test3</li>
+    <li>test3</li>
+  </ul>
+</div>
+
+
+
+<script type="text/javascript">
+
+  //6. DocumentFragment: 文档碎片(高效批量更新多个节点)
+  // document: 对应显示的页面, 包含n个elment  一旦更新document内部的某个元素界面更新
+  // documentFragment: 内存中保存n个element的容器对象(不与界面关联), 如果更新framgnet中的某个element, 界面不变
+  /*
+  <div id="app">
+    <ul>
+      <li>test1</li>
+      <li>test2</li>
+      <li>test3</li>
+      <li>test3</li>
+      <li>test3</li>
+      <li>test3</li>
+      <li>test3</li>
+      <li>test3</li>
+    </ul>
+  </div>
+   */
+  const div = document.getElementById('app')
+  // 1. 创建fragment
+  const fragment = document.createDocumentFragment()
+  // 2. 取出ul中所有子节点取出保存到fragment
+  let child
+  while(child=div.firstChild) { // 一个节点只能有一个父亲
+    fragment.appendChild(child)  // 先将child从ul中移除, 添加为fragment子节点
+  }
+
+  // 3. 更新fragment中所有li的文本
+  Array.prototype.slice.call(fragment.childNodes).forEach(node => {
+    if (node.nodeType===1) { // 元素节点 <ul>
+      Array.from(node.children).forEach(li => li.textContent = 'atguigu')
+    }
+  })
+
+  // 4. 将fragment插入ul
+  div.appendChild(fragment)
+
+</script>
+</body>
+</html>

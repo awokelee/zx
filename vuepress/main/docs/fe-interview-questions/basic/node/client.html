@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script>
+    // 2. 连接到服务器
+    let ws = new WebSocket('ws://localhost:8080')
+
+    ws.onopen=function(){
+      alert('连接已打开')
+      ws.send('abc')
+    }
+    ws.onmessage=function(){
+      alert('有消息过来')
+    }
+    ws.onclose=function(){
+      alert('连接已断开')
+    }
+    ws.onerror=function(){
+      alert('连接出错了')
+    }
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

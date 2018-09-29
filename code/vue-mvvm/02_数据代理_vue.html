@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>02_数据代理_vue</title>
+</head>
+
+<body>
+
+  <div id="test"></div>
+  <script type="text/javascript" src="js/vue.js"></script>
+  <script type="text/javascript">
+    const vm = new Vue({
+      el: "#test",
+      data: {
+        name: '张三'
+      }
+    })
+    console.log(vm.name) // 读取的是data中的name,  vm代理对data的读操作
+    vm.name = '李四' // 数据保存到data中的name上, vm代理对data的写操作
+    console.log(vm.name, vm._data.name)
+    
+    
+    const sum = (...arr) => [...arr].reduce((acc, val) => {
+      let temp = typeof val === 'number' ? val : val.replace(/,/g, "") - 0 
+      return acc + temp
+    }, 0);
+
+    console.log(sum(...['4,5,6', 2, 3, 4, '2,3']))
+  </script>
+</body>
+
+</html>
