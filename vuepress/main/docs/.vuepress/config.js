@@ -1,4 +1,4 @@
-/* const mpvue = require('./category/mpvue')
+const mpvue = require('./category/mpvue')
 const nginx = require('./category/nginx')
 const EffectiveJavaScript = require('./category/EffectiveJavaScript')
 const notes = require('./category/notes')
@@ -22,7 +22,7 @@ const bookletUi = require('./category/bookletUi')
 const bookletVueCore = require('./category/bookletVueCore')
 const performance = require('./category/performance')
 const webpack3 = require('./category/webpack3')
-const webpack4 = require('./category/webpack4') */
+const webpack4 = require('./category/webpack4')
 
 module.exports = {
   // base: '/vue-press/',
@@ -48,7 +48,7 @@ module.exports = {
 function getNavList() {
   return [
     { text: '面试', link: '/fe-interview-questions/' },
-    /* {
+    {
       text: 'Vue',
       items: [
         { text: 'Vue 零基础搭建项目', link: '/vue/' },
@@ -153,13 +153,13 @@ function getNavList() {
         { text: '其他', link: '/home/' },
         
       ]
-    }, */
+    },
   ]
 }
 
 function getSidebar() {
   return {
-    /* '/home/': home.getList(),
+    '/home/': home.getList(),
     '/nginx/': nginx.getList(),
     '/mpvue/': mpvue.getList(),
     '/Effective-JavaScript/': EffectiveJavaScript.getList(),
@@ -172,6 +172,18 @@ function getSidebar() {
     '/vue-advanced/': vueAdvanced.getList(),
     '/vue-best-practice/': [
       '',
+      {
+        title: 'Nginx 前端常用',
+        collapsable: false,
+        children: [
+          './nginx/快速实现简单的访问限制',
+          './nginx/解决跨域',
+          './nginx/适配PC与移动环境',
+          './nginx/合并请求',
+          './nginx/图片处理',
+          './nginx/页面内容修改',
+        ]
+      },
       '数组',
       'getPrototypeOf',
       '滚动条样式',
@@ -189,7 +201,7 @@ function getSidebar() {
           './vuex/actions.js',
         ]
       },
-    ], */
+    ],
     '/fe-interview-questions/': [
       {
         title: 'Vue-MVVM',
@@ -284,7 +296,7 @@ function getSidebar() {
         ]
       }
     ],
-    /* '/fe-interview-junior/': feInterviewJunior.getList(),
+    '/fe-interview-junior/': feInterviewJunior.getList(),
     '/fe-interview-senior/': feInterviewSenior.getList(),
     '/fe-interview-skill/': feInterviewSkill.getList(),
     '/design-patterns/': designPatterns.getList(),
@@ -297,7 +309,7 @@ function getSidebar() {
     '/security/': security.getList(),
     '/performance/': performance.getList(),
     '/webpack3/': webpack3.getList(),
-    '/webpack4/': webpack4.getList(), */
+    '/webpack4/': webpack4.getList(),
     '/': [ '', 'contact', 'about']
   }
 }
