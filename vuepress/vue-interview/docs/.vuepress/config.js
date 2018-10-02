@@ -30,6 +30,7 @@ function getNavList() {
 function getSidebar() {
   return {
     '/vue/': [
+      'Event-Loop事件循环',
       {
         title: '基础',
         collapsable: false,
