@@ -113,7 +113,7 @@ function getNavList() {
         }
       ]
     },
-    { text: 'Nav', link: 'http://nav.gaodaqian.com' },
+    { text: 'Web 导航', link: 'http://nav.gaodaqian.com' },
     {
       text: 'Projects',
       items: [
