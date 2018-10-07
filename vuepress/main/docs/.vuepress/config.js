@@ -1,10 +1,10 @@
-const mpvue = require('./category/mpvue')
-const nginx = require('./category/nginx')
+// const mpvue = require('./category/mpvue')
+// const nginx = require('./category/nginx')
 const EffectiveJavaScript = require('./category/EffectiveJavaScript')
 const notes = require('./category/notes')
 const standard = require('./category/standard')
 const vue = require('./category/vue')
-const react = require('./category/react')
+// const react = require('./category/react')
 const smarketing = require('./category/smarketing')
 const security = require('./category/security')
 const interview = require('./category/interview')
@@ -47,14 +47,14 @@ module.exports = {
 
 function getNavList() {
   return [
-    { text: '面试', link: '/fe-interview-questions/' },
+    // { text: '面试', link: '/fe-interview-questions/' },
     {
       text: 'Vue',
       items: [
         { text: 'Vue 零基础搭建项目', link: '/vue/' },
         { text: 'Vue 项目中遇到的问题', link: '/notes/' },
         { text: 'Vue 核心技术(Vue+Vue-Router+Vuex+SSR)', link: '/vue-advanced/' },
-        { text: 'Vue 最佳实践', link: '/vue-best-practice/' },
+        // { text: 'Vue 最佳实践', link: '/vue-best-practice/' },
       ]
     },
     // { text: 'React', link: '/react/' },
@@ -72,7 +72,7 @@ function getNavList() {
             { text: '前端开发规范', link: '/standard/' },
           ]
         },
-        {
+        /* {
           text: '面试相关',
           items: [
             { text: 'Web 前端面试指南', link: '/booklet-interview-guide/' },
@@ -80,7 +80,7 @@ function getNavList() {
             { text: '前端跳槽面试必备技巧', link: '/fe-interview-skill/' },
             { text: '揭秘一线互联网企业 前端 JavaScript 高级面试', link: '/fe-interview-senior/' },
           ]
-        },
+        }, */
         {
           text: '网络及性能',
           items: [
@@ -163,17 +163,17 @@ function getNavList() {
 function getSidebar() {
   return {
     '/home/': home.getList(),
-    '/nginx/': nginx.getList(),
-    '/mpvue/': mpvue.getList(),
+    // '/nginx/': nginx.getList(),
+    // '/mpvue/': mpvue.getList(),
     '/Effective-JavaScript/': EffectiveJavaScript.getList(),
     '/smarketing/': smarketing.getList(),
-    '/react/': react.getList(),
+    // '/react/': react.getList(),
     '/vue/': vue.getList(),
     '/notes/': notes.getList(),
     '/interview/': interview.getList(),
     '/standard/': standard.getList(),
     '/vue-advanced/': vueAdvanced.getList(),
-    '/vue-best-practice/': [
+    /* '/vue-best-practice/': [
       '',
       {
         title: 'Nginx 前端常用',
@@ -204,7 +204,7 @@ function getSidebar() {
           './vuex/actions.js',
         ]
       },
-    ],
+    ] ,*/
     '/fe-interview-questions/': [
       {
         title: 'Vue-MVVM',
