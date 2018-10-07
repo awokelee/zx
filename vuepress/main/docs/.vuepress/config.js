@@ -57,9 +57,12 @@ function getNavList() {
         { text: 'Vue 最佳实践', link: '/vue-best-practice/' },
       ]
     },
-    { text: 'React', link: '/react/' },
-    { text: 'Nginx', link: '/nginx/' },
-    { text: '小程序', link: '/mpvue/' },
+    // { text: 'React', link: '/react/' },
+    { text: 'React', link: 'http://react.gaodaqian.com/react/' },
+    // { text: 'Nginx', link: '/nginx/' },
+    { text: 'Nginx', link: 'http://nginx.gaodaqian.com/nginx/' },
+    // { text: '小程序', link: '/mpvue/' },
+    { text: '小程序', link: 'http://mpvue.gaodaqian.com/mpvue/' },
     {
       text: 'FE-必知必会',
       items: [
