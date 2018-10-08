@@ -98,8 +98,10 @@ function getNavList() {
           text: '其他深入',
           items: [
             { text: '剖析 Vue.js 内部运行机制', link: '/booklet-vue-core/' },
-            { text: '四大维度解锁 Webpack 3.0 前端工程化', link: '/webpack3/' },
-            { text: '使用 webpack 定制前端开发环境(webpack 4.x)', link: '/webpack4/' },
+            // { text: '四大维度解锁 Webpack 3.0 前端工程化', link: '/webpack3/' },
+            { text: '四大维度解锁 Webpack 3.0 前端工程化', link: 'http://webpack3.gaodaqian.com/webpack3/' },
+            // { text: '使用 webpack 定制前端开发环境(webpack 4.x)', link: '/webpack4/' },
+            { text: '使用 webpack 定制前端开发环境(webpack 4.x)', link: 'http://webpack4.gaodaqian.com/webpack4/' },
             { text: 'Javascript 设计模式系统讲解与应用', link: '/design-patterns/' },
           ]
         },
@@ -311,8 +313,8 @@ function getSidebar() {
     '/booklet-vue-core/': bookletVueCore.getList(),
     '/security/': security.getList(),
     '/performance/': performance.getList(),
-    '/webpack3/': webpack3.getList(),
-    '/webpack4/': webpack4.getList(),
+    // '/webpack3/': webpack3.getList(),
+    // '/webpack4/': webpack4.getList(),
     '/': [ '', 'contact', 'about']
   }
 }
