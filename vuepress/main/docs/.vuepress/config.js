@@ -1,10 +1,10 @@
-// const mpvue = require('./category/mpvue')
-// const nginx = require('./category/nginx')
+const mpvue = require('./category/mpvue')
+const nginx = require('./category/nginx')
 const EffectiveJavaScript = require('./category/EffectiveJavaScript')
 const notes = require('./category/notes')
 const standard = require('./category/standard')
 const vue = require('./category/vue')
-// const react = require('./category/react')
+const react = require('./category/react')
 const smarketing = require('./category/smarketing')
 const security = require('./category/security')
 const interview = require('./category/interview')
@@ -47,22 +47,19 @@ module.exports = {
 
 function getNavList() {
   return [
-    // { text: '面试', link: '/fe-interview-questions/' },
+    { text: '面试', link: '/fe-interview-questions/' },
     {
       text: 'Vue',
       items: [
         { text: 'Vue 零基础搭建项目', link: '/vue/' },
         { text: 'Vue 项目中遇到的问题', link: '/notes/' },
         { text: 'Vue 核心技术(Vue+Vue-Router+Vuex+SSR)', link: '/vue-advanced/' },
-        // { text: 'Vue 最佳实践', link: '/vue-best-practice/' },
+        { text: 'Vue 最佳实践', link: '/vue-best-practice/' },
       ]
     },
-    // { text: 'React', link: '/react/' },
-    { text: 'React', link: 'http://react.gaodaqian.com/react/' },
-    // { text: 'Nginx', link: '/nginx/' },
-    { text: 'Nginx', link: 'http://nginx.gaodaqian.com/nginx/' },
-    // { text: '小程序', link: '/mpvue/' },
-    { text: '小程序', link: 'http://mpvue.gaodaqian.com/mpvue/' },
+    { text: 'React', link: '/react/' },
+    { text: 'Nginx', link: '/nginx/' },
+    { text: '小程序', link: '/mpvue/' },
     {
       text: 'FE-必知必会',
       items: [
@@ -72,7 +69,7 @@ function getNavList() {
             { text: '前端开发规范', link: '/standard/' },
           ]
         },
-        /* {
+        {
           text: '面试相关',
           items: [
             { text: 'Web 前端面试指南', link: '/booklet-interview-guide/' },
@@ -80,7 +77,7 @@ function getNavList() {
             { text: '前端跳槽面试必备技巧', link: '/fe-interview-skill/' },
             { text: '揭秘一线互联网企业 前端 JavaScript 高级面试', link: '/fe-interview-senior/' },
           ]
-        }, */
+        },
         {
           text: '网络及性能',
           items: [
@@ -98,10 +95,8 @@ function getNavList() {
           text: '其他深入',
           items: [
             { text: '剖析 Vue.js 内部运行机制', link: '/booklet-vue-core/' },
-            // { text: '四大维度解锁 Webpack 3.0 前端工程化', link: '/webpack3/' },
-            { text: '四大维度解锁 Webpack 3.0 前端工程化', link: 'http://webpack3.gaodaqian.com/webpack3/' },
-            // { text: '使用 webpack 定制前端开发环境(webpack 4.x)', link: '/webpack4/' },
-            { text: '使用 webpack 定制前端开发环境(webpack 4.x)', link: 'http://webpack4.gaodaqian.com/webpack4/' },
+            { text: '四大维度解锁 Webpack 3.0 前端工程化', link: '/webpack3/' },
+            { text: '使用 webpack 定制前端开发环境(webpack 4.x)', link: '/webpack4/' },
             { text: 'Javascript 设计模式系统讲解与应用', link: '/design-patterns/' },
           ]
         },
@@ -165,17 +160,17 @@ function getNavList() {
 function getSidebar() {
   return {
     '/home/': home.getList(),
-    // '/nginx/': nginx.getList(),
-    // '/mpvue/': mpvue.getList(),
+    '/nginx/': nginx.getList(),
+    '/mpvue/': mpvue.getList(),
     '/Effective-JavaScript/': EffectiveJavaScript.getList(),
     '/smarketing/': smarketing.getList(),
-    // '/react/': react.getList(),
+    '/react/': react.getList(),
     '/vue/': vue.getList(),
     '/notes/': notes.getList(),
     '/interview/': interview.getList(),
     '/standard/': standard.getList(),
     '/vue-advanced/': vueAdvanced.getList(),
-    /* '/vue-best-practice/': [
+    '/vue-best-practice/': [
       '',
       {
         title: 'Nginx 前端常用',
@@ -206,7 +201,7 @@ function getSidebar() {
           './vuex/actions.js',
         ]
       },
-    ] ,*/
+    ] ,
     '/fe-interview-questions/': [
       {
         title: 'Vue-MVVM',
@@ -313,8 +308,8 @@ function getSidebar() {
     '/booklet-vue-core/': bookletVueCore.getList(),
     '/security/': security.getList(),
     '/performance/': performance.getList(),
-    // '/webpack3/': webpack3.getList(),
-    // '/webpack4/': webpack4.getList(),
+    '/webpack3/': webpack3.getList(),
+    '/webpack4/': webpack4.getList(),
     '/': [ '', 'contact', 'about']
   }
 }
