@@ -1,6 +1,6 @@
 # 设置 chunk 名称
 
-配置 webpack.base.conf.js:
+**配置 webpack.base.conf.js**:
 
 增加 `chunkFilename: '[name].js',`
 
@@ -15,7 +15,7 @@ output: {
 },
 ```
 
-配置 router/index.js:
+**配置 router/index.js**:
 
 设置 `trunkname`, `/* webpackChunkName: 'home' */`
 

@@ -79,13 +79,13 @@ location ~* ^.+\.(eot|ttf|otf|woff|svg)$ {
 
 ### 开启前后性能对比
 
- | 开启 GZIP 前 | 开启 GZIP 后
+对比内容 | 开启 GZIP 前 | 开启 GZIP 后
 ---------|----------|---------
  vendor 大小| `281 kb` | `113 kb`
  vendor 耗时 | `3.27 s` | `150 ms`
  总大小 | `780 kb` | `583 kb`
  总耗时| `6 s` | `2 s`
 
-![](./media/ni-gzip.png)
+![](./media/no-gzip.png)
 
 ![](./media/gzip.png)
