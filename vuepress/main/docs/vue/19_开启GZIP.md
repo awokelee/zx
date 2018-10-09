@@ -2,14 +2,14 @@
 
 ### Vue 项目开启 GZIP
 
-找到 `config/index.js` 把 `productionGzip: false,` 改为 `productionGzip: true,`
+- 找到 `config/index.js` 把 `productionGzip: false,` 改为 `productionGzip: true,`
 
 ```js
 // npm install --save-dev compression-webpack-plugin
 productionGzip: true,
 ```
 
-安装依赖 `npm install --save-dev compression-webpack-plugin`
+- 安装依赖 `npm install --save-dev compression-webpack-plugin`
 
 如果 `npm run build` 打包报错如下:
 
@@ -40,7 +40,7 @@ options should NOT have additional properties
 
 ### Nginx 开启 GZIP
 
-找到对应站点 `Nginx` 配置文件, 默认是 `nginx.conf`, 开启 `gzip`:
+- 找到对应站点 `Nginx` 配置文件, 默认是 `nginx.conf`, 开启 `gzip`:
 
 ```bash
 # 开启gzip
