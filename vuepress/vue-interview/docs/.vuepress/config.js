@@ -219,7 +219,16 @@ function getSidebar() {
       '21.0 剖析 vuex 内部运行机制',
       '22.0 剖析 axios 内部运行机制',
       '23.0 发布一个 npm 资源包',
-      '24.0 vue的服务器端渲染',
+      {
+        title: '二十四、 vue 的服务器端渲染',
+        collapsable: false,
+        children: [
+          '24.0 vue的服务器端渲染',
+          '24.1 服务器端渲染与Nuxt.js',
+          '24.2 带你走近Vue服务器端渲染',
+          '24.3 首屏渲染速度对比'
+        ]
+      },
       '25.0 vue高版本的一些新特性的实践',
       '26.0 electron-vue',
       '27.0 资料分享'

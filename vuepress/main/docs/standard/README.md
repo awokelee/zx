@@ -10,4 +10,6 @@
 [ESLint](https://panjiachen.github.io/vue-element-admin-site/zh/guide/advanced/eslint.html#%E9%85%8D%E7%BD%AE%E9%A1%B9), by PanJiaChen.
 
 [前端开发规范：命名规范、html规范、css规范、js规范](https://juejin.im/post/592d4a5b0ce463006b43b6da#heading-40), by sunshine小小倩.
+
+[从支付宝tabbar看BEM](https://juejin.im/post/5bb4678a5188255c980be9d2?utm_source=gold_browser_extension), by veryHappyBird.
 :::

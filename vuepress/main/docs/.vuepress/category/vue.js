@@ -17,6 +17,7 @@ module.exports = {
           '05_fastclick',
           '06_less',
           '06_stylus',
+          '06_Scoped-CSS',
           '07_iconfont',
           '07_elementui',
           '07_vux',
@@ -26,6 +27,7 @@ module.exports = {
         title: 'Vue 项目常用',
         collapsable: false,
         children: [
+          '08_设置chunk名称',
           '08_vconsole',
           '08_图片',
           '08_axios',
