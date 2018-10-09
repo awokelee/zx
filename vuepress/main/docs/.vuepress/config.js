@@ -206,6 +206,7 @@ function getSidebar() {
           '08_vconsole',
           '10_proxyTable',
           '24_nginx配置vue跨域',
+          '20_视图不更新',
           '26_vue滚动条位置',
           '28_vue引入css报错',
           '29_编辑器stylus设置',
@@ -215,7 +216,6 @@ function getSidebar() {
         title: 'Vue 生产相关',
         collapsable: false,
         children: [
-          '20_视图不更新',
           '08_设置chunk名称',
           '27_vue项目打包配置工程路径',
           '22_解决npm_run_build卡住问题',
