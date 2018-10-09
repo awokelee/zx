@@ -27,6 +27,8 @@ module.exports = {
         title: 'Vue 项目常用',
         collapsable: false,
         children: [
+          '19_开启GZIP',
+          '20_生产环境JSON404',
           '08_设置chunk名称',
           '08_vconsole',
           '08_图片',
