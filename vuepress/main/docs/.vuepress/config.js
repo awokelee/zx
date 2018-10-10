@@ -225,14 +225,14 @@ function getSidebar() {
           '11_nginx',
           '25_vue部署nginx404',
           '20_生产环境JSON404',
-          '19_开启GZIP',
         ]
       },
       {
         title: 'Vue 优化(待更新)',
         collapsable: false,
         children: [
-          
+          '19_开启GZIP',
+          '19_使用CDN引入vue',
         ]
       },
       {
