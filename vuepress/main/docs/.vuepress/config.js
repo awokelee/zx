@@ -228,6 +228,16 @@ function getSidebar() {
         ]
       },
       {
+        title: 'Vue 好的实践',
+        collapsable: false,
+        children: [
+          '33_化繁为简的Watchers',
+          '34_一劳永逸的组件注册',
+          '35_釜底抽薪的router-key',
+          '36_高阶组件',
+        ]
+      },
+      {
         title: 'Vue 优化(待更新)',
         collapsable: false,
         children: [

@@ -31,8 +31,11 @@ function getSidebar() {
   return {
     '/interview/':[
       '主观题',
+      'JavaScript',
+      'CSS',
       'Event-Loop事件循环',
       'vue相关',
+      'fiddler抓包',
       /* {
         title: 'Vue 相关',
         collapsable: false,
