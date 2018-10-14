@@ -47,14 +47,14 @@ module.exports = {
 
 function getNavList() {
   return [
-    { text: '面试', link: '/fe-interview-questions/' },
+    
     {
       text: 'Vue',
       items: [
         { text: 'Vue 零基础搭建项目', link: '/vue/' },
         { text: 'Vue 项目中遇到的问题', link: '/notes/' },
         { text: 'Vue 核心技术(Vue+Vue-Router+Vuex+SSR)', link: '/vue-advanced/' },
-        { text: 'Vue 最佳实践', link: '/vue-best-practice/' },
+        // { text: 'Vue 好的实践', link: '/vue-best-practice/' },
       ]
     },
     { text: 'React', link: '/react/' },
@@ -69,7 +69,7 @@ function getNavList() {
             { text: '前端开发规范', link: '/standard/' },
           ]
         },
-        {
+        /* {
           text: '面试相关',
           items: [
             { text: 'Web 前端面试指南', link: '/booklet-interview-guide/' },
@@ -77,7 +77,7 @@ function getNavList() {
             { text: '前端跳槽面试必备技巧', link: '/fe-interview-skill/' },
             { text: '揭秘一线互联网企业 前端 JavaScript 高级面试', link: '/fe-interview-senior/' },
           ]
-        },
+        }, */
         {
           text: '网络及性能',
           items: [
@@ -147,11 +147,20 @@ function getNavList() {
     {
       text: '.',
       items: [
-        { text: 'Blogs', link: 'http://blog.gaodaqian.com' },
+        { text: 'Hexo Blogs', link: 'http://blog.gaodaqian.com' },
         { text: 'JavaScript', link: '/Effective-JavaScript/' },        
         { text: '基础', link: '/interview/' },
         { text: '其他', link: '/home/' },
-        
+        // { text: '面试', link: '/fe-interview-questions/' },
+        { text: '1', link: '/fe-interview-questions/' },
+        // { text: 'Web 前端面试指南', link: '/booklet-interview-guide/' },
+        { text: '2', link: '/booklet-interview-guide/' },
+        // { text: '前端 JavaScript 面试技巧', link: '/fe-interview-junior/' },
+        { text: '3', link: '/fe-interview-junior/' },
+        // { text: '前端跳槽面试必备技巧', link: '/fe-interview-skill/' },
+        { text: '4', link: '/fe-interview-skill/' },
+        // { text: '揭秘一线互联网企业 前端 JavaScript 高级面试', link: '/fe-interview-senior/' },
+        { text: '5', link: '/fe-interview-senior/' },
       ]
     },
   ]

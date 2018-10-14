@@ -1,5 +1,9 @@
 # Webpack 相关
 
+## webpack 打包模块的源码
+
+![](./media/kkb-webpack.png)
+
 ## 打包体积 优化思路
 
 提取第三方库或通过引用外部文件的方式引入第三方库
