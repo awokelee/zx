@@ -62,6 +62,7 @@ function getSidebar() {
       '内存泄漏',
       '垃圾回收',
       '前端测试',
+      '一句话面试题',
       /* {
         title: 'Vue 相关',
         collapsable: false,
