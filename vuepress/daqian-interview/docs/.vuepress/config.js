@@ -35,7 +35,6 @@ function getSidebar() {
       'CSS',
       'Event-Loop事件循环',
       'hiper性能分析',
-      '如何计算白屏时间',
       '三个框架性能对比',
       'vue',
       'vue相关',
