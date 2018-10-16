@@ -170,7 +170,7 @@ bus.$emit('event1', val)
 
 可以看出本质是一个 `Vue实例` 充当事件绑定的媒介, 在所有实例中使用其进行数据的通信。
 
-- Vuex 状态管理
+## Vuex 状态管理
 
 ![](./media/vuex-cn.png)
 
