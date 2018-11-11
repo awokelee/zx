@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: /hero.png
-actionText: 开始 →
+actionText: 开 始 →
 actionLink: /xiaoce/
 prev: true
 next: true
