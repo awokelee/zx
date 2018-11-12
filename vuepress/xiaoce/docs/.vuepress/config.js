@@ -1,6 +1,6 @@
 module.exports = {
   title: '小册',
-  description: 'some notes',
+  // description: 'some notes',
   search: false,
   sidebarDepth: 2,
   searchMaxSuggestions: 10,
@@ -27,6 +27,12 @@ function getNavList() {
 function getSidebar() {
   return {
     '/xiaoce/': [
+      {
+        title: '收录的小册',
+        collapsable: false,
+        children: [
+        ]
+      },
       {
         title: 'Git 原理详解及实用指南',
         collapsable: true,
