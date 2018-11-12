@@ -1,6 +1,6 @@
 module.exports = {
   title: '小册',
-  // description: 'some notes',
+  description: '整理的一些小册',
   search: false,
   sidebarDepth: 2,
   searchMaxSuggestions: 10,
