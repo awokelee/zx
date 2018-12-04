@@ -1,9 +1,23 @@
 // params 参数来源: https://xiaoce-cache-api-ms.juejin.im/v1/get 这个请求
+function parseQueryString(url) {
+	var str = url.split("?")[1], items = str.split("&");
+	var result = {};
+	var arr;
+	for (var i = 0; i < items.length; i++) {
+		arr = items[i].split("=");
+		result[arr[0]] = arr[1];
+	}
+	return result;
+}
+
+const URL  = `https://xiaoce-cache-api-ms.juejin.im/v1/get这个接口的完整URL`
+console.log(parseQueryString(URL))
+const {token, id, client_id, uid} = parseQueryString(URL)
 let params = {
-  token: 'token',
-  id: 'id',
-  client_id: 'client_id',
-  uid: 'uid',
+  token,
+  id,
+  client_id,
+  uid,
   src: 'web'
 }
 
@@ -12,6 +26,7 @@ let urls = {
   getSectionUrl: 'https://xiaoce-cache-api-ms.juejin.im/v1/getSection' // getSection 接口, 不需要变
 }
 
+// kancloud
 let paramsCL = {
   __jsluid : '601859efdd376bb4f9870d2960902819',
   _ga : 'GA1.2.834880515.1537986182',

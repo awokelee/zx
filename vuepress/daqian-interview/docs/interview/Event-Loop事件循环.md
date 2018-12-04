@@ -1,5 +1,13 @@
 # Event-Loop 事件循环
 
+nodejs 和浏览器的 event loop 是两个有明确区分的事物，不能混为一谈.
+
+`nodejs` 的 `event` 是基于 `libuv`，而浏览器的 `event loop` 则在 `html5` 的规范中明确定义。
+
+`libuv` 已经对 `event loop` 作出了实现，而 `html5` 规范中只是定义了浏览器中 `event loop` 的模型，`具体实现留给了浏览器厂商`
+
+## 开始
+
 JavaScript 是一门 **单线程**、**非阻塞** 的脚本语言，目的是为了实现与浏览器交互。
 
 ## 单线程

@@ -101,15 +101,25 @@
         "name": "Lodash",
         "desc": "Lodash"
       },{
-        "href": "https://xluos.github.io/demo/flexbox/",
-        "src": "./static/images/flex.png",
-        "name": "Flexbox 演示站",
-        "desc": "Flexbox 演示站"
+        "href": "https://github.com/leonardomso/33-js-concepts",
+        "src": "./static/images/33.jpg",
+        "name": "JavaScript 必会的 33 个概念",
+        "desc": "JavaScript 必会的 33 个概念"
+      },{
+        "href": "https://github.com/k88hudson/git-flight-rules/blob/master/README_zh-CN.md",
+        "src": "./static/images/git.png",
+        "name": "Git 飞行规则",
+        "desc": "关于 Git 出现的各种问题过后应该怎么操作"
       },{
         "href": "https://shfshanyue.github.io/cheat-sheets/git",
         "src": "./static/images/git.png",
         "name": "Git Cheat Sheet",
         "desc": "Git 常用命令"
+      },{
+        "href": "https://xluos.github.io/demo/flexbox/",
+        "src": "./static/images/flex.png",
+        "name": "Flexbox 演示站",
+        "desc": "Flexbox 演示站"
       }]
     },
     { 

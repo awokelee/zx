@@ -30,7 +30,6 @@ function getNavList() {
 function getSidebar() {
   return {
     '/interview/':[
-      '主观题',
       'JavaScript',
       'CSS',
       'Event-Loop事件循环',
