@@ -100,6 +100,32 @@ function getSidebar() {
         ]
       },
       {
+        title: 'Vue.js 组件精讲',
+        collapsable: true,
+        children: [
+          './Vue.js 组件精讲/0开篇：Vue.js 的精髓——组件.md',
+          './Vue.js 组件精讲/1基础：Vue.js 组件的三个 API：prop、event、slot.md',
+          './Vue.js 组件精讲/2组件的通信 1：provide  inject.md',
+          './Vue.js 组件精讲/3组件的通信 2：派发与广播——自行实现 dispatch 和 broadcast 方法.md',
+          './Vue.js 组件精讲/4实战 1：具有数据校验功能的表单组件——Form.md',
+          './Vue.js 组件精讲/5组件的通信 3：找到任意组件实例——findComponents 系列方法.md',
+          './Vue.js 组件精讲/6实战 2：组合多选框组件——CheckboxGroup Checkbox.md',
+          './Vue.js 组件精讲/7Vue 的构造器——extend 与手动挂载——mount.md',
+          './Vue.js 组件精讲/8实战 3：动态渲染 .vue 文件的组件—— Display.md',
+          './Vue.js 组件精讲/9实战 4：全局提示组件——Alert.md',
+          './Vue.js 组件精讲/10更灵活的组件：Render 函数与 Functional Render.md',
+          './Vue.js 组件精讲/11实战 5：可用 Render 自定义列的表格组件——Table.md',
+          './Vue.js 组件精讲/12实战 6：可用 slot-scope 自定义列的表格组件——Table.md',
+          './Vue.js 组件精讲/13递归组件与动态组件.md',
+          './Vue.js 组件精讲/14实战 7：树形控件——Tree.md',
+          './Vue.js 组件精讲/15拓展：Vue.js 容易忽略的 API 详解.md',
+          './Vue.js 组件精讲/16拓展：Vue.js 面试、常见问题答疑.md',
+          './Vue.js 组件精讲/17拓展：如何做好一个开源项目（上篇）.md',
+          './Vue.js 组件精讲/18拓展：如何做好一个开源项目（下篇）.md',
+          './Vue.js 组件精讲/19写在最后.md',
+        ]
+      },
+      {
         title: 'React 组合式开发实践：打造企业管理系统五大核心模块',
         collapsable: true,
         children: [

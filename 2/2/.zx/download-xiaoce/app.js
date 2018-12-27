@@ -28,12 +28,13 @@ function getSection(sectionId) {
 
 async function load() {
   let data = await get()
-  let outputDir = data.d.title
+  let outputDir = data.d.title && data.d.title.replace('\/','')
 
   fs.mkdirSync(outputDir, 0755)
   let section = data.d.section
   for (let i = 0; (len = section.length), i < len; i++) {
     let sectionData = await getSection(section[i])
+	sectionData.d.title = sectionData.d.title && sectionData.d.title.replace('\/','');
     let fd = fs.openSync(
       outputDir + '/' + i + sectionData.d.title + '.md',
       'w',
