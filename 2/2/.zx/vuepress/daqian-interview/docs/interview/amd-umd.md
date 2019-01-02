@@ -1,3 +1,0 @@
-# UMD
-
-![](./media/umd.png)
